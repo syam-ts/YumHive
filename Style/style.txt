@@ -1,0 +1,24 @@
+//1st Way
+
+const jsx = (
+    <div 
+    style={{
+        backgroundColor: "blue";
+    }}
+    >
+    <h1> JSX </h1>
+    <h1> Second JSX </h1>
+    </div>
+)
+
+//2nd Way
+
+const styleObj = {
+    border: "1px solid red";
+}
+
+<h2 style={styleObj}> Hello React </h2>
+
+//3rd Way || use it inside css file
+
+<p className="jsx"> Paragraph </p>
