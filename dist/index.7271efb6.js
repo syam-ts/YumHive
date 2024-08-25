@@ -27723,13 +27723,16 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _titleJs = require("./Title.js");
 var _titleJsDefault = parcelHelpers.interopDefault(_titleJs);
+const loggedInUser = ()=>{
+    return true;
+};
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 4,
+                lineNumber: 7,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27740,45 +27743,58 @@ const Header = ()=>{
                             children: " Home "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 7,
+                            lineNumber: 10,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " About "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 8,
+                            lineNumber: 11,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " Contact "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 9,
+                            lineNumber: 12,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " Cart "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 10,
+                            lineNumber: 13,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 6,
+                    lineNumber: 9,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 5,
+                lineNumber: 8,
                 columnNumber: 9
+            }, undefined),
+            loggedInUser() ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: " Logout "
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 17,
+                columnNumber: 23
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: " Login "
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 17,
+                columnNumber: 51
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 3,
+        lineNumber: 6,
         columnNumber: 10
     }, undefined);
 };
@@ -27806,7 +27822,7 @@ const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
         className: "logo",
         alt: "logo",
-        src: "https://logo-suggestion.renderforest.com/suggestions-images/2457/b202/2457b202debe50fd95a8a4d26d596dc1.png"
+        src: "https://api.logo.com/api/v2/images?logo=logo_241d9aa9-b0d8-4b00-8172-ff8898ac1c6e&u=1724599740&width=500&height=400&fit=contain&margins=100&format=webp&quality=60"
     }, void 0, false, {
         fileName: "src/components/Title.js",
         lineNumber: 2,

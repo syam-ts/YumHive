@@ -1,5 +1,10 @@
 import Title from './Title.js'
 
+const loggedInUser = () => {
+   
+  return true
+}
+ 
 const Header = () => {
     return (
       <div className="header">
@@ -12,6 +17,10 @@ const Header = () => {
             <li> Cart </li>
           </ul>
         </div>
+
+{ (loggedInUser() ?  <button> Logout </button> : <button> Login </button>) }
+
+
       </div>
     )
   }
