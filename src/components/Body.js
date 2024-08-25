@@ -33,6 +33,12 @@ let Body = () => {
           getRestaurants()
         }, [])
 
+      
+        if( filteredRestaurant.length === 0 ) {
+          <Shimmer />
+        } else {
+          
+        }
 
 
         return filteredRestaurant.length === 0 ? <Shimmer />  :

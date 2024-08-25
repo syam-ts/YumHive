@@ -42,4 +42,11 @@
 card-img {
   height: 200px;
 }
+
+.shimmer-card {
+  background: #d3d3d3;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
