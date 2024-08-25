@@ -27723,16 +27723,20 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _titleJs = require("./Title.js");
 var _titleJsDefault = parcelHelpers.interopDefault(_titleJs);
+var _react = require("react");
+var _s = $RefreshSig$();
 const loggedInUser = ()=>{
     return true;
 };
 const Header = ()=>{
+    _s();
+    const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleJsDefault.default), {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27743,61 +27747,64 @@ const Header = ()=>{
                             children: " Home "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 10,
+                            lineNumber: 12,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " About "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " Contact "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: " Cart "
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 13,
+                            lineNumber: 15,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 9,
+                    lineNumber: 11,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined),
-            loggedInUser() ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsLoggedIn(false),
                 children: " Logout "
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 17,
-                columnNumber: 23
+                lineNumber: 20,
+                columnNumber: 19
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsLoggedIn(true),
                 children: " Login "
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 17,
-                columnNumber: 51
+                lineNumber: 20,
+                columnNumber: 84
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 6,
+        lineNumber: 8,
         columnNumber: 10
     }, undefined);
 };
+_s(Header, "g0+hF+DMX0JdpNcbD2NNHkMq/cU=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -27808,7 +27815,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Title.js":"6wotK"}],"6wotK":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Title.js":"6wotK","react":"21dqq"}],"6wotK":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6418 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27818,14 +27825,16 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _yumhiveLogoPng = require("../img/yumhive-logo.png");
+var _yumhiveLogoPngDefault = parcelHelpers.interopDefault(_yumhiveLogoPng);
 const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
         className: "logo",
         alt: "logo",
-        src: "https://api.logo.com/api/v2/images?logo=logo_241d9aa9-b0d8-4b00-8172-ff8898ac1c6e&u=1724599740&width=500&height=400&fit=contain&margins=100&format=webp&quality=60"
+        src: (0, _yumhiveLogoPngDefault.default)
     }, void 0, false, {
         fileName: "src/components/Title.js",
-        lineNumber: 2,
+        lineNumber: 3,
         columnNumber: 10
     }, undefined);
 };
@@ -27839,7 +27848,45 @@ $RefreshReg$(_c, "Title");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../img/yumhive-logo.png":"iaHAN"}],"iaHAN":[function(require,module,exports) {
+module.exports = require("ce2f5402c0f9e766").getBundleURL("aXMci") + "yumhive-logo.acdc8951.png" + "?" + Date.now();
+
+},{"ce2f5402c0f9e766":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

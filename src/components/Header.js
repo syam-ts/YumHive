@@ -1,4 +1,5 @@
 import Title from './Title.js'
+import { useState } from 'react'
 
 const loggedInUser = () => {
    
@@ -6,6 +7,9 @@ const loggedInUser = () => {
 }
  
 const Header = () => {
+
+  const [isloggedIn, setIsLoggedIn] = useState(false) 
+
     return (
       <div className="header">
         <Title />
@@ -18,7 +22,12 @@ const Header = () => {
           </ul>
         </div>
 
-{ (loggedInUser() ?  <button> Logout </button> : <button> Login </button>) }
+ 
+    { 
+    (isloggedIn ?  
+    <button onClick={() => setIsLoggedIn(false)}> Logout </button> :
+    <button onClick={() => setIsLoggedIn(true)}> Login </button>)
+     }
 
 
       </div>
