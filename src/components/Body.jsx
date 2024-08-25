@@ -1,7 +1,7 @@
 import { restrauntList } from "../config.js"
-import ResturarntCard from "./ResturarntCard.js"
+import ResturarntCard from "./ResturarntCard.jsx"
 import { useState, useEffect } from "react"
-import Shimmer from './Shimmer.js'
+import Shimmer from './Shimmer.jsx'
 
 let Body = () => {
 
@@ -13,7 +13,6 @@ let Body = () => {
     const founded = allRestaurant.filter((restaurant) =>
       restaurant?.info?.name.includes(searchText)
     )
-
     return founded
   }
 
