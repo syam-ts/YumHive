@@ -9,6 +9,10 @@ let Body = () => {
   const [filteredRestaurant, setFilteredRestaurent] = useState([])
   const [searchText, setSearchText] = useState("")
 
+  useEffect(() => {
+
+    getRestaurants()
+  }, [])
 
       async function getRestaurants() {
     
@@ -26,10 +30,11 @@ let Body = () => {
       
       }
 
-    useEffect(() => {
+  
 
-      getRestaurants()
-    }, [])
+    // if(offline) {
+    //   return <h1> 🔴 Offline, please check your internet connection!</h1>
+    // }
       
 
         return filteredRestaurant.length === 0 ? <Shimmer /> :

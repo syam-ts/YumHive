@@ -9,6 +9,7 @@ import Error from './components/Error.jsx'
 import Contact from './components/Contact.jsx'
 import RestaurantMenu from "./components/RestaurantMenu.jsx"
 import Profile from './components/Profile.jsx'
+import InstaMart from "./components/InstMart.jsx"
 
  
 const AppLayout = () => {
@@ -32,7 +33,7 @@ const appRouter = createBrowserRouter([
               element: <About />,
               children: [
                 {
-                  path: 'profile', // localhost:1234/about/profile
+                  path: 'profile', 
                   element: <Profile />
                 }
               ]
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
             {
               path: "restraunt/:id",
               element: <RestaurantMenu />
+            },
+            {
+              path: "/instamart",
+              element: <InstaMart />
             }
           ] 
         }
