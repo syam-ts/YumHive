@@ -1,55 +1,39 @@
-import { restrauntList } from "../config.js"
 import ResturarntCard from "./ResturarntCard.jsx"
 import { useState, useEffect } from "react"
 import Shimmer from './Shimmer.jsx'
-import Error from './Error.jsx'
 import {Link} from 'react-router-dom'
-import { useParams } from 'react-router-dom'
 import { filterData } from '../utils/helper.js'
 
-// const { id } = useParams()
-
-// console.log('The id ', id)
-
 let Body = () => {
-
   const [allRestaurant, setAllRestaurent] = useState([])
   const [filteredRestaurant, setFilteredRestaurent] = useState([])
   const [searchText, setSearchText] = useState("")
 
 
-  async function getRestaurants() {
- 
-    try{
-
-      const data = await fetch(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-      )
-      const json = await data.json()
-      setAllRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      setFilteredRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    }
-    catch(err) {
-         console.log(err)
-    }
-   
-  }
-
-        useEffect(() => {
-
-          getRestaurants()
-        }, [])
-
-      
-        if( filteredRestaurant.length === 0 ) {
-          <Shimmer />
-        } else {
-          
+      async function getRestaurants() {
+    
+        try{
+          const data = await fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+          )
+          const json = await data.json()
+          setAllRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+          setFilteredRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         }
+        catch(err) {
+            console.log(err)
+        }
+      
+      }
 
+    useEffect(() => {
 
-        return filteredRestaurant.length === 0 ? <Shimmer />  :
-            <>
+      getRestaurants()
+    }, [])
+      
+
+        return filteredRestaurant.length === 0 ? <Shimmer /> :
+           ( <>
               <div className="search-container">
                 <input
                   type="text"
@@ -70,10 +54,8 @@ let Body = () => {
                   Search
                 </button>
               </div>
-            
               <div className="res">
-                {filteredRestaurant.map((restraunt) => {
-                   console.log(restraunt.info.id)
+                {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 
                     to={"/restraunt/"+ restraunt?.info?.id}
@@ -81,15 +63,12 @@ let Body = () => {
                    > 
                <ResturarntCard {...restraunt} />
                  </Link>
-                   )
-                  
+                   )        
                 })}
-              </div>
-          
-            </>
-          
-
-
+          </div>
+      </>)
 }
+
+
 
 export default Body
