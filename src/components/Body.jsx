@@ -5,6 +5,7 @@ import Shimmer from './Shimmer.jsx'
 import Error from './Error.jsx'
 import {Link} from 'react-router-dom'
 import { useParams } from 'react-router-dom'
+import { filterData } from '../utils/helper.js'
 
 // const { id } = useParams()
 
@@ -15,13 +16,6 @@ let Body = () => {
   const [allRestaurant, setAllRestaurent] = useState([])
   const [filteredRestaurant, setFilteredRestaurent] = useState([])
   const [searchText, setSearchText] = useState("")
-
-  const filterData = (searchText, allRestaurant) => {
-    const founded = allRestaurant.filter((restaurant) =>
-      restaurant?.info?.name.includes(searchText)
-    )
-    return founded
-  }
 
 
   async function getRestaurants() {

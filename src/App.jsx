@@ -8,6 +8,7 @@ import About from './components/About.jsx'
 import Error from './components/Error.jsx'
 import Contact from './components/Contact.jsx'
 import RestaurantMenu from "./components/RestaurantMenu.jsx"
+import Profile from './components/Profile.jsx'
 
  
 const AppLayout = () => {
@@ -28,7 +29,13 @@ const appRouter = createBrowserRouter([
           children: [
             {
               path: "/about",
-              element: <About />
+              element: <About />,
+              children: [
+                {
+                  path: 'profile', // localhost:1234/about/profile
+                  element: <Profile />
+                }
+              ]
             },
             {
               path: "/",
