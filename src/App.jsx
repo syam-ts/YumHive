@@ -1,4 +1,4 @@
-import React from "react"
+import React, { lazy } from "react"
 import ReactDOM from "react-dom/client"
 import Body from './components/Body.jsx'
 import Header from './components/Header.jsx'
@@ -8,8 +8,9 @@ import About from './components/About.jsx'
 import Error from './components/Error.jsx'
 import Contact from './components/Contact.jsx'
 import RestaurantMenu from "./components/RestaurantMenu.jsx"
-import Profile from './components/Profile.jsx'
-import InstaMart from "./components/InstMart.jsx"
+import Profile from './components/Profile.jsx' 
+
+const InstaMart = lazy(() => import("./components/Profile.jsx"))
 
  
 const AppLayout = () => {

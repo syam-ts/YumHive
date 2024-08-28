@@ -1,4 +1,4 @@
-import logo from '/src/style/yumhive-logo.png'
+import logo from '../style/img/yumHive-logo.png'
 
 
 const Title = () => {
