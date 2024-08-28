@@ -59,3 +59,11 @@ card-img {
 .menu {
     display: flex;
 }
+
+.instamart-div {
+    border: 1px solid black;
+    padding: 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 140px; 
+    margin: 15px;
+}

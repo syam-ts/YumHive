@@ -2974,45 +2974,45 @@ var _restaurantMenuJsx = require("./components/RestaurantMenu.jsx");
 var _restaurantMenuJsxDefault = parcelHelpers.interopDefault(_restaurantMenuJsx);
 var _profileJsx = require("./components/Profile.jsx");
 var _profileJsxDefault = parcelHelpers.interopDefault(_profileJsx);
-const InstaMart = /*#__PURE__*/ (0, _react.lazy)(()=>require("bc09d9364eec4670"));
-_c = InstaMart;
+var _instMartJsx = require("./components/InstMart.jsx");
+var _instMartJsxDefault = parcelHelpers.interopDefault(_instMartJsx);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerJsxDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 20,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 18,
+        lineNumber: 17,
         columnNumber: 5
     }, undefined);
 };
-_c1 = AppLayout;
+_c = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 29,
+            lineNumber: 28,
             columnNumber: 20
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsxDefault.default), {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 25
         }, undefined),
         children: [
@@ -3020,7 +3020,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 34,
+                    lineNumber: 33,
                     columnNumber: 24
                 }, undefined),
                 children: [
@@ -3028,7 +3028,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsxDefault.default), {}, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 38,
+                            lineNumber: 37,
                             columnNumber: 28
                         }, undefined)
                     }
@@ -3038,7 +3038,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyJsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 44,
+                    lineNumber: 43,
                     columnNumber: 24
                 }, undefined)
             },
@@ -3046,7 +3046,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 48,
+                    lineNumber: 47,
                     columnNumber: 24
                 }, undefined)
             },
@@ -3054,15 +3054,15 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restraunt/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 52,
+                    lineNumber: 51,
                     columnNumber: 24
                 }, undefined)
             },
             {
                 path: "/instamart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(InstaMart, {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartJsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 56,
+                    lineNumber: 55,
                     columnNumber: 24
                 }, undefined)
             }
@@ -3074,19 +3074,18 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.jsx",
-    lineNumber: 64,
+    lineNumber: 63,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "InstaMart");
-$RefreshReg$(_c1, "AppLayout");
+var _c;
+$RefreshReg$(_c, "AppLayout");
 
   $parcel$ReactRefreshHelpers$2430.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Body.jsx":"hHUrP","./components/Header.jsx":"knC38","./components/Footer.jsx":"2OVeV","react-router-dom":"9xmpe","./components/About.jsx":"hkKyJ","./components/Error.jsx":"cKXa2","./components/Contact.jsx":"25EXR","./components/RestaurantMenu.jsx":"ixexi","./components/Profile.jsx":"5QmVt","bc09d9364eec4670":"kNsPl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Body.jsx":"hHUrP","./components/Header.jsx":"knC38","./components/Footer.jsx":"2OVeV","react-router-dom":"9xmpe","./components/About.jsx":"hkKyJ","./components/Error.jsx":"cKXa2","./components/Contact.jsx":"25EXR","./components/RestaurantMenu.jsx":"ixexi","./components/Profile.jsx":"5QmVt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/InstMart.jsx":"3xkEN"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -35467,9 +35466,140 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kNsPl":[function(require,module,exports) {
-module.exports = Promise.resolve(module.bundle.root("5QmVt"));
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3xkEN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$789d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$789d.prelude(module);
 
-},{}]},["1H8md","1xC6H","e9Zfo"], "e9Zfo", "parcelRequire5d3f")
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Section = ({ title, description })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "instamart-div",
+        children: [
+            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsVisible(false),
+                children: " hide "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 11,
+                columnNumber: 11
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsVisible(true),
+                children: " show "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 12,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    " ",
+                    title,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    " ",
+                    description,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 15,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/InstMart.jsx",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
+_c = Section;
+const InstaMart = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: " Instamart "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "About Us",
+                    description: " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.jsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "Contact Us",
+                    description: " is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.jsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "Call Us",
+                    description: " is simply dummy text of the printing and t xt ever  rinter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.jsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/InstMart.jsx",
+        lineNumber: 23,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = InstaMart;
+exports.default = InstaMart;
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "InstaMart");
+
+  $parcel$ReactRefreshHelpers$789d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["1H8md","1xC6H","e9Zfo"], "e9Zfo", "parcelRequire5d3f")
 
 //# sourceMappingURL=index.f482b72b.js.map
