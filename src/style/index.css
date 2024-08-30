@@ -62,8 +62,9 @@ card-img {
 
 .instamart-div {
     border: 1px solid black;
-    padding: 4px;
+    padding: 5px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 140px; 
     margin: 15px;
+    font-size: 12px;
 }

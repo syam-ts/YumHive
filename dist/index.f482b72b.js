@@ -34869,6 +34869,8 @@ var _titleJsx = require("./Title.jsx");
 var _titleJsxDefault = parcelHelpers.interopDefault(_titleJsx);
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
+var _userContexJs = require("../utils/userContex.js");
+var _userContexJsDefault = parcelHelpers.interopDefault(_userContexJs);
 var _s = $RefreshSig$();
 const loggedInUser = ()=>{
     return true;
@@ -34876,12 +34878,13 @@ const loggedInUser = ()=>{
 const Header = ()=>{
     _s();
     const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
+    const { user } = (0, _react.useContext)((0, _userContexJsDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleJsxDefault.default), {}, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 14,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34893,16 +34896,16 @@ const Header = ()=>{
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/",
-                                    children: " Home "
+                                    children: " Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 17,
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 17,
+                            lineNumber: 23,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34913,13 +34916,13 @@ const Header = ()=>{
                                     children: " About "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 18,
+                                    lineNumber: 24,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 18,
+                            lineNumber: 24,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34930,13 +34933,13 @@ const Header = ()=>{
                                     children: " Contact "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 19,
+                                    lineNumber: 25,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 19,
+                            lineNumber: 25,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34947,13 +34950,13 @@ const Header = ()=>{
                                     children: " Cart "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 20,
+                                    lineNumber: 26,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 20,
+                            lineNumber: 26,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -34964,24 +34967,35 @@ const Header = ()=>{
                                     children: " Instamart "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 21,
+                                    lineNumber: 27,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 21,
+                            lineNumber: 27,
                             columnNumber: 10
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.jsx",
-                    lineNumber: 16,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 15,
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    " ",
+                    user.name,
+                    "  "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34989,24 +35003,24 @@ const Header = ()=>{
                 children: " Logout "
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 26,
+                lineNumber: 33,
                 columnNumber: 9
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>setIsLoggedIn(true),
                 children: " Login "
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 28,
+                lineNumber: 35,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 13,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
-_s(Header, "g0+hF+DMX0JdpNcbD2NNHkMq/cU=");
+_s(Header, "11ddpwiDCf8A6Ed5W9GAM9goVXM=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -35017,7 +35031,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Title.jsx":"tDxU0","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"tDxU0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Title.jsx":"tDxU0","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/userContex.js":"3eGpB"}],"tDxU0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$01d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35088,7 +35102,30 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"2OVeV":[function(require,module,exports) {
+},{}],"3eGpB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4eea = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4eea.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const userContext = /*#__PURE__*/ (0, _react.createContext)({
+    user: {
+        name: "syam",
+        email: "syamnandhu3@gamil.com"
+    }
+});
+exports.default = userContext;
+
+  $parcel$ReactRefreshHelpers$4eea.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2OVeV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$66c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35486,45 +35523,37 @@ const Section = ({ title, description })=>{
         children: [
             isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: ()=>setIsVisible(false),
-                children: " hide "
+                children: " Hide "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsVisible(true),
+                children: " Show "
             }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
                 lineNumber: 11,
-                columnNumber: 11
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>setIsVisible(true),
-                children: " show "
-            }, void 0, false, {
-                fileName: "src/components/InstMart.jsx",
-                lineNumber: 12,
-                columnNumber: 11
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: [
-                    " ",
-                    title,
-                    " "
-                ]
-            }, void 0, true, {
+                children: title
+            }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    " ",
-                    description,
-                    " "
-                ]
-            }, void 0, true, {
+                children: description
+            }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
-                lineNumber: 15,
+                lineNumber: 14,
                 columnNumber: 21
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/InstMart.jsx",
-        lineNumber: 8,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -35533,59 +35562,52 @@ _c = Section;
 const InstaMart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: " Instamart "
-            }, void 0, false, {
-                fileName: "src/components/InstMart.jsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "About Us",
-                    description: " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                    title: "About us",
+                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
                 }, void 0, false, {
                     fileName: "src/components/InstMart.jsx",
-                    lineNumber: 26,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
-                lineNumber: 25,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Contact Us",
-                    description: " is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                    title: "Contact us",
+                    description: "is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including vers ey of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
                 }, void 0, false, {
                     fileName: "src/components/InstMart.jsx",
-                    lineNumber: 33,
+                    lineNumber: 31,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
-                lineNumber: 32,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Call Us",
-                    description: " is simply dummy text of the printing and t xt ever  rinter took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+                    title: "Team us",
+                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
                 }, void 0, false, {
                     fileName: "src/components/InstMart.jsx",
-                    lineNumber: 40,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/InstMart.jsx",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/InstMart.jsx",
-        lineNumber: 23,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -35600,6 +35622,6 @@ $RefreshReg$(_c1, "InstaMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["1H8md","1xC6H","e9Zfo"], "e9Zfo", "parcelRequire5d3f")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react/jsx-dev-runtime":"iTorj"}]},["1H8md","1xC6H","e9Zfo"], "e9Zfo", "parcelRequire5d3f")
 
 //# sourceMappingURL=index.f482b72b.js.map
