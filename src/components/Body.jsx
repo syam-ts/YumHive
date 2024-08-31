@@ -27,7 +27,6 @@ let Body = () => {
         catch(err) {
             console.log(err)
         }
-      
       }
 
   
