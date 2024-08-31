@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
         <h3>{restaurant?.constForTwoMsg}</h3>
       </div>
 
-      <div class="menu-res">
+      <div className="menu-res">
         <h1> Menu </h1>
         {
           menus.map((menu) => {

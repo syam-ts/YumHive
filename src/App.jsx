@@ -10,15 +10,18 @@ import Contact from './components/Contact.jsx'
 import RestaurantMenu from "./components/RestaurantMenu.jsx"
 import Profile from './components/Profile.jsx' 
 import InstaMart from './components/InstMart.jsx'
-
+import Provide from 'react-redux'
+import store from './utils/store.js'
  
 const AppLayout = () => {
   return (
+    <Provide store={store}>
     <React.Fragment>
       <Header />
       <Outlet />
       <Footer />
     </React.Fragment>
+    </Provide>
   )
 }
 
