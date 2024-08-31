@@ -28,8 +28,7 @@ let Body = () => {
             console.log(err)
         }
       }
-
-  
+ 
 
     // if(offline) {
     //   return <h1> 🔴 Offline, please check your internet connection!</h1>

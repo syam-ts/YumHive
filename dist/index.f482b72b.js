@@ -27369,7 +27369,7 @@ let Body = ()=>{
     // }
     return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsxDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 39,
+        lineNumber: 38,
         columnNumber: 50
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27386,7 +27386,7 @@ let Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 42,
+                        lineNumber: 41,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27398,13 +27398,13 @@ let Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 51,
+                        lineNumber: 50,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 41,
+                lineNumber: 40,
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27416,18 +27416,18 @@ let Body = ()=>{
                             ...restraunt
                         }, void 0, false, {
                             fileName: "src/components/Body.jsx",
-                            lineNumber: 68,
+                            lineNumber: 67,
                             columnNumber: 16
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 64,
+                        lineNumber: 63,
                         columnNumber: 21
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 61,
+                lineNumber: 60,
                 columnNumber: 15
             }, undefined)
         ]
