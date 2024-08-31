@@ -1,18 +1,35 @@
 import { useParams } from "react-router-dom"
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { IMG_CDN_URl } from '../constants.js'
 import Shimmer from './Shimmer.jsx'
-import useRestaurant from '../utils/useRestaurant.js'
-import userContext from '../utils/userContex.js'
+import useRestaurant from '../utils/useRestaurant.js' 
 
-const RestaurantMenu = () => {
-  
-  const {user} = useContext( userContext )
-   
+const RestaurantMenu = () => { 
     const { id } = useParams()
     const restaurant = useRestaurant(id)
+  
+    const [menus, setMenus] = useState([])
 
-   return (!restaurant) ? <Shimmer /> :
+
+
+    useEffect(() => {
+ 
+      async function getMenus() {
+        const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=${menuId}&catalog_qa=undefined&submitAction=ENTER`)
+        const json = await data.json()
+        setMenus(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards)
+      }
+ 
+
+      const menuId = restaurant?.id
+      menuId == undefined ? console.log('wait') : 
+     
+
+      getMenus()
+    }, [])
+   
+
+   return (!restaurant && !menus) ? <Shimmer /> :
         (
         <div className="menu">
           <div>
@@ -23,12 +40,19 @@ const RestaurantMenu = () => {
             <h3>{restaurant?.avgRating} start</h3>
             <h3>{restaurant?.constForTwoMsg}</h3>
         </div>
-
+ 
         <div>
              <h1> Menu </h1>
-             <div>
-              { user.email }
-             </div>
+            {
+              menus.map( menu => {
+                return (
+                  <div >
+                    {menu?.card?.info?.name}
+                  </div>
+                )
+              })
+
+            }
         </div>
         </div>
       
