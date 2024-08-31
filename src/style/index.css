@@ -15,11 +15,12 @@
 
 .nav-items > ul > li {
     padding: 10px;
-    font-family:monospace ;
+    font-family:'Courier New', Courier, monospace ; 
 }
  
+ 
 .logo {
-    width: 90px;
+    width: 65px;
     border-radius: 50%; 
 }
 
@@ -96,3 +97,10 @@
     margin: 15px;
     font-size: 12px;
 } 
+
+.menu-res {
+
+    margin-left: 12px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}

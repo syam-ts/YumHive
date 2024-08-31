@@ -27,7 +27,6 @@ const  {user} = useContext( userContext )
          <li> <Link to="/instamart"> Instamart </Link></li> 
         </ul>
       </div>
-      <div> {user.name} &  { user.email }</div>
 
       {isloggedIn ? (
         <button onClick={() => setIsLoggedIn(false)}> Logout </button>

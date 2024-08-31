@@ -7,7 +7,7 @@ const Title = () => {
       <img
         className="logo"
         alt="logo"
-        src={ logo }
+        src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-food-logo-png-image_5687717.png"
       />
     )
   }
