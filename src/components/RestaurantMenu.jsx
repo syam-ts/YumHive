@@ -5,7 +5,10 @@ import Shimmer from './Shimmer.jsx'
 import useRestaurant from '../utils/useRestaurant.js'
 
 const RestaurantMenu = () => {
-  const { id } = useParams()
+
+ const {id} = useParams()
+ 
+  
   const restaurant = useRestaurant(id)
   const [menus, setMenus] = useState([])
 
@@ -36,7 +39,8 @@ const RestaurantMenu = () => {
 
       <div className="menu-res">
         <h1> Menu </h1>
-        {
+        { menus == undefined ? 
+        <div>hold</div> :
           menus.map((menu) => {
             return (
               <div key={menu?.card?.info?.id}>
