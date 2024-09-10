@@ -1,7 +1,7 @@
 import React, { lazy } from "react"
 import ReactDOM from "react-dom/client"
 import Body from './components/Body.jsx'
-import Header from './components/Header.jsx'
+import Header2 from './components/Header2.jsx'
 import Footer from './components/Footer.jsx'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import About from './components/About.jsx'
@@ -15,7 +15,7 @@ const AppLayout = () => {
   return (
    
     <React.Fragment>
-      <Header />
+      <Header2 />
       <Outlet />
       <Footer />
     </React.Fragment>

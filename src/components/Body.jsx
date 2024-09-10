@@ -15,7 +15,6 @@ let Body = () => {
   
   async function getRestaurants() {
     try {
-      // Fetch data from both APIs simultaneously
       const [swiggyResponse, secondApiResponse, thirdApiResponse] = await Promise.all([
         fetch(
           "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
@@ -26,35 +25,26 @@ let Body = () => {
         fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
         )
-      ]);
+      ])
   
-      // Convert both responses to JSON
-      const swiggyJson = await swiggyResponse.json();
-      const secondApiJson = await secondApiResponse.json();
-      const thirdApiJson = await thirdApiResponse.json();
+      const swiggyJson = await swiggyResponse.json()
+      const secondApiJson = await secondApiResponse.json()
+      const thirdApiJson = await thirdApiResponse.json()
+       
+      const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []
+      const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []
+      const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []
 
-      
-  
-      // Extract restaurant data from both APIs
-      const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-      const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-      const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-  
-      console.log('second one :', secondApiRestaurants)
-      // Combine the restaurant data from both APIs
-      const combinedRestaurants = [...swiggyRestaurants, ...secondApiRestaurants,...thirdApiRestaurants];
-  
-      // Update the state with the combined restaurant data
-      setAllRestaurent(combinedRestaurants);
-      setFilteredRestaurent(combinedRestaurants);
-  
+      const combinedRestaurants = [...swiggyRestaurants, ...secondApiRestaurants,...thirdApiRestaurants]
+
+      setAllRestaurent(combinedRestaurants)
+      setFilteredRestaurent(combinedRestaurants)
     } catch (err) {
-      console.log(err);
+      console.log(err)
     }
   }
   
  
-
     // if(offline) {
     //   return <h1> 🔴 Offline, please check your internet connection!</h1>
     // }
@@ -83,7 +73,7 @@ let Body = () => {
                 </button>
               </div>
      {/* restaurant card */}
-              <div className="flex flex-wrap gap-12 px-44 mt-28 ">
+              <div className="flex flex-wrap gap-12 px-52 mt-28">
                 {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 

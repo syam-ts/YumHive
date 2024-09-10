@@ -1,8 +1,8 @@
 const ResturarntCard = res => {
    
   return (
-    <div className="" key={res?.info?.id}> 
-      <img className="h-[250px] w-[350px] rounded-md" 
+    <div key={res?.info?.id}> 
+      <img className="h-[220px] w-[330px] rounded-md" 
       src={res.image ? res.image : `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${res?.info?.cloudinaryImageId}`}
        /> 
       <span 
