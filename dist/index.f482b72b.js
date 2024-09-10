@@ -27375,11 +27375,11 @@ let Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border-black border-2 w-56 h-10 rounded-md mt-5",
+                className: "w-56 h-10 rounded-md mt-1 border-2 border-black",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        className: "p-2  w-56 h-10",
+                        className: "w-52 h-9 ",
                         placeholder: "Search",
                         value: searchText,
                         onChange: (e)=>{
@@ -27391,7 +27391,7 @@ let Body = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "bg-black",
+                        className: "bg-black w-28 text-white rounded-md mt-5",
                         onClick: ()=>{
                             const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
                             setFilteredRestaurent(filteredData);
@@ -27409,7 +27409,7 @@ let Body = ()=>{
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-24 px-28 mt-5",
+                className: "flex flex-wrap gap-24 px-24 mt-28",
                 children: filteredRestaurant.map((restraunt)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restraunt/" + restraunt?.info?.id,
@@ -35310,21 +35310,21 @@ const RestaurantMenu = ()=>{
         lineNumber: 29,
         columnNumber: 36
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "menu",
+        className: "flex gap-44 pl-5",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid p-5 border-black border-2",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: [
-                            "Restraunt id: ",
-                            id
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "w-96",
+                        src: (0, _constantsJs.IMG_CDN_URl) + restaurant?.cloudinaryImageId
+                    }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        className: "font-bold text-2xl",
                         children: [
                             " ",
                             restaurant?.name,
@@ -35332,24 +35332,19 @@ const RestaurantMenu = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantMenu.jsx",
-                        lineNumber: 33,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _constantsJs.IMG_CDN_URl) + restaurant?.cloudinaryImageId
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantMenu.jsx",
                         lineNumber: 34,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "font-bold text-xl",
                         children: restaurant?.city
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
                         lineNumber: 35,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "font-bold text-lg",
                         children: [
                             restaurant?.avgRating,
                             " start"
@@ -35359,7 +35354,8 @@ const RestaurantMenu = ()=>{
                         lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "font-bold",
                         children: restaurant?.constForTwoMsg
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
@@ -35373,7 +35369,7 @@ const RestaurantMenu = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "menu-res",
+                className: "grid decoration",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         children: " Menu "
@@ -35388,10 +35384,15 @@ const RestaurantMenu = ()=>{
                         fileName: "src/components/RestaurantMenu.jsx",
                         lineNumber: 43,
                         columnNumber: 9
-                    }, undefined) : menus.map((menu)=>{
+                    }, undefined) : menus.map((menu, index)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: menu?.card?.info?.name
-                        }, menu?.card?.info?.id, false, {
+                            className: "font-mono",
+                            children: [
+                                index,
+                                " ",
+                                menu?.card?.info?.name
+                            ]
+                        }, menu?.card?.info?.id, true, {
                             fileName: "src/components/RestaurantMenu.jsx",
                             lineNumber: 46,
                             columnNumber: 15

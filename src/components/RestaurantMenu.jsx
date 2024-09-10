@@ -27,24 +27,26 @@ const RestaurantMenu = () => {
   }, [restaurant]);
 
   return (!restaurant && !menus) ? <Shimmer /> : (
-    <div className="menu">
-      <div>
-        <h1>Restraunt id: {id}</h1>
-        <h2> {restaurant?.name} </h2>
-        <img src={IMG_CDN_URl + restaurant?.cloudinaryImageId} />
-        <h3>{restaurant?.city}</h3>
-        <h3>{restaurant?.avgRating} start</h3>
-        <h3>{restaurant?.constForTwoMsg}</h3>
+    <div className="flex gap-44 pl-5">
+      <div className="grid p-5 border-black border-2">
+        {/* <h1>Restraunt id: {id}</h1> */}
+        <img className="w-96" src={IMG_CDN_URl + restaurant?.cloudinaryImageId} />
+        <h2 className="font-bold text-2xl"> {restaurant?.name} </h2>
+        <span className="font-bold text-xl">{restaurant?.city}</span>
+        <span className="font-bold text-lg">{restaurant?.avgRating} start</span>
+        <span className="font-bold">{restaurant?.constForTwoMsg}</span>
       </div>
 
-      <div className="menu-res">
+      <div className="grid decoration">
         <h1> Menu </h1>
         { menus == undefined ? 
         <div> Empty </div> :
-          menus.map((menu) => {
+          menus.map((menu, index) => {
             return (
-              <div key={menu?.card?.info?.id}>
-                {menu?.card?.info?.name}
+              <div key={menu?.card?.info?.id} 
+              className="font-mono"
+              >
+                {index} {menu?.card?.info?.name}
               </div>
             )
           })

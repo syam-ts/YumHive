@@ -37,10 +37,10 @@ let Body = () => {
   //search
         return filteredRestaurant.length === 0 ? <Shimmer /> :
            ( <>
-              <div className="border-black border-2 w-56 h-10 rounded-md mt-5">
+              <div className="w-56 h-10 rounded-md mt-1 border-2 border-black">
                 <input
                   type="text"
-                  className="p-2  w-56 h-10"
+                  className="w-52 h-9 "
                   placeholder="Search"
                   value={searchText}
                   onChange={(e) => {
@@ -48,7 +48,7 @@ let Body = () => {
                   }}
                 />
                 <button
-                  className="bg-black"
+                  className="bg-black w-28 text-white rounded-md mt-5"
                   onClick={() => {
                     const filteredData = filterData(searchText, allRestaurant)
                     setFilteredRestaurent(filteredData)
@@ -57,7 +57,7 @@ let Body = () => {
                   Search
                 </button>
               </div>
-              <div className="flex flex-wrap gap-24 px-28 mt-5">
+              <div className="flex flex-wrap gap-24 px-24 mt-28">
                 {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 
