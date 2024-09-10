@@ -35304,33 +35304,254 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: " About Us"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col lg:flex-row justify-between gap-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-5/12 flex flex-col justify-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
+                                children: "About Us"
+                            }, void 0, false, {
+                                fileName: "src/components/About.jsx",
+                                lineNumber: 8,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "font-normal text-base leading-6 text-gray-600 ",
+                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
+                            }, void 0, false, {
+                                fileName: "src/components/About.jsx",
+                                lineNumber: 9,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.jsx",
+                        lineNumber: 7,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-8/12 ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "w-full h-full",
+                            src: "https://i.ibb.co/FhgPJt8/Rectangle-116.png",
+                            alt: "A group of People"
+                        }, void 0, false, {
+                            fileName: "src/components/About.jsx",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/About.jsx",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/About.jsx",
-                lineNumber: 7,
+                lineNumber: 6,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: " This is a sample about page "
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex lg:flex-row flex-col justify-between gap-8 pt-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-5/12 flex flex-col justify-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
+                                children: "Our Story"
+                            }, void 0, false, {
+                                fileName: "src/components/About.jsx",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "font-normal text-base leading-6 text-gray-600 ",
+                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
+                            }, void 0, false, {
+                                fileName: "src/components/About.jsx",
+                                lineNumber: 19,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.jsx",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-8/12 lg:pt-8",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/FYTKDG6/Rectangle-118-2.png",
+                                            alt: "Alexa featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 24,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/zHjXqg4/Rectangle-118.png",
+                                            alt: "Alexa featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 25,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Alexa"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 26,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/fGmxhVy/Rectangle-119.png",
+                                            alt: "Olivia featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 29,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/NrWKJ1M/Rectangle-119.png",
+                                            alt: "Olivia featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 30,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Olivia"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 31,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 28,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/Pc6XVVC/Rectangle-120.png",
+                                            alt: "Liam featued Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 34,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/C5MMBcs/Rectangle-120.png",
+                                            alt: "Liam featued Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 35,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Liam"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 36,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 33,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/7nSJPXQ/Rectangle-121.png",
+                                            alt: "Elijah featured img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 39,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/ThZBWxH/Rectangle-121.png",
+                                            alt: "Elijah featured img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 40,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Elijah"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.jsx",
+                                            lineNumber: 41,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.jsx",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/About.jsx",
+                        lineNumber: 21,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/About.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                fileName: "src/components/About.jsx",
-                lineNumber: 9,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/About.jsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 9
     }, undefined);
 };
@@ -35344,7 +35565,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cKXa2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cKXa2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1609 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
