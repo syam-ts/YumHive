@@ -35082,7 +35082,7 @@ const About = ()=>{
         className: "2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col lg:flex-row justify-between gap-8",
+                className: "flex flex-col lg:flex-row justify-between gap-8 p-44",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "w-full lg:w-5/12 flex flex-col justify-center",
@@ -35112,8 +35112,8 @@ const About = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "w-full lg:w-8/12 ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "w-full h-full",
-                            src: "https://i.ibb.co/FhgPJt8/Rectangle-116.png",
+                            className: "w-full h-full rounded-xl",
+                            src: "https://exotel.com/wp-content/uploads/2023/04/home-page-images-Swiggy-scaled.jpg",
                             alt: "A group of People"
                         }, void 0, false, {
                             fileName: "src/components/About.jsx",
@@ -35418,11 +35418,11 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-            className: "relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] p-44",
+            className: "relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "container",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "-mx-4 flex flex-wrap lg:justify-between",
+                    className: "-mx-4 flex flex-wrap lg:justify-between px-64",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "w-full px-4 lg:w-1/2 xl:w-6/12",
@@ -37425,7 +37425,7 @@ _s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = Section;
 const InstaMart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "grid gap-12 px-44",
+        className: "grid gap-12 px-44 pt-44 pb-44",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "border border-black rounded-md",

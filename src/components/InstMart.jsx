@@ -19,7 +19,7 @@ const Section = ({ title, description }) => {
 
 const InstaMart = () => {
   return (
-    <div className="grid gap-12 px-44">
+    <div className="grid gap-12 px-44 pt-44 pb-44">
       <div className="border border-black rounded-md">
         <Section
           title="About us"
