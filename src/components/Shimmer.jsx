@@ -6,7 +6,7 @@ const Shimmer = () => {
         {Array(10)
           .fill("")
           .map((e, index) => (
-            <div key={index} className="h-[250px] w-[350px] rounded-md bg-gray-200 "></div>
+            <div key={index} className="h-[220px] w-[320px] rounded-md bg-gray-200 "></div>
           ))}
       </div>
     )
