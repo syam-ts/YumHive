@@ -34868,7 +34868,7 @@ const Header = ()=>{
     const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     const { user } = (0, _react.useContext)((0, _userContexJsDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleJsxDefault.default), {}, void 0, false, {
                 fileName: "src/components/Header.jsx",
@@ -34876,10 +34876,11 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    className: "flex gap-24 text-center pt-5 pl-96",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:underline hover:text-blue-500",
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34888,7 +34889,7 @@ const Header = ()=>{
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
                                     lineNumber: 23,
-                                    columnNumber: 15
+                                    columnNumber: 63
                                 }, undefined)
                             ]
                         }, void 0, true, {
@@ -34897,6 +34898,7 @@ const Header = ()=>{
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:underline hover:text-blue-500",
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34905,7 +34907,7 @@ const Header = ()=>{
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
                                     lineNumber: 24,
-                                    columnNumber: 15
+                                    columnNumber: 63
                                 }, undefined)
                             ]
                         }, void 0, true, {
@@ -34914,6 +34916,7 @@ const Header = ()=>{
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:underline hover:text-blue-500",
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34922,7 +34925,7 @@ const Header = ()=>{
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
                                     lineNumber: 25,
-                                    columnNumber: 15
+                                    columnNumber: 63
                                 }, undefined)
                             ]
                         }, void 0, true, {
@@ -34931,6 +34934,7 @@ const Header = ()=>{
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:underline hover:text-blue-500",
                             children: " Cart "
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
@@ -34938,6 +34942,7 @@ const Header = ()=>{
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:underline hover:text-blue-500",
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -34946,13 +34951,50 @@ const Header = ()=>{
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
                                     lineNumber: 27,
-                                    columnNumber: 15
+                                    columnNumber: 63
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
                             lineNumber: 27,
                             columnNumber: 10
+                        }, undefined),
+                        isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:text-blue-500",
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setIsLoggedIn(false),
+                                    children: " Logout "
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 29,
+                                    columnNumber: 47
+                                }, undefined),
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 29,
+                            columnNumber: 10
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            className: "hover:text-blue-500",
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setIsLoggedIn(true),
+                                    children: " Login "
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 32,
+                                    columnNumber: 46
+                                }, undefined),
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 32,
+                            columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
@@ -34964,21 +35006,6 @@ const Header = ()=>{
                 fileName: "src/components/Header.jsx",
                 lineNumber: 21,
                 columnNumber: 7
-            }, undefined),
-            isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>setIsLoggedIn(false),
-                children: " Logout "
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 32,
-                columnNumber: 9
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                onClick: ()=>setIsLoggedIn(true),
-                children: " Login "
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 34,
-                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
@@ -35012,7 +35039,7 @@ var _yumHiveLogoPng = require("../style/img/yumHive-logo.png");
 var _yumHiveLogoPngDefault = parcelHelpers.interopDefault(_yumHiveLogoPng);
 const Title = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-        className: "logo",
+        className: "w-16 h-16",
         alt: "logo",
         src: "https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-food-logo-png-image_4743616.png"
     }, void 0, false, {
@@ -35384,7 +35411,7 @@ const RestaurantMenu = ()=>{
                         columnNumber: 9
                     }, undefined),
                     menus == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: "hold"
+                        children: " Empty "
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
                         lineNumber: 43,

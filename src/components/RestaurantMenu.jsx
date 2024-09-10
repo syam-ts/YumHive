@@ -40,7 +40,7 @@ const RestaurantMenu = () => {
       <div className="menu-res">
         <h1> Menu </h1>
         { menus == undefined ? 
-        <div>hold</div> :
+        <div> Empty </div> :
           menus.map((menu) => {
             return (
               <div key={menu?.card?.info?.id}>

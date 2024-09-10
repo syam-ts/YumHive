@@ -16,23 +16,23 @@ const  {user} = useContext( userContext )
 
 
   return (
-    <div className="header">
+    <div className="flex">
       <Title />
-      <div className="nav-items">
-        <ul>
-         <li> <Link to="/"> Home</Link></li>
-         <li> <Link to="/about"> About </Link></li>
-         <li> <Link to="/contact"> Contact </Link></li>
-         <li> Cart </li> 
-         <li> <Link to="/instamart"> Instamart </Link></li> 
-        </ul>
-      </div>
-
+      <div>
+        <ul className="flex gap-24 text-center pt-5 pl-96">
+         <li className="hover:underline hover:text-blue-500"> <Link to="/"> Home</Link></li>
+         <li className="hover:underline hover:text-blue-500"> <Link to="/about"> About </Link></li>
+         <li className="hover:underline hover:text-blue-500"> <Link to="/contact"> Contact </Link></li>
+         <li className="hover:underline hover:text-blue-500"> Cart </li> 
+         <li className="hover:underline hover:text-blue-500"> <Link to="/instamart"> Instamart </Link></li> 
       {isloggedIn ? (
-        <button onClick={() => setIsLoggedIn(false)}> Logout </button>
+         <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(false)}> Logout </button> </li> 
+        
       ) : (
-        <button onClick={() => setIsLoggedIn(true)}> Login </button>
+        <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(true)}> Login </button> </li> 
       )}
+            </ul> 
+       </div>
     </div>
   )
 }
