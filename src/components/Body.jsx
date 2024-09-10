@@ -10,24 +10,49 @@ let Body = () => {
   const [searchText, setSearchText] = useState("")
 
   useEffect(() => {
+    getRestaurants();
+  }, []);
+  
+  async function getRestaurants() {
+    try {
+      // Fetch data from both APIs simultaneously
+      const [swiggyResponse, secondApiResponse, thirdApiResponse] = await Promise.all([
+        fetch(
+          "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        ),
+        fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.007849499999999&lng=76.5411712&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        )
+        ,
+        fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
-    getRestaurants()
-  }, [])
+        )
+      ]);
+  
+      // Convert both responses to JSON
+      const swiggyJson = await swiggyResponse.json();
+      const secondApiJson = await secondApiResponse.json();
+      const thirdApiJson = await thirdApiResponse.json();
 
-      async function getRestaurants() {
-    
-        try{
-          const data = await fetch(
-            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-          )
-          const json = await data.json()
-          setAllRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-          setFilteredRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        }
-        catch(err) {
-            console.log(err)
-        }
-      }
+      
+  
+      // Extract restaurant data from both APIs
+      const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+  
+      console.log('second one :', secondApiRestaurants)
+      // Combine the restaurant data from both APIs
+      const combinedRestaurants = [...swiggyRestaurants, ...secondApiRestaurants,...thirdApiRestaurants];
+  
+      // Update the state with the combined restaurant data
+      setAllRestaurent(combinedRestaurants);
+      setFilteredRestaurent(combinedRestaurants);
+  
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  
  
 
     // if(offline) {
@@ -37,7 +62,7 @@ let Body = () => {
   //search
         return filteredRestaurant.length === 0 ? <Shimmer /> :
            ( <>
-              <div className="w-56 h-10 rounded-md mt-1 border-2 border-black">
+              <div className="w-56 h-10 rounded-md mt-1 border-2 border-black ml-12">
                 <input
                   type="text"
                   className="w-52 h-9 "
@@ -48,7 +73,7 @@ let Body = () => {
                   }}
                 />
                 <button
-                  className="bg-black w-28 text-white rounded-md mt-5"
+                  className="bg-black w-28 text-white rounded-full mt-2"
                   onClick={() => {
                     const filteredData = filterData(searchText, allRestaurant)
                     setFilteredRestaurent(filteredData)
@@ -57,7 +82,8 @@ let Body = () => {
                   Search
                 </button>
               </div>
-              <div className="flex flex-wrap gap-24 px-24 mt-28 ">
+     {/* restaurant card */}
+              <div className="flex flex-wrap gap-12 px-44 mt-28 ">
                 {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 

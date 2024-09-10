@@ -27356,10 +27356,30 @@ let Body = ()=>{
     }, []);
     async function getRestaurants() {
         try {
-            const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
-            const json = await data.json();
-            setAllRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-            setFilteredRestaurent(json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+            // Fetch data from both APIs simultaneously
+            const [swiggyResponse, secondApiResponse, thirdApiResponse] = await Promise.all([
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.007849499999999&lng=76.5411712&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+            ]);
+            // Convert both responses to JSON
+            const swiggyJson = await swiggyResponse.json();
+            const secondApiJson = await secondApiResponse.json();
+            const thirdApiJson = await thirdApiResponse.json();
+            // Extract restaurant data from both APIs
+            const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            console.log("second one :", secondApiRestaurants);
+            // Combine the restaurant data from both APIs
+            const combinedRestaurants = [
+                ...swiggyRestaurants,
+                ...secondApiRestaurants,
+                ...thirdApiRestaurants
+            ];
+            // Update the state with the combined restaurant data
+            setAllRestaurent(combinedRestaurants);
+            setFilteredRestaurent(combinedRestaurants);
         } catch (err) {
             console.log(err);
         }
@@ -27370,12 +27390,12 @@ let Body = ()=>{
     //search
     return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsxDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 38,
+        lineNumber: 63,
         columnNumber: 50
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-56 h-10 rounded-md mt-1 border-2 border-black",
+                className: "w-56 h-10 rounded-md mt-1 border-2 border-black ml-12",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
@@ -27387,11 +27407,11 @@ let Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 41,
+                        lineNumber: 66,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "bg-black w-28 text-white rounded-md mt-5",
+                        className: "bg-black w-28 text-white rounded-full mt-2",
                         onClick: ()=>{
                             const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
                             setFilteredRestaurent(filteredData);
@@ -27399,17 +27419,17 @@ let Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 50,
+                        lineNumber: 75,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 40,
+                lineNumber: 65,
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-24 px-24 mt-28 ",
+                className: "flex flex-wrap gap-12 px-44 mt-28 ",
                 children: filteredRestaurant.map((restraunt)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restraunt/" + restraunt?.info?.id,
@@ -27419,23 +27439,23 @@ let Body = ()=>{
                                 ...restraunt
                             }, void 0, false, {
                                 fileName: "src/components/Body.jsx",
-                                lineNumber: 68,
+                                lineNumber: 94,
                                 columnNumber: 20
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Body.jsx",
-                            lineNumber: 67,
+                            lineNumber: 93,
                             columnNumber: 20
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 63,
+                        lineNumber: 89,
                         columnNumber: 21
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 60,
+                lineNumber: 86,
                 columnNumber: 15
             }, undefined)
         ]
@@ -27484,7 +27504,7 @@ const ResturarntCard = (res)=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 className: "font-mono",
-                children: res.cuisine ? res.cuisine.join(", ") : res?.info?.cuisines?.join(", ")
+                children: res.cuisine ? res.cuisine.slice(0, 2).join(", ") : res?.info?.cuisines?.slice(0, 2).join(", ")
             }, void 0, false, {
                 fileName: "src/components/ResturarntCard.jsx",
                 lineNumber: 13,
@@ -35128,7 +35148,7 @@ const Footer = ()=>{
                             class: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: "https://flowbite.com/docs/images/logo.svg",
+                                    src: "https://interexy.com/wp-content/uploads/2021/02/shutterstock_1509818786-3.svg",
                                     class: "h-8",
                                     alt: "Flowbite Logo"
                                 }, void 0, false, {
@@ -35138,7 +35158,7 @@ const Footer = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     class: "self-center text-2xl font-semibold whitespace-nowrap :text-white",
-                                    children: "Flowbite"
+                                    children: "YumHive"
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.jsx",
                                     lineNumber: 12,
@@ -35235,11 +35255,11 @@ const Footer = ()=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                     class: "block text-sm text-gray-500 sm:text-center :text-gray-400",
                     children: [
-                        "\xa9 2023 ",
+                        "\xa9 2024 ",
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "https://flowbite.com/",
                             class: "hover:underline",
-                            children: "Flowbite\u2122"
+                            children: "YumHive"
                         }, void 0, false, {
                             fileName: "src/components/Footer.jsx",
                             lineNumber: 30,
@@ -35274,7 +35294,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35399,32 +35419,1724 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: " Contact Us"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+            className: "relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] p-44",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "-mx-4 flex flex-wrap lg:justify-between",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-1/2 xl:w-6/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mb-12 max-w-[570px] lg:mb-0",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "mb-4 block text-base font-semibold text-primary",
+                                        children: "Contact Us"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 11,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]",
+                                        children: "GET IN TOUCH WITH US"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "mb-9 text-base leading-relaxed text-body-color dark:text-dark-6",
+                                        children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        d: "M30.6 11.8002L17.7 3.5002C16.65 2.8502 15.3 2.8502 14.3 3.5002L1.39998 11.8002C0.899983 12.1502 0.749983 12.8502 1.04998 13.3502C1.39998 13.8502 2.09998 14.0002 2.59998 13.7002L3.44998 13.1502V25.8002C3.44998 27.5502 4.84998 28.9502 6.59998 28.9502H25.4C27.15 28.9502 28.55 27.5502 28.55 25.8002V13.1502L29.4 13.7002C29.6 13.8002 29.8 13.9002 30 13.9002C30.35 13.9002 30.75 13.7002 30.95 13.4002C31.3 12.8502 31.15 12.1502 30.6 11.8002ZM13.35 26.7502V18.5002C13.35 18.0002 13.75 17.6002 14.25 17.6002H17.75C18.25 17.6002 18.65 18.0002 18.65 18.5002V26.7502H13.35ZM26.3 25.8002C26.3 26.3002 25.9 26.7002 25.4 26.7002H20.9V18.5002C20.9 16.8002 19.5 15.4002 17.8 15.4002H14.3C12.6 15.4002 11.2 16.8002 11.2 18.5002V26.7502H6.69998C6.19998 26.7502 5.79998 26.3502 5.79998 25.8502V11.7002L15.5 5.4002C15.8 5.2002 16.2 5.2002 16.5 5.4002L26.3 11.7002V25.8002Z",
+                                                        fill: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 31,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 24,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 23,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Our Location"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "99 S.t Jomblo Park Pekanbaru 28292. Indonesia"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 41,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 37,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 22,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("g", {
+                                                            "clip-path": "url(#clip0_941_17577)",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.jsx",
+                                                                    lineNumber: 57,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M29.3 14.25C28.7 14.25 28.25 13.8 28.2 13.2C27.8 8.15003 23.65 4.10003 18.55 3.75003C17.95 3.70003 17.45 3.20003 17.5 2.55003C17.55 1.95003 18.05 1.45003 18.7 1.50003C24.9 1.90003 29.95 6.80003 30.45 13C30.5 13.6 30.05 14.15 29.4 14.2C29.4 14.25 29.35 14.25 29.3 14.25Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.jsx",
+                                                                    lineNumber: 61,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M24.35 14.7002C23.8 14.7002 23.3 14.3002 23.25 13.7002C22.95 11.0002 20.85 8.90018 18.15 8.55018C17.55 8.50018 17.1 7.90018 17.15 7.30018C17.2 6.70018 17.8 6.25018 18.4 6.30018C22.15 6.75018 25.05 9.65018 25.5 13.4002C25.55 14.0002 25.15 14.5502 24.5 14.6502C24.4 14.7002 24.35 14.7002 24.35 14.7002Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.jsx",
+                                                                    lineNumber: 65,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 56,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("clipPath", {
+                                                                id: "clip0_941_17577",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("rect", {
+                                                                    width: "32",
+                                                                    height: "32",
+                                                                    fill: "white"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.jsx",
+                                                                    lineNumber: 72,
+                                                                    columnNumber: 27
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.jsx",
+                                                                lineNumber: 71,
+                                                                columnNumber: 25
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 70,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 48,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Phone Number"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "(+62)81 414 257 9980"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 81,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 77,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 47,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        d: "M28 4.7998H3.99998C2.29998 4.7998 0.849976 6.1998 0.849976 7.9498V24.1498C0.849976 25.8498 2.24998 27.2998 3.99998 27.2998H28C29.7 27.2998 31.15 25.8998 31.15 24.1498V7.8998C31.15 6.1998 29.7 4.7998 28 4.7998ZM28 7.0498C28.05 7.0498 28.1 7.0498 28.15 7.0498L16 14.8498L3.84998 7.0498C3.89998 7.0498 3.94998 7.0498 3.99998 7.0498H28ZM28 24.9498H3.99998C3.49998 24.9498 3.09998 24.5498 3.09998 24.0498V9.2498L14.8 16.7498C15.15 16.9998 15.55 17.0998 15.95 17.0998C16.35 17.0998 16.75 16.9998 17.1 16.7498L28.8 9.2498V24.0998C28.9 24.5998 28.5 24.9498 28 24.9498Z",
+                                                        fill: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 96,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 88,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Email Address"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 103,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "info@yourdomain.com"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 102,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Contact.jsx",
+                                lineNumber: 10,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.jsx",
+                            lineNumber: 9,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-1/2 xl:w-5/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "name",
+                                                placeholder: "Your Name"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 116,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "email",
+                                                placeholder: "Your Email"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "phone",
+                                                placeholder: "Your Phone"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactTextArea, {
+                                                row: "6",
+                                                placeholder: "Your Message",
+                                                name: "details",
+                                                defaultValue: ""
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 131,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    type: "submit",
+                                                    className: "w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90",
+                                                    children: "Send Message"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 138,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 137,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 115,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -right-9 -top-10 z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 100,
+                                                    height: 100,
+                                                    viewBox: "0 0 100 100",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        fillRule: "evenodd",
+                                                        clipRule: "evenodd",
+                                                        d: "M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z",
+                                                        fill: "#3056D3"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.jsx",
+                                                        lineNumber: 155,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 148,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 147,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -right-10 top-[90px] z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 34,
+                                                    height: 134,
+                                                    viewBox: "0 0 34 134",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 171,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 178,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 185,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 192,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 199,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 206,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 213,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 220,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 227,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 234,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 241,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 248,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 255,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 262,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 269,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 276,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 283,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 290,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 297,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 304,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 311,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 318,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 325,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 332,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 339,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 346,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 353,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 360,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 367,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 374,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 164,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 163,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -bottom-7 -left-7 z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 107,
+                                                    height: 134,
+                                                    viewBox: "0 0 107 134",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 391,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 398,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 405,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 412,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 419,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 426,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 433,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 440,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 447,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 454,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 461,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 468,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 475,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 482,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 489,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 496,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 503,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 510,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 517,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 524,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 531,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 538,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 545,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 552,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 559,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 566,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 573,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 580,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 587,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 594,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 601,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 608,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 615,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 622,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 629,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 636,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 643,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 650,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 657,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 664,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 671,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 678,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 685,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 692,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 699,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 706,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 713,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 720,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 727,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 734,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 741,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 748,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 755,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 762,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 769,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 776,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 783,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 790,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 797,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 804,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 811,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 818,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 825,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 832,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 839,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 846,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 853,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 860,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 867,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 874,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 881,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 888,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 895,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 902,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 909,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 916,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 923,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 930,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 937,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.jsx",
+                                                            lineNumber: 944,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.jsx",
+                                                    lineNumber: 384,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.jsx",
+                                                lineNumber: 383,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.jsx",
+                                        lineNumber: 146,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Contact.jsx",
+                                lineNumber: 114,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.jsx",
+                            lineNumber: 113,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.jsx",
+                    lineNumber: 8,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Contact.jsx",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined)
         }, void 0, false, {
             fileName: "src/components/Contact.jsx",
-            lineNumber: 5,
-            columnNumber: 13
+            lineNumber: 6,
+            columnNumber: 7
         }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Contact.jsx",
-        lineNumber: 4,
-        columnNumber: 9
-    }, undefined);
+    }, void 0, false);
 };
 _c = Contact;
 exports.default = Contact;
-var _c;
+const ContactTextArea = ({ row, placeholder, name, defaultValue })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "mb-6",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                rows: row,
+                placeholder: placeholder,
+                name: name,
+                className: "w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6",
+                defaultValue: defaultValue
+            }, void 0, false, {
+                fileName: "src/components/Contact.jsx",
+                lineNumber: 969,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Contact.jsx",
+            lineNumber: 968,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c1 = ContactTextArea;
+const ContactInputBox = ({ type, placeholder, name })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "mb-6",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: type,
+                placeholder: placeholder,
+                name: name,
+                className: "w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+            }, void 0, false, {
+                fileName: "src/components/Contact.jsx",
+                lineNumber: 985,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Contact.jsx",
+            lineNumber: 984,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c2 = ContactInputBox;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "Contact");
+$RefreshReg$(_c1, "ContactTextArea");
+$RefreshReg$(_c2, "ContactInputBox");
 
   $parcel$ReactRefreshHelpers$ac13.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ixexi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ixexi":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d8b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35678,6 +37390,7 @@ const Section = ({ title, description })=>{
         className: "instamart-div",
         children: [
             isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "font-serif",
                 onClick: ()=>setIsVisible(false),
                 children: " Hide "
             }, void 0, false, {
@@ -35685,6 +37398,7 @@ const Section = ({ title, description })=>{
                 lineNumber: 9,
                 columnNumber: 9
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "font-serif",
                 onClick: ()=>setIsVisible(true),
                 children: " Show "
             }, void 0, false, {
@@ -35717,8 +37431,10 @@ _s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = Section;
 const InstaMart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "grid gap-12 px-44",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                     title: "About us",
                     description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
@@ -35733,6 +37449,7 @@ const InstaMart = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                     title: "Contact us",
                     description: "is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including vers ey of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
@@ -35747,6 +37464,7 @@ const InstaMart = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                     title: "Team us",
                     description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
