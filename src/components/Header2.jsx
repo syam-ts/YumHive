@@ -7,7 +7,7 @@ const Header2 =() => {
     const [isloggedIn, setIsLoggedIn] = useState(false)
     return(
          
-<header className="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
+<header className="header sticky top-0 bg-white shadow-md z-0 flex items-center justify-between px-8 py-02">
  
  <h1 className="w-3/12">
      <a href="">
@@ -18,27 +18,27 @@ const Header2 =() => {
  </h1>
 
 
- <nav className="nav font-semibold text-lg">
-     <ul className="flex items-center">
+ <nav className="nav quicksand-regular text-sm">
+     <ul className="flex items-center gap-12">
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
-           <Link to="/">Home</Link>
+           <Link to="/">HOME</Link>
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
-           <Link to="/about">About</Link>
+           <Link to="/about">ABOUT</Link>
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
-           <Link to="/contact">Contact</Link>
+           <Link to="/contact">CONTACT</Link>
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
-           <Link to="/cart">Cart</Link>
+           <Link to="/cart">CART</Link>
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer">
-           <Link to="/instamart">Instamart</Link>
+           <Link to="/instamart">INSTAMART</Link>
          </li>
          {isloggedIn ? (
-            <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(false)}> Logout </button> </li>
+            <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(false)}> LOGOUT </button> </li>
           ) : (
-            <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(true)}> Login </button> </li>
+            <li className="hover:text-blue-500"> <button onClick={() => setIsLoggedIn(true)}> LOGIN </button> </li>
           )}
      </ul>
  </nav>

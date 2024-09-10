@@ -27389,38 +27389,65 @@ let Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-56 h-10 rounded-md mt-1 border-2 border-black ml-12",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        type: "text",
-                        className: "w-52 h-9 ",
-                        placeholder: "Search",
-                        value: searchText,
-                        onChange: (e)=>{
-                            setSearchText(e.target.value);
-                        }
-                    }, void 0, false, {
-                        fileName: "src/components/Body.jsx",
-                        lineNumber: 56,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "bg-black w-28 text-white rounded-full mt-2",
-                        onClick: ()=>{
-                            const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
-                            setFilteredRestaurent(filteredData);
-                        },
-                        children: "Search"
-                    }, void 0, false, {
-                        fileName: "src/components/Body.jsx",
-                        lineNumber: 65,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                class: "max-w-md mx-auto mt-5 shadow-xl rounded-md ",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            class: "grid place-items-center h-full w-12 text-gray-300",
+                            onClick: ()=>{
+                                const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
+                                setFilteredRestaurent(filteredData);
+                            },
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                class: "h-6 w-6",
+                                fill: "none",
+                                viewBox: "0 0 24 24",
+                                stroke: "currentColor",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.jsx",
+                                    lineNumber: 84,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Body.jsx",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Body.jsx",
+                            lineNumber: 79,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            class: "peer h-full w-full outline-none text-sm text-gray-700 pr-2",
+                            type: "text",
+                            value: searchText,
+                            onChange: (e)=>{
+                                setSearchText(e.target.value);
+                            },
+                            placeholder: "Search something.."
+                        }, void 0, false, {
+                            fileName: "src/components/Body.jsx",
+                            lineNumber: 88,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Body.jsx",
+                    lineNumber: 78,
+                    columnNumber: 5
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 55,
-                columnNumber: 15
+                lineNumber: 77,
+                columnNumber: 1
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex flex-wrap gap-12 px-52 mt-28",
@@ -27433,23 +27460,23 @@ let Body = ()=>{
                                 ...restraunt
                             }, void 0, false, {
                                 fileName: "src/components/Body.jsx",
-                                lineNumber: 84,
+                                lineNumber: 110,
                                 columnNumber: 20
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Body.jsx",
-                            lineNumber: 83,
+                            lineNumber: 109,
                             columnNumber: 20
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 79,
+                        lineNumber: 105,
                         columnNumber: 21
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 76,
+                lineNumber: 102,
                 columnNumber: 15
             }, undefined)
         ]
@@ -37480,7 +37507,7 @@ const Header2 = ()=>{
     _s();
     const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02",
+        className: "header sticky top-0 bg-white shadow-md z-0 flex items-center justify-between px-8 py-02",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "w-3/12",
@@ -37506,15 +37533,15 @@ const Header2 = ()=>{
                 columnNumber: 2
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-                className: "nav font-semibold text-lg",
+                className: "nav quicksand-regular text-sm",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "flex items-center",
+                    className: "flex items-center gap-12",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                children: "Home"
+                                children: "HOME"
                             }, void 0, false, {
                                 fileName: "src/components/Header2.jsx",
                                 lineNumber: 24,
@@ -37529,7 +37556,7 @@ const Header2 = ()=>{
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
-                                children: "About"
+                                children: "ABOUT"
                             }, void 0, false, {
                                 fileName: "src/components/Header2.jsx",
                                 lineNumber: 27,
@@ -37544,7 +37571,7 @@ const Header2 = ()=>{
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                children: "Contact"
+                                children: "CONTACT"
                             }, void 0, false, {
                                 fileName: "src/components/Header2.jsx",
                                 lineNumber: 30,
@@ -37559,7 +37586,7 @@ const Header2 = ()=>{
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/cart",
-                                children: "Cart"
+                                children: "CART"
                             }, void 0, false, {
                                 fileName: "src/components/Header2.jsx",
                                 lineNumber: 33,
@@ -37574,7 +37601,7 @@ const Header2 = ()=>{
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/instamart",
-                                children: "Instamart"
+                                children: "INSTAMART"
                             }, void 0, false, {
                                 fileName: "src/components/Header2.jsx",
                                 lineNumber: 36,
@@ -37591,7 +37618,7 @@ const Header2 = ()=>{
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     onClick: ()=>setIsLoggedIn(false),
-                                    children: " Logout "
+                                    children: " LOGOUT "
                                 }, void 0, false, {
                                     fileName: "src/components/Header2.jsx",
                                     lineNumber: 39,
@@ -37609,7 +37636,7 @@ const Header2 = ()=>{
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     onClick: ()=>setIsLoggedIn(true),
-                                    children: " Login "
+                                    children: " LOGIN "
                                 }, void 0, false, {
                                     fileName: "src/components/Header2.jsx",
                                     lineNumber: 41,

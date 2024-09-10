@@ -52,7 +52,7 @@ let Body = () => {
   //search
         return filteredRestaurant.length === 0 ? <Shimmer /> :
            ( <>
-              <div className="w-56 h-10 rounded-md mt-1 border-2 border-black ml-12">
+              {/* <div className="flex gap-12 w-56 h-10 rounded-md mt-1 border-2 border-black ml-12">
                 <input
                   type="text"
                   className="w-52 h-9 "
@@ -63,7 +63,7 @@ let Body = () => {
                   }}
                 />
                 <button
-                  className="bg-black w-28 text-white rounded-full mt-2"
+                  className="w-28 text-black mt-2"
                   onClick={() => {
                     const filteredData = filterData(searchText, allRestaurant)
                     setFilteredRestaurent(filteredData)
@@ -71,7 +71,33 @@ let Body = () => {
                 >
                   Search
                 </button>
-              </div>
+              </div> */}
+
+             
+<div class='max-w-md mx-auto mt-5 shadow-xl rounded-md '>
+    <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+        <div class="grid place-items-center h-full w-12 text-gray-300" onClick={() => {
+                    const filteredData = filterData(searchText, allRestaurant)
+                    setFilteredRestaurent(filteredData)
+                  }}>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+        </div>
+
+        <input
+        class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
+        type="text"
+        value={searchText}
+        onChange={(e) => {
+          setSearchText(e.target.value)
+        }}
+        placeholder="Search something.." /> 
+    </div>
+</div>
+
+
+
      {/* restaurant card */}
               <div className="flex flex-wrap gap-12 px-52 mt-28">
                 {filteredRestaurant.map((restraunt) => { 
