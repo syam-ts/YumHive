@@ -34,13 +34,13 @@ let Body = () => {
     //   return <h1> 🔴 Offline, please check your internet connection!</h1>
     // }
       
-
+  //search
         return filteredRestaurant.length === 0 ? <Shimmer /> :
            ( <>
-              <div className="search-container">
+              <div className="border-black border-2 w-56 h-10 rounded-md mt-5">
                 <input
                   type="text"
-                  className="search-input"
+                  className="p-2  w-56 h-10"
                   placeholder="Search"
                   value={searchText}
                   onChange={(e) => {
@@ -48,7 +48,7 @@ let Body = () => {
                   }}
                 />
                 <button
-                  className="search-btn"
+                  className="bg-black"
                   onClick={() => {
                     const filteredData = filterData(searchText, allRestaurant)
                     setFilteredRestaurent(filteredData)
@@ -57,14 +57,14 @@ let Body = () => {
                   Search
                 </button>
               </div>
-              <div className="res">
+              <div className="flex flex-wrap gap-24 px-28 mt-5">
                 {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 
                     to={"/restraunt/"+ restraunt?.info?.id}
                     key={restraunt?.id}
-                   > 
-               <ResturarntCard {...restraunt} />
+                   >  
+            <ResturarntCard {...restraunt} /> 
                  </Link>
                    )        
                 })}

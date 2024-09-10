@@ -27367,6 +27367,7 @@ let Body = ()=>{
     // if(offline) {
     //   return <h1> 🔴 Offline, please check your internet connection!</h1>
     // }
+    //search
     return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsxDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.jsx",
         lineNumber: 38,
@@ -27374,11 +27375,11 @@ let Body = ()=>{
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-container",
+                className: "border-black border-2 w-56 h-10 rounded-md mt-5",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         type: "text",
-                        className: "search-input",
+                        className: "p-2  w-56 h-10",
                         placeholder: "Search",
                         value: searchText,
                         onChange: (e)=>{
@@ -27390,7 +27391,7 @@ let Body = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "search-btn",
+                        className: "bg-black",
                         onClick: ()=>{
                             const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
                             setFilteredRestaurent(filteredData);
@@ -27408,7 +27409,7 @@ let Body = ()=>{
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res",
+                className: "flex flex-wrap gap-24 px-28 mt-5",
                 children: filteredRestaurant.map((restraunt)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restraunt/" + restraunt?.info?.id,
@@ -27417,7 +27418,7 @@ let Body = ()=>{
                         }, void 0, false, {
                             fileName: "src/components/Body.jsx",
                             lineNumber: 67,
-                            columnNumber: 16
+                            columnNumber: 13
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "src/components/Body.jsx",
@@ -27456,10 +27457,10 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const ResturarntCard = (res)=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
+        className: "",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "card-img",
+                className: "h-[250px] w-[350px] rounded-md",
                 src: res.image ? res.image : `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${res?.info?.cloudinaryImageId}`
             }, void 0, false, {
                 fileName: "src/components/ResturarntCard.jsx",
@@ -34857,22 +34858,16 @@ var _titleJsx = require("./Title.jsx");
 var _titleJsxDefault = parcelHelpers.interopDefault(_titleJsx);
 var _react = require("react");
 var _reactRouterDom = require("react-router-dom");
-var _userContexJs = require("../utils/userContex.js");
-var _userContexJsDefault = parcelHelpers.interopDefault(_userContexJs);
 var _s = $RefreshSig$();
-const loggedInUser = ()=>{
-    return true;
-};
 const Header = ()=>{
     _s();
     const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
-    const { user } = (0, _react.useContext)((0, _userContexJsDefault.default));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _titleJsxDefault.default), {}, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 20,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34888,14 +34883,14 @@ const Header = ()=>{
                                     children: " Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 23,
-                                    columnNumber: 63
+                                    lineNumber: 14,
+                                    columnNumber: 64
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 23,
-                            columnNumber: 10
+                            lineNumber: 14,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:underline hover:text-blue-500",
@@ -34906,14 +34901,14 @@ const Header = ()=>{
                                     children: " About "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 24,
-                                    columnNumber: 63
+                                    lineNumber: 15,
+                                    columnNumber: 64
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 24,
-                            columnNumber: 10
+                            lineNumber: 15,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:underline hover:text-blue-500",
@@ -34924,22 +34919,22 @@ const Header = ()=>{
                                     children: " Contact "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 25,
-                                    columnNumber: 63
+                                    lineNumber: 16,
+                                    columnNumber: 64
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 25,
-                            columnNumber: 10
+                            lineNumber: 16,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:underline hover:text-blue-500",
                             children: " Cart "
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 26,
-                            columnNumber: 10
+                            lineNumber: 17,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:underline hover:text-blue-500",
@@ -34950,14 +34945,14 @@ const Header = ()=>{
                                     children: " Instamart "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 27,
-                                    columnNumber: 63
+                                    lineNumber: 18,
+                                    columnNumber: 64
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 27,
-                            columnNumber: 10
+                            lineNumber: 18,
+                            columnNumber: 11
                         }, undefined),
                         isloggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:text-blue-500",
@@ -34968,15 +34963,15 @@ const Header = ()=>{
                                     children: " Logout "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 29,
-                                    columnNumber: 47
+                                    lineNumber: 20,
+                                    columnNumber: 50
                                 }, undefined),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 29,
-                            columnNumber: 10
+                            lineNumber: 20,
+                            columnNumber: 13
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "hover:text-blue-500",
                             children: [
@@ -34986,35 +34981,35 @@ const Header = ()=>{
                                     children: " Login "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.jsx",
-                                    lineNumber: 32,
-                                    columnNumber: 46
+                                    lineNumber: 22,
+                                    columnNumber: 50
                                 }, undefined),
                                 " "
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 32,
-                            columnNumber: 9
+                            lineNumber: 22,
+                            columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.jsx",
-                    lineNumber: 22,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 21,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 19,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
-_s(Header, "11ddpwiDCf8A6Ed5W9GAM9goVXM=");
+_s(Header, "g0+hF+DMX0JdpNcbD2NNHkMq/cU=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -35025,7 +35020,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Title.jsx":"tDxU0","react":"21dqq","react-router-dom":"9xmpe","../utils/userContex.js":"3eGpB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"tDxU0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Title.jsx":"tDxU0","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"tDxU0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$01d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35096,30 +35091,7 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"3eGpB":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4eea = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4eea.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-const userContext = /*#__PURE__*/ (0, _react.createContext)({
-    user: {
-        name: "syam",
-        email: "syamnandhu3@gamil.com"
-    }
-});
-exports.default = userContext;
-
-  $parcel$ReactRefreshHelpers$4eea.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2OVeV":[function(require,module,exports) {
+},{}],"2OVeV":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$66c2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
