@@ -27,14 +27,14 @@ const RestaurantMenu = () => {
   }, [restaurant]);
 
   return (!restaurant && !menus) ? <Shimmer /> : (
-    <div className="flex gap-44 pl-5">
-      <div className="grid p-5 border-black border-2">
+    <div className="flex gap-44 pl-5 pt-12">
+      <div className="grid p-5 border-gray-300 border-2 ">
         {/* <h1>Restraunt id: {id}</h1> */}
         <img className="w-96" src={IMG_CDN_URl + restaurant?.cloudinaryImageId} />
-        <h2 className="font-bold text-2xl"> {restaurant?.name} </h2>
-        <span className="font-bold text-xl">{restaurant?.city}</span>
-        <span className="font-bold text-lg">{restaurant?.avgRating} start</span>
-        <span className="font-bold">{restaurant?.constForTwoMsg}</span>
+        <sapn className="font-mono text-2xl"> {restaurant?.name} </sapn>
+        <span className="font-mono text-xl">{restaurant?.city}</span>
+        <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
+        <span className="font-mono">{restaurant?.constForTwoMsg}</span>
       </div>
 
       <div className="grid decoration">

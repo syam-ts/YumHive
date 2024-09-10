@@ -57,14 +57,17 @@ let Body = () => {
                   Search
                 </button>
               </div>
-              <div className="flex flex-wrap gap-24 px-24 mt-28">
+              <div className="flex flex-wrap gap-24 px-24 mt-28 ">
                 {filteredRestaurant.map((restraunt) => { 
                    return (
                     <Link 
                     to={"/restraunt/"+ restraunt?.info?.id}
                     key={restraunt?.id}
                    >  
-            <ResturarntCard {...restraunt} /> 
+                   <div className="hover:scale-110 transition duration-500">
+                   <ResturarntCard {...restraunt} /> 
+                   </div>
+          
                  </Link>
                    )        
                 })}

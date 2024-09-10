@@ -5,14 +5,16 @@ const ResturarntCard = res => {
       <img className="h-[250px] w-[350px] rounded-md" 
       src={res.image ? res.image : `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${res?.info?.cloudinaryImageId}`}
        /> 
-      <h2> 
+      <span 
+      className="text-xl font-bold font-mono"
+      > 
         {res.name ? res.name : res?.info?.name } 
-        </h2>
-      <h3> 
+        </span>
+      <h3 className="font-mono"> 
         {res.cuisine ? res.cuisine.join(', ') : res?.info?.cuisines?.join(", ") }
          </h3>
-      <h4>
-         {res.rating ? res.rating : res?.info?.avgRating } 
+      <h4 className="font-mono">
+         {res.rating ? res.rating : res?.info?.avgRating } ⭐
          </h4> 
     </div>
   )

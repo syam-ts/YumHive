@@ -27409,16 +27409,23 @@ let Body = ()=>{
                 columnNumber: 15
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-24 px-24 mt-28",
+                className: "flex flex-wrap gap-24 px-24 mt-28 ",
                 children: filteredRestaurant.map((restraunt)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restraunt/" + restraunt?.info?.id,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturarntCardJsxDefault.default), {
-                            ...restraunt
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hover:scale-110 transition duration-500",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturarntCardJsxDefault.default), {
+                                ...restraunt
+                            }, void 0, false, {
+                                fileName: "src/components/Body.jsx",
+                                lineNumber: 68,
+                                columnNumber: 20
+                            }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Body.jsx",
                             lineNumber: 67,
-                            columnNumber: 13
+                            columnNumber: 20
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "src/components/Body.jsx",
@@ -27467,7 +27474,8 @@ const ResturarntCard = (res)=>{
                 lineNumber: 5,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "text-xl font-bold font-mono",
                 children: res.name ? res.name : res?.info?.name
             }, void 0, false, {
                 fileName: "src/components/ResturarntCard.jsx",
@@ -27475,17 +27483,22 @@ const ResturarntCard = (res)=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "font-mono",
                 children: res.cuisine ? res.cuisine.join(", ") : res?.info?.cuisines?.join(", ")
             }, void 0, false, {
                 fileName: "src/components/ResturarntCard.jsx",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: res.rating ? res.rating : res?.info?.avgRating
-            }, void 0, false, {
+                className: "font-mono",
+                children: [
+                    res.rating ? res.rating : res?.info?.avgRating,
+                    " \u2B50"
+                ]
+            }, void 0, true, {
                 fileName: "src/components/ResturarntCard.jsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined)
         ]
@@ -35101,13 +35114,156 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Footer = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: " Footer "
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+        class: "bg-white rounded-lg shadow :bg-gray-900 m-4",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            class: "w-full max-w-screen-xl mx-auto p-4 md:py-8",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "sm:flex sm:items-center sm:justify-between",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://flowbite.com/",
+                            class: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: "https://flowbite.com/docs/images/logo.svg",
+                                    class: "h-8",
+                                    alt: "Flowbite Logo"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 11,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    class: "self-center text-2xl font-semibold whitespace-nowrap :text-white",
+                                    children: "Flowbite"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 12,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 10,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            class: "flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 :text-gray-400",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        class: "hover:underline me-4 md:me-6",
+                                        children: "About"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 16,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 15,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        class: "hover:underline me-4 md:me-6",
+                                        children: "Privacy Policy"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 19,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 18,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        class: "hover:underline me-4 md:me-6",
+                                        children: "Licensing"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 22,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 21,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        class: "hover:underline",
+                                        children: "Contact"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 25,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 24,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 14,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                    class: "my-6 border-gray-200 sm:mx-auto :border-gray-700 lg:my-8"
+                }, void 0, false, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    class: "block text-sm text-gray-500 sm:text-center :text-gray-400",
+                    children: [
+                        "\xa9 2023 ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://flowbite.com/",
+                            class: "hover:underline",
+                            children: "Flowbite\u2122"
+                        }, void 0, false, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 30,
+                            columnNumber: 88
+                        }, undefined),
+                        ". All Rights Reserved."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Footer.jsx",
+            lineNumber: 8,
+            columnNumber: 5
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.jsx",
-        lineNumber: 3,
-        columnNumber: 23
+        lineNumber: 7,
+        columnNumber: 1
     }, undefined);
+};
 _c = Footer;
 exports.default = Footer;
 var _c;
@@ -35118,7 +35274,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35310,10 +35466,10 @@ const RestaurantMenu = ()=>{
         lineNumber: 29,
         columnNumber: 36
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex gap-44 pl-5",
+        className: "flex gap-44 pl-5 pt-12",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid p-5 border-black border-2",
+                className: "grid p-5 border-gray-300 border-2 ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "w-96",
@@ -35323,8 +35479,8 @@ const RestaurantMenu = ()=>{
                         lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        className: "font-bold text-2xl",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("sapn", {
+                        className: "font-mono text-2xl",
                         children: [
                             " ",
                             restaurant?.name,
@@ -35336,7 +35492,7 @@ const RestaurantMenu = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "font-bold text-xl",
+                        className: "font-mono text-xl",
                         children: restaurant?.city
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
@@ -35344,7 +35500,7 @@ const RestaurantMenu = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "font-bold text-lg",
+                        className: "font-mono text-lg",
                         children: [
                             restaurant?.avgRating,
                             " start"
@@ -35355,7 +35511,7 @@ const RestaurantMenu = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "font-bold",
+                        className: "font-mono",
                         children: restaurant?.constForTwoMsg
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenu.jsx",
