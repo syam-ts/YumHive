@@ -10,20 +10,24 @@ import Contact from './components/Contact.jsx'
 import RestaurantMenu from "./components/RestaurantMenu.jsx"
 import Profile from './components/Profile.jsx' 
 import InstaMart from './components/InstMart.jsx' 
+import { Provider } from 'react-redux'
+import store from './utils/store.js'
  
 const AppLayout = () => {
   return (
-   
+   <Provider store={store}>
     <React.Fragment>
       <Header2 />
       <Outlet />
       <Footer />
     </React.Fragment>
+   </Provider>
+
     
   )
 }
 
-const appRouter = createBrowserRouter([
+const AppRouter = createBrowserRouter([
         {
           path: "/",
           element: <AppLayout />,
@@ -61,7 +65,7 @@ const appRouter = createBrowserRouter([
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<RouterProvider router={appRouter} />)
+root.render(<RouterProvider router={AppRouter} />)
 
 
  

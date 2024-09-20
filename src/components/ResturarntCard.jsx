@@ -22,9 +22,9 @@ const ResturarntCard = res => {
     <h4 className="font-mono">
       {res.rating ? res.rating : res?.info?.avgRating} ⭐
     </h4>
-  </div>
+  </div> 
   
   )
 }
-
+ 
 export default ResturarntCard

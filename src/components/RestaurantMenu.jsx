@@ -6,9 +6,7 @@ import useRestaurant from '../utils/useRestaurant.js'
 
 const RestaurantMenu = () => {
 
- const {id} = useParams()
- 
-  
+  const {id} = useParams()  
   const restaurant = useRestaurant(id)
   const [menus, setMenus] = useState([])
 
@@ -21,10 +19,10 @@ const RestaurantMenu = () => {
         const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=${menuId}&catalog_qa=undefined&submitAction=ENTER`)
         const json = await data.json()
         setMenus(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards)
-      }
-      getMenus();
+      }  
+      getMenus()
     }
-  }, [restaurant]);
+  }, [restaurant])
 
   return (!restaurant && !menus) ? <Shimmer /> : (
     <div className="flex gap-44 pl-5 pt-12">
@@ -35,8 +33,7 @@ const RestaurantMenu = () => {
         <span className="font-mono text-xl">{restaurant?.city}</span>
         <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
         <span className="font-mono">{restaurant?.constForTwoMsg}</span>
-      </div>
-
+      </div> 
       <div className="grid decoration">
         <h1> Menu </h1>
         { menus == undefined ? 
@@ -56,4 +53,6 @@ const RestaurantMenu = () => {
   )
 }
 
-export default RestaurantMenu;
+
+export default RestaurantMenu
+
