@@ -3,12 +3,20 @@ import { useState, useEffect } from 'react'
 import { IMG_CDN_URl } from '../constants.js'
 import Shimmer from './Shimmer.jsx'
 import useRestaurant from '../utils/useRestaurant.js'
+import { addItem } from "../utils/cartSlice.js"
+import { useDispatch } from 'react-redux'
 
 const RestaurantMenu = () => {
 
   const {id} = useParams()  
   const restaurant = useRestaurant(id)
   const [menus, setMenus] = useState([])
+  const dispatch = useDispatch()
+
+  const handleAddItem = () => {
+      dispatch(addItem("Toyota"))
+  }
+
 
   useEffect(() => {
     const menuId = restaurant?.id;
@@ -34,6 +42,13 @@ const RestaurantMenu = () => {
         <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
         <span className="font-mono">{restaurant?.constForTwoMsg}</span>
       </div> 
+      <div>
+        <button className="p-2 m-5 bg-green-200 hover:bg-green-300"
+        onClick={() => handleAddItem()}
+        >
+          Add Items
+          </button>
+      </div>
       <div className="grid decoration">
         <h1> Menu </h1>
         { menus == undefined ? 
