@@ -36228,6 +36228,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
         className: "bg-white rounded-lg shadow :bg-gray-900 m-4",
@@ -36237,49 +36238,63 @@ const Footer = ()=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "sm:flex sm:items-center sm:justify-between",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "https://flowbite.com/",
-                            className: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg",
-                                    className: "h-12 w-20",
-                                    alt: "Flowbite Logo"
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.jsx",
-                                    lineNumber: 11,
-                                    columnNumber: 17
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "self-center text-2xl font-semibold whitespace-nowrap",
-                                    children: "YumHive"
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.jsx",
-                                    lineNumber: 12,
-                                    columnNumber: 17
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                className: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg",
+                                        className: "h-12 w-20",
+                                        alt: "Flowbite Logo"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 13,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "self-center text-2xl font-semibold whitespace-nowrap",
+                                        children: "YumHive"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.jsx",
+                                lineNumber: 12,
+                                columnNumber: 17
+                            }, undefined)
+                        }, void 0, false, {
                             fileName: "src/components/Footer.jsx",
-                            lineNumber: 10,
-                            columnNumber: 13
+                            lineNumber: 11,
+                            columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                             className: "flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 :text-gray-400",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: "#",
-                                        className: "hover:underline me-4 md:me-6",
-                                        children: "About"
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/about",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            className: "hover:underline me-4 md:me-6",
+                                            children: "About"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 21,
+                                            columnNumber: 21
+                                        }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.jsx",
-                                        lineNumber: 16,
+                                        lineNumber: 20,
                                         columnNumber: 21
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.jsx",
-                                    lineNumber: 15,
+                                    lineNumber: 19,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36289,12 +36304,12 @@ const Footer = ()=>{
                                         children: "Privacy Policy"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.jsx",
-                                        lineNumber: 19,
+                                        lineNumber: 26,
                                         columnNumber: 21
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.jsx",
-                                    lineNumber: 18,
+                                    lineNumber: 25,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -36304,33 +36319,40 @@ const Footer = ()=>{
                                         children: "Licensing"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.jsx",
-                                        lineNumber: 22,
+                                        lineNumber: 29,
                                         columnNumber: 21
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.jsx",
-                                    lineNumber: 21,
+                                    lineNumber: 28,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: "#",
-                                        className: "hover:underline",
-                                        children: "Contact"
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/contact",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            className: "hover:underline",
+                                            children: "Contact"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 33,
+                                            columnNumber: 17
+                                        }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.jsx",
-                                        lineNumber: 25,
-                                        columnNumber: 21
+                                        lineNumber: 32,
+                                        columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Footer.jsx",
-                                    lineNumber: 24,
+                                    lineNumber: 31,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Footer.jsx",
-                            lineNumber: 14,
+                            lineNumber: 18,
                             columnNumber: 13
                         }, undefined)
                     ]
@@ -36343,7 +36365,7 @@ const Footer = ()=>{
                     className: "my-6 border-gray-200 sm:mx-auto :border-gray-700 lg:my-8"
                 }, void 0, false, {
                     fileName: "src/components/Footer.jsx",
-                    lineNumber: 29,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -36356,14 +36378,14 @@ const Footer = ()=>{
                             children: "YumHive"
                         }, void 0, false, {
                             fileName: "src/components/Footer.jsx",
-                            lineNumber: 30,
+                            lineNumber: 40,
                             columnNumber: 92
                         }, undefined),
                         ". All Rights Reserved."
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Footer.jsx",
-                    lineNumber: 30,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -36388,7 +36410,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hkKyJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"hkKyJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36751,7 +36773,7 @@ const Contact = ()=>{
                                 className: "mb-12 max-w-[570px] lg:mb-0",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "mb-4 block text-base font-semibold text-primary",
+                                        className: "mb-4 block text-blue-800 font-semibold text-primary",
                                         children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "src/components/Contact.jsx",
@@ -36816,7 +36838,7 @@ const Contact = ()=>{
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         className: "text-base text-body-color dark:text-dark-6",
-                                                        children: "99 S.t Jomblo Park Pekanbaru 28292. Indonesia"
+                                                        children: "99 S.t Jomblo Park Peranbu 28292. India"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Contact.jsx",
                                                         lineNumber: 41,
@@ -36985,7 +37007,7 @@ const Contact = ()=>{
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                         className: "text-base text-body-color dark:text-dark-6",
-                                                        children: "info@yourdomain.com"
+                                                        children: "info@yumhive.com"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Contact.jsx",
                                                         lineNumber: 106,
@@ -37061,7 +37083,7 @@ const Contact = ()=>{
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                     type: "submit",
-                                                    className: "w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90",
+                                                    className: "w-full rounded border border-primary bg-blue-700 p-3 text-gray-400 transition hover:bg-opacity-90",
                                                     children: "Send Message"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Contact.jsx",

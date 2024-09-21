@@ -8,7 +8,7 @@ const Contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between px-64">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold text-primary">
+                <span className="mb-4 block text-blue-800 font-semibold text-primary">
                   Contact Us
                 </span>
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
@@ -39,7 +39,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      99 S.t Jomblo Park Peranbu 28292. India
                     </p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      info@yumhive.com
                     </p>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      className="w-full rounded border border-primary bg-blue-700 p-3 text-gray-400 transition hover:bg-opacity-90"
                     >
                       Send Message
                     </button>
