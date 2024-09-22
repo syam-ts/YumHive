@@ -43,13 +43,6 @@ const RestaurantMenu = () => {
         <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
         <span className="font-mono">{restaurant?.constForTwoMsg}</span>
       </div> 
-     <div>
-       <button className="bg-green-200 p-3 m-2"
-         onClick={() => handleAddItem()}
-       >
-           Add Item
-       </button>
-     </div>
       <div className="grid decoration">
         <h1 className="text-3xl font-mono"> Menu </h1>
         { menus == undefined ? 
