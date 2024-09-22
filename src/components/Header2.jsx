@@ -1,11 +1,10 @@
 import { useState, } from "react"
-import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'  
+import { Link } from 'react-router-dom' 
+import { useSelector } from 'react-redux'
 
 const Header2 =() => {
-
-   const cartItems = useSelector(store => store.cart.items)
-
+ 
+    const cartItems = useSelector(store => store.cart.items)
     const [isloggedIn, setIsLoggedIn] = useState(false)
     return(
          
@@ -35,12 +34,12 @@ const Header2 =() => {
            <Link to="/instamart">INSTAMART</Link>
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer">
-           <Link to="/cart">CART {cartItems.length}-ITEMS</Link> 
+           <Link to="/cart">CART {cartItems.length} -ITEMS</Link> 
          </li>
          {isloggedIn ? (
-            <li className="hover:text-green-400"> <button onClick={() => setIsLoggedIn(false)}> LOGOUT </button> </li>
+            <li className="hover:text-green-400 pr-0"> <button onClick={() => setIsLoggedIn(false)}> LOGOUT </button> </li>
           ) : (
-            <li className="hover:text-green-400"> <button onClick={() => setIsLoggedIn(true)}> LOGIN </button> </li>
+            <li className="hover:text-green-400 pl-4"> <button onClick={() => setIsLoggedIn(true)}> LOGIN </button> </li>
           )}
      </ul>
  </nav>

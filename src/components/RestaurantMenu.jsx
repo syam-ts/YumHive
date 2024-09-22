@@ -2,19 +2,20 @@ import { useParams } from "react-router-dom"
 import { useState, useEffect } from 'react'
 import { IMG_CDN_URl } from '../constants.js'
 import Shimmer from './Shimmer.jsx'
-import useRestaurant from '../utils/useRestaurant.js'
-import { addItem } from "../utils/cartSlice.js"
+import useRestaurant from '../utils/useRestaurant.js' 
 import { useDispatch } from 'react-redux'
+import { addItem } from '../utils/cartSlice.js'
 
 const RestaurantMenu = () => {
 
   const {id} = useParams()  
   const restaurant = useRestaurant(id)
-  const [menus, setMenus] = useState([])
+  const [menus, setMenus] = useState([]) 
   const dispatch = useDispatch()
 
-  const handleAddItem = () => {
-      dispatch(addItem("Toyota"))
+
+  const handleAddItem = (item) => {
+      dispatch(addItem(item))
   }
 
 
@@ -42,15 +43,15 @@ const RestaurantMenu = () => {
         <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
         <span className="font-mono">{restaurant?.constForTwoMsg}</span>
       </div> 
-      <div>
-        <button className="p-2 m-5 bg-green-200 hover:bg-green-300"
-        onClick={() => handleAddItem()}
-        >
-          Add Items
-          </button>
-      </div>
+     <div>
+       <button className="bg-green-200 p-3 m-2"
+         onClick={() => handleAddItem()}
+       >
+           Add Item
+       </button>
+     </div>
       <div className="grid decoration">
-        <h1> Menu </h1>
+        <h1 className="text-3xl font-mono"> Menu </h1>
         { menus == undefined ? 
         <div> Empty </div> :
           menus.map((menu, index) => {
@@ -59,6 +60,11 @@ const RestaurantMenu = () => {
               className="font-mono"
               >
                 {index} {menu?.card?.info?.name}
+                <button className="bg-green-100 p-1 mx-2"
+                  onClick={() => handleAddItem(menu?.card?.info)}
+                >
+                  Add
+                </button>
               </div>
             )
           })

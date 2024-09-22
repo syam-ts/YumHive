@@ -32,6 +32,7 @@ let Body = () => {
       const secondApiJson = await secondApiResponse.json();
       const thirdApiJson = await thirdApiResponse.json();
 
+
       const swiggyRestaurants =
         swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || [];

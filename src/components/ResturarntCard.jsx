@@ -1,5 +1,7 @@
 const ResturarntCard = res => {
    
+  console.log('The data : ', res?.info)
+
   return (
     <div key={res?.info?.id} className="overflow-hidden">
     <img
@@ -19,6 +21,9 @@ const ResturarntCard = res => {
         ? res.cuisine.slice(0, 2).join(', ')
         : res?.info?.cuisines?.slice(0, 2).join(', ')}
     </h3>
+    <h4 className="font-mono text-xs">
+       {res?.info.areaName}
+    </h4>
     <h4 className="font-mono">
       {res.rating ? res.rating : res?.info?.avgRating} ⭐
     </h4>
