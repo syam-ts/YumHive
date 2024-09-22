@@ -470,6 +470,10 @@ img, video {
   height: 100%;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -512,6 +516,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .max-w-\[370px\] {
@@ -584,6 +592,10 @@ img, video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -691,12 +703,20 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-contain {
+  object-fit: contain;
+}
+
 .object-cover {
   object-fit: cover;
 }
 
 .p-1 {
   padding: .25rem;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .p-2 {
@@ -721,10 +741,6 @@ img, video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-12 {
-  padding: 3rem;
 }
 
 .px-4 {

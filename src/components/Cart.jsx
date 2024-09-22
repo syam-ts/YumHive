@@ -6,7 +6,7 @@ const Cart = () => {
     const cartItems = useSelector(store => store.cart.items) 
 
     return (
-        <div>
+        <div className="flex flex-wrap gap-12 px-60 mt-12">
             {
                 cartItems.map((item) => (
                     <CartMenu key={item.id} {...item} />

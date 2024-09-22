@@ -4,9 +4,9 @@ const CartMenu = ({ id, name, imageId, description, price }) => {
 
   return (
     
-      <div key={id} className="flex gap-12 p-12">
+      <div key={id} className="grid gap-12 p-12 flex-wrap">
         <img
-          className="h-[200px] w-[300px] object-cover rounded-md"
+          className="h-[100px] w-[200px] object-cover rounded-md"
           src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imageId}`}
           alt={name}
         />

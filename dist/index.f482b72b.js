@@ -42897,6 +42897,7 @@ const Cart = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap gap-12 px-60 mt-12",
         children: cartItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartMenuJsxDefault.default), {
                 ...item
             }, item.id, false, {
@@ -42938,10 +42939,10 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const CartMenu = ({ id, name, imageId, description, price })=>{
     console.log("name: ", imageId);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex gap-12 p-12",
+        className: "grid gap-12 p-12 flex-wrap",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "h-[200px] w-[300px] object-cover rounded-md",
+                className: "h-[100px] w-[200px] object-cover rounded-md",
                 src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imageId}`,
                 alt: name
             }, void 0, false, {
