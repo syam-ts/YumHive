@@ -342,13 +342,14 @@ img, video {
   margin: 1rem;
 }
 
-.m-1 {
-  margin: .25rem;
-}
-
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
+}
+
+.mx-2 {
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 
 .mx-auto {
@@ -359,11 +360,6 @@ img, video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-2 {
-  margin-left: .5rem;
-  margin-right: .5rem;
 }
 
 .mb-1 {
@@ -680,6 +676,11 @@ img, video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
@@ -690,13 +691,12 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-green-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   object-fit: cover;
+}
+
+.p-1 {
+  padding: .25rem;
 }
 
 .p-2 {
@@ -723,8 +723,8 @@ img, video {
   padding: 2rem;
 }
 
-.p-1 {
-  padding: .25rem;
+.p-12 {
+  padding: 3rem;
 }
 
 .px-4 {
@@ -814,10 +814,6 @@ img, video {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 .text-2xl {

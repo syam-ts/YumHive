@@ -65,6 +65,7 @@ const RestaurantMenu = () => {
                 >
                   Add
                 </button>
+                {console.log(menu?.card?.info)}
               </div>
             )
           })

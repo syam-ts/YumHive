@@ -1,6 +1,5 @@
 const ResturarntCard = res => {
-   
-  console.log('The data : ', res?.info)
+    
 
   return (
     <div key={res?.info?.id} className="overflow-hidden">
