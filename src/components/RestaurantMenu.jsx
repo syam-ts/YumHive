@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
   }, [restaurant])
 
   return (!restaurant && !menus) ? <Shimmer /> : (
-    <div className="flex gap-44 pl-5 pt-12">
+    <div className="grid gap-44 pl-5 pt-12">
       <div className="grid p-5 border-gray-300 border-2 ">
         {/* <h1>Restraunt id: {id}</h1> */}
         <img className="w-96" src={IMG_CDN_URl + restaurant?.cloudinaryImageId} />
@@ -43,27 +43,50 @@ const RestaurantMenu = () => {
         <span className="font-mono text-lg">{restaurant?.avgRating} start</span>
         <span className="font-mono">{restaurant?.constForTwoMsg}</span>
       </div> 
+
+
+
+
+    {/* menu */}
       <div className="grid decoration">
         <h1 className="text-3xl font-mono"> Menu </h1>
+     
         { menus == undefined ? 
         <div> Empty </div> :
           menus.map((menu, index) => {
+           {console.log(menu?.card?.info)}
             return (
-              <div key={menu?.card?.info?.id} 
-              className="font-mono"
-              >
-                {index} {menu?.card?.info?.name}
-                <button className="bg-green-100 p-1 mx-2"
+              
+              <div className='h-[217px] w-[800px] border-b flex justify-between m-4 mx-auto ' key={menu?.card?.info?.id}>
+                <div className='grid p-10'>
+                <img className='h-7' src='https://packagingguruji.com/wp-content/uploads/2022/09/New-Non-Logo.png' />
+              <h1> {menu?.card?.info?.name} </h1>
+                  <span className='font-bold'> {menu?.card?.info?.defaultPrice}</span>
+                  <span className='font-bold'> {menu?.card?.info?.ratings?.aggregatedRating?.rating}</span>
+                  <span className='font-bold'> {menu?.card?.info?.itemAttribute?.vegClassifier} </span> 
+                    </div>
+                <div className=''> 
+                   <img className='h-[140px] w-[160px] rounded-2xl' src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`} />
+              
+       
+         <div className='grid'>
+         <button className="bg-white border font-bold border-gray-700 mx-5 p-1 h-[34px] w-[119px] rounded-lg "
                   onClick={() => handleAddItem(menu?.card?.info)}
                 >
                   Add
                 </button>
-                {console.log(menu?.card?.info)}
+                <span className='text-xs mx-11'>
+                Customisable
+                </span>
+         </div>
+                </div>
+             
               </div>
             )
           })
         }
       </div>
+    
     </div>
   )
 }

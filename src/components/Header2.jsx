@@ -22,7 +22,7 @@ const Header2 =() => {
  <nav className="nav quicksand-regular text-sm">
      <ul className="flex items-center gap-12">
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer active">
-           <Link to="/">HOME</Link>
+         <a href='/'>HOME</a> 
          </li>
          <li className="p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer">
            <Link to="/about">ABOUT</Link>
