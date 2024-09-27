@@ -17,6 +17,7 @@ const Cart = () => {
       <div className="grid">
         {cartItems.map((item) => (
           <CartMenu key={item.id} {...item} />
+       
         ))}
       </div>
 

@@ -1,5 +1,5 @@
-const CartMenu = ({ id, name, imageId, description, price }) => {
- 
+const CartMenu = ({ id, name, imageId, inStock, price }) => {
+  console.log("name: ", imageId);
 
   return (
     <div
@@ -13,8 +13,8 @@ const CartMenu = ({ id, name, imageId, description, price }) => {
       />
       <div className="m-1">
         <span className="text-xl font-mono">{name}</span>
-        <h3 className="text-xs">{description}</h3>
-        <h4 className="text-xs">{price}</h4>
+        <h3 className="text-xs">Stock left {inStock}</h3>
+        <h4 className="text-xs">Price {price}</h4>
       </div>
     </div>
   );
