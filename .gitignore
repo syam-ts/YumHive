@@ -1,7 +1,10 @@
 node_modules
-.vscode
-.idea
-.parcel-cache
 
-.dist
+
+# Do not ignore these directories
+!.vscode/
+!.idea/
+!.parcel-cache/
+!.dist/
+
  
