@@ -1,7 +1,7 @@
 node_modules
-vscode
-idea
-parcel-cache
+.vscode
+.idea
+.parcel-cache
 
-dist
+.dist
  
