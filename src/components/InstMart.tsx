@@ -1,6 +1,11 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
-const Section = ({ title, description }) => {
+interface Section {
+  title: string,
+  description: string
+}
+
+const Section = ({ title, description }: Section) => {
   const [isVisible, setIsVisible] = useState(false)
 
   return (

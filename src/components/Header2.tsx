@@ -1,10 +1,10 @@
-import { useState, } from "react"
+import React, { useState } from "react"
 import { Link } from 'react-router-dom' 
 import { useSelector } from 'react-redux'
 
 const Header2 =() => {
  
-    const cartItems = useSelector(store => store.cart.items)
+    const cartItems = useSelector((store: any )=> store.cart.items)
     const [isloggedIn, setIsLoggedIn] = useState(false)
     return(
          

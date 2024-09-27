@@ -1,5 +1,15 @@
-const CartMenu = ({ id, name, imageId, inStock, price }) => {
-  console.log("name: ", imageId);
+import React from 'react'
+
+interface CartMenu {
+  id: string,
+  name: string,
+  imageId: string,
+  inStock: number,
+  price: number
+}
+
+const CartMenu = ({ id, name, imageId, inStock, price }: CartMenu) => {
+  console.log("name: ", imageId)
 
   return (
     <div
@@ -17,7 +27,7 @@ const CartMenu = ({ id, name, imageId, inStock, price }) => {
         <h4 className="text-xs">Price {price}</h4>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CartMenu;
+export default CartMenu

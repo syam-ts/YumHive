@@ -960,9 +960,10 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+
+const ContactTextArea = ({ row, placeholder, name, defaultValue }: { row: any, placeholder: any, name: any, defaultValue: any }) => {
   return (
     <>
       <div className="mb-6">
@@ -978,9 +979,9 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
   );
 };
 
-const ContactInputBox = ({ type, placeholder, name }) => {
+const ContactInputBox = ({ type, placeholder, name }: { type: any, placeholder: any, name: any}) => {
   return (
-    <>
+ 
       <div className="mb-6">
         <input
           type={type}
@@ -989,6 +990,6 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
         />
       </div>
-    </>
-  );
-};
+ 
+  )
+}

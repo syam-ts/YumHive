@@ -1,20 +1,21 @@
 import { useParams } from "react-router-dom"
-import { useState, useEffect } from 'react'
-import { IMG_CDN_URl } from '../constants.js'
+import React, { useState, useEffect } from 'react'
+import { IMG_CDN_URl } from '../utils/constants.js'
 import Shimmer from './Shimmer.jsx'
 import useRestaurant from '../utils/useRestaurant.js' 
 import { useDispatch } from 'react-redux'
 import { addItem } from '../utils/cartSlice.js'
 
 const RestaurantMenu = () => {
+ 
 
-  const {id} = useParams()  
-  const restaurant = useRestaurant(id)
+  const {id}: any = useParams()  
+  const restaurant: any = useRestaurant(id)
   const [menus, setMenus] = useState([]) 
   const dispatch = useDispatch()
 
 
-  const handleAddItem = (item) => {
+  const handleAddItem = (item: any)  => {
       dispatch(addItem(item))
   }
 
@@ -64,7 +65,7 @@ const RestaurantMenu = () => {
      
         { menus == undefined ? 
         <div> Empty </div> :
-          menus.map((menu, index) => { 
+          menus.map((menu: any, index: number) => { 
             return (
               
               <div className='h-[217px] w-[800px] border-b flex justify-between m-4 mx-auto ' key={menu?.card?.info?.id}>

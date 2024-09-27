@@ -1,4 +1,6 @@
-const ResturarntCard = res => {
+import React from 'react'
+
+const ResturarntCard = (res: any) => {
     
 
   return (

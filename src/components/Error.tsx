@@ -1,8 +1,9 @@
+import React from 'react'
 import { useRouteError } from "react-router-dom"
 
 const Error = () => {
-
-    const { status , statusText} = useRouteError()
+ 
+    const { status, statusText}: any = useRouteError()
 
     return (
         <div>

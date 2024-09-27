@@ -2957,58 +2957,58 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _reactRouterDom = require("react-router-dom");
+var _restaurantMenuTsx = require("./components/RestaurantMenu.tsx");
+var _restaurantMenuTsxDefault = parcelHelpers.interopDefault(_restaurantMenuTsx);
+var _instMartTsx = require("./components/InstMart.tsx");
+var _instMartTsxDefault = parcelHelpers.interopDefault(_instMartTsx);
+var _contactTsx = require("./components/Contact.tsx");
+var _contactTsxDefault = parcelHelpers.interopDefault(_contactTsx);
+var _profileTsx = require("./components/Profile.tsx");
+var _profileTsxDefault = parcelHelpers.interopDefault(_profileTsx);
+var _header2Tsx = require("./components/Header2.tsx");
+var _header2TsxDefault = parcelHelpers.interopDefault(_header2Tsx);
+var _footerTsx = require("./components/Footer.tsx");
+var _footerTsxDefault = parcelHelpers.interopDefault(_footerTsx);
+var _errorTsx = require("./components/Error.tsx");
+var _errorTsxDefault = parcelHelpers.interopDefault(_errorTsx);
+var _aboutTsx = require("./components/About.tsx");
+var _aboutTsxDefault = parcelHelpers.interopDefault(_aboutTsx);
 var _bodyTsx = require("./components/Body.tsx");
 var _bodyTsxDefault = parcelHelpers.interopDefault(_bodyTsx);
-var _header2Js = require("./components/Header2.js");
-var _header2JsDefault = parcelHelpers.interopDefault(_header2Js);
-var _footerJsx = require("./components/Footer.jsx");
-var _footerJsxDefault = parcelHelpers.interopDefault(_footerJsx);
-var _reactRouterDom = require("react-router-dom");
-var _aboutJs = require("../dist-TS/components/About.js");
-var _aboutJsDefault = parcelHelpers.interopDefault(_aboutJs);
-var _errorJs = require("./components/Error.js");
-var _errorJsDefault = parcelHelpers.interopDefault(_errorJs);
-var _contactJsx = require("./components/Contact.jsx");
-var _contactJsxDefault = parcelHelpers.interopDefault(_contactJsx);
-var _restaurantMenuJsx = require("./components/RestaurantMenu.jsx");
-var _restaurantMenuJsxDefault = parcelHelpers.interopDefault(_restaurantMenuJsx);
-var _profileJsx = require("./components/Profile.jsx");
-var _profileJsxDefault = parcelHelpers.interopDefault(_profileJsx);
-var _instMartJs = require("./components/InstMart.js");
-var _instMartJsDefault = parcelHelpers.interopDefault(_instMartJs);
-var _cartJs = require("./components/Cart.js");
-var _cartJsDefault = parcelHelpers.interopDefault(_cartJs);
+var _cartTsx = require("./components/Cart.tsx");
+var _cartTsxDefault = parcelHelpers.interopDefault(_cartTsx);
+var _storeTs = require("./utils/store.ts");
 var _reactRedux = require("react-redux");
-var _storeJs = require("./utils/store.js");
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
-        store: (0, _storeJs.store),
+        store: (0, _storeTs.store),
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header2JsDefault.default), {}, void 0, false, {
-                    fileName: "src/App.tsx",
-                    lineNumber: 21,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header2TsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
                     lineNumber: 22,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerJsxDefault.default), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.tsx",
                     lineNumber: 23,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerTsxDefault.default), {}, void 0, false, {
+                    fileName: "src/App.tsx",
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.tsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
     }, undefined);
 };
@@ -3018,28 +3018,28 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 14
         }, undefined),
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsDefault.default), {}, void 0, false, {
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorTsxDefault.default), {}, void 0, false, {
             fileName: "src/App.tsx",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 19
         }, undefined),
         children: [
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 37,
+                    lineNumber: 38,
                     columnNumber: 18
                 }, undefined),
                 children: [
                     {
                         path: "profile",
-                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileJsxDefault.default), {}, void 0, false, {
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileTsxDefault.default), {}, void 0, false, {
                             fileName: "src/App.tsx",
-                            lineNumber: 41,
+                            lineNumber: 42,
                             columnNumber: 22
                         }, undefined)
                     }
@@ -3049,53 +3049,56 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactJsxDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "restraunt/:id",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuJsxDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 55,
+                    lineNumber: 56,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/instamart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 18
                 }, undefined)
             },
             {
                 path: "/cart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartJsDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartTsxDefault.default), {}, void 0, false, {
                     fileName: "src/App.tsx",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 18
                 }, undefined)
             }
         ]
     }
 ]);
-const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
-    router: AppRouter
-}, void 0, false, {
-    fileName: "src/App.tsx",
-    lineNumber: 70,
-    columnNumber: 13
-}, undefined));
+const rootElement = document.getElementById("root");
+if (rootElement) {
+    const root = (0, _clientDefault.default).createRoot(rootElement);
+    root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+        router: AppRouter
+    }, void 0, false, {
+        fileName: "src/App.tsx",
+        lineNumber: 74,
+        columnNumber: 15
+    }, undefined));
+} else console.error("Root element not found");
 var _c;
 $RefreshReg$(_c, "AppLayout");
 
@@ -3104,7 +3107,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Footer.jsx":"eHp76","react-router-dom":"9xmpe","./components/Contact.jsx":"5n5Rz","./components/RestaurantMenu.jsx":"5cbj0","./components/Profile.jsx":"f8TzL","./components/Cart.js":"d09Wa","react-redux":"62sf7","./utils/store.js":"1sOW7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Body.tsx":"lnxaO","../dist-TS/components/About.js":"juaHo","./components/Error.js":"hU72F","./components/Header2.js":"jCg0q","./components/InstMart.js":"41vRu"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"5cbj0","./components/InstMart.tsx":"41vRu","./components/Contact.tsx":"5n5Rz","./components/Profile.tsx":"f8TzL","./components/Header2.tsx":"jCg0q","./components/Footer.tsx":"eHp76","./components/Error.tsx":"hU72F","./components/About.tsx":"i01Mg","./components/Body.tsx":"lnxaO","./components/Cart.tsx":"d09Wa","./utils/store.ts":"1sOW7","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27347,199 +27350,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"eHp76":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b676 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b676.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-        className: "bg-white rounded-lg shadow :bg-gray-900 m-4",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-full max-w-screen-xl mx-auto p-4 md:py-8",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "sm:flex sm:items-center sm:justify-between",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: "",
-                                className: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg",
-                                        className: "h-12 w-20",
-                                        alt: "Flowbite Logo"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 13,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "self-center text-2xl font-semibold whitespace-nowrap",
-                                        children: "YumHive"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 14,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Footer.tsx",
-                                lineNumber: 12,
-                                columnNumber: 17
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Footer.tsx",
-                            lineNumber: 11,
-                            columnNumber: 17
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            className: "flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 :text-gray-400",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/about",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "#",
-                                            className: "hover:underline me-4 md:me-6",
-                                            children: "About"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Footer.tsx",
-                                            lineNumber: 21,
-                                            columnNumber: 21
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 20,
-                                        columnNumber: 21
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.tsx",
-                                    lineNumber: 19,
-                                    columnNumber: 17
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: "#",
-                                        className: "hover:underline me-4 md:me-6",
-                                        children: "Privacy Policy"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 26,
-                                        columnNumber: 21
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 17
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: "#",
-                                        className: "hover:underline me-4 md:me-6",
-                                        children: "Licensing"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 29,
-                                        columnNumber: 21
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.tsx",
-                                    lineNumber: 28,
-                                    columnNumber: 17
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/contact",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "#",
-                                            className: "hover:underline",
-                                            children: "Contact"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Footer.tsx",
-                                            lineNumber: 33,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/Footer.tsx",
-                                        lineNumber: 32,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Footer.tsx",
-                                    lineNumber: 31,
-                                    columnNumber: 17
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Footer.tsx",
-                            lineNumber: 18,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Footer.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
-                    className: "my-6 border-gray-200 sm:mx-auto :border-gray-700 lg:my-8"
-                }, void 0, false, {
-                    fileName: "src/components/Footer.tsx",
-                    lineNumber: 39,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "block text-sm text-gray-500 sm:text-center :text-gray-400",
-                    children: [
-                        "\xa9 2024 ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "https://flowbite.com/",
-                            className: "hover:underline",
-                            children: "YumHive"
-                        }, void 0, false, {
-                            fileName: "src/components/Footer.tsx",
-                            lineNumber: 40,
-                            columnNumber: 92
-                        }, undefined),
-                        ". All Rights Reserved."
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Footer.tsx",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Footer.tsx",
-            lineNumber: 8,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Footer.tsx",
-        lineNumber: 7,
-        columnNumber: 1
-    }, undefined);
-};
-_c = Footer;
-exports.default = Footer;
-var _c;
-$RefreshReg$(_c, "Footer");
-
-  $parcel$ReactRefreshHelpers$b676.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.26.1
  *
@@ -34695,7 +34506,369 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"5cbj0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2f77 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2f77.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _constantsJs = require("../utils/constants.js");
+var _shimmerJsx = require("./Shimmer.jsx");
+var _shimmerJsxDefault = parcelHelpers.interopDefault(_shimmerJsx);
+var _useRestaurantJs = require("../utils/useRestaurant.js");
+var _useRestaurantJsDefault = parcelHelpers.interopDefault(_useRestaurantJs);
+var _reactRedux = require("react-redux");
+var _cartSliceJs = require("../utils/cartSlice.js");
+var _s = $RefreshSig$();
+const RestaurantMenu = ()=>{
+    _s();
+    const { id } = (0, _reactRouterDom.useParams)();
+    const restaurant = (0, _useRestaurantJsDefault.default)(id);
+    const [menus, setMenus] = (0, _react.useState)([]);
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handleAddItem = (item)=>{
+        dispatch((0, _cartSliceJs.addItem)(item));
+    };
+    (0, _react.useEffect)(()=>{
+        const menuId = restaurant?.id;
+        if (menuId === undefined) console.log("wait");
+        else {
+            async function getMenus() {
+                const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=${menuId}&catalog_qa=undefined&submitAction=ENTER`);
+                const json = await data.json();
+                setMenus(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards);
+            }
+            getMenus();
+        }
+    }, [
+        restaurant
+    ]);
+    // resturant card
+    return !restaurant && !menus ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsxDefault.default), {}, void 0, false, {
+        fileName: "src/components/RestaurantMenu.tsx",
+        lineNumber: 39,
+        columnNumber: 36
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "grid pl-5 pt-5",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex mx-72 my-20",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "w-96 rounded-lg",
+                            src: (0, _constantsJs.IMG_CDN_URl) + restaurant?.cloudinaryImageId
+                        }, void 0, false, {
+                            fileName: "src/components/RestaurantMenu.tsx",
+                            lineNumber: 43,
+                            columnNumber: 7
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.tsx",
+                        lineNumber: 42,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex text-end my-44",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20 text-2xl",
+                                children: [
+                                    " ",
+                                    restaurant?.name,
+                                    " "
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 47,
+                                columnNumber: 8
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20 text-xl",
+                                children: [
+                                    " ",
+                                    restaurant?.locality,
+                                    " "
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 48,
+                                columnNumber: 8
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20 text-xl",
+                                children: restaurant?.city
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 49,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20 text-md",
+                                children: [
+                                    restaurant?.avgRating,
+                                    " "
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 51,
+                                columnNumber: 19
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20",
+                                children: restaurant?.costForTwo
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 53,
+                                columnNumber: 8
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "font-mono ml-20",
+                                children: restaurant?.isOpen ? "Open" : "Closed"
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantMenu.tsx",
+                                lineNumber: 54,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestaurantMenu.tsx",
+                        lineNumber: 46,
+                        columnNumber: 8
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantMenu.tsx",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid decoration",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-3xl font-mono text-center border-b p-2 ",
+                        children: " Menu Card "
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, undefined),
+                    menus == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: " Empty "
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.tsx",
+                        lineNumber: 67,
+                        columnNumber: 9
+                    }, undefined) : menus.map((menu, index)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "h-[217px] w-[800px] border-b flex justify-between m-4 mx-auto ",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "grid p-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "h-7",
+                                            src: "https://packagingguruji.com/wp-content/uploads/2022/09/New-Non-Logo.png"
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 73,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                            className: "font-semibold  quicksand-regular",
+                                            children: [
+                                                " ",
+                                                menu?.card?.info?.name,
+                                                " "
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 74,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "quicksand-regular",
+                                            children: [
+                                                " \u20B9 ",
+                                                menu?.card?.info?.price
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 75,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "quicksand-regular text-green-600 flex",
+                                            children: [
+                                                " ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                    className: "h-5",
+                                                    src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBIPEA8QDxAQFRAVExAXDw8SEA8SFREXGBURGRUYHSgkGBonGxMVITEhJykrMC8uFyMzOTMtNygtOisBCgoKDg0OGxAQGzUmICUtLS0tLy0tLS0rLS0vLS0tLS0tLS0tLS0wKy0tLS0rLSstLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcBBAUDAv/EADoQAAIBAQMJBQYGAQUAAAAAAAABAgMEERIFBhMhMUFRYZEiUnGBoQcyYnKx8IKSosHC0UIjM0OD4f/EABoBAQADAQEBAAAAAAAAAAAAAAADBAUBAgb/xAAlEQEAAgIDAAICAgMBAAAAAAAAAQIDEQQSITFRQYEFIhRhcZH/2gAMAwEAAhEDEQA/ALxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHhZ7XCcqkYu90pYJcpYYy+kkeYtE7iPw8xaJmYj8Pc9PQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADytNZQhKpJ3RhGUm+UVe/ocmdRty0xEblAcwcquVrrRm9dpxVP+yLbuX4ZS/KZ3Ey7vMT+fWZwsszkmJ/PqwzSagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACM+0C3aOyOCfarSUPwrtSfRJfiKvLv1x6+1Pm364tfaucmWx0a1Osv+OcZPnG/tLzV68zMx262izJx36Xi30uqEk0mnenc0+K4m6+ih9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArL2h27HalST1UIpfjn2pemDoZXMvu/X6Y/Ov2ydfpFyopLXzJt2lsdO93ypX05fh939LibHFv2xxv/AI3OJfvij/XjvFhZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8V6qhGU5O6MU5N8ElezkzqNuTOo3Kk7baXVqTqy21JSk+V7vu/YwrW7TNnzt7drTafy8Ty8pj7NrdhrVKDeqpFTj80NT6p/pL3Cvq01aHAvq01+1iGk1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARvP23aOxyin2qzVNeD1y9E15lbl364/wDqpzL9cevvxVxkMUA28j23QWilW3U5Jv5XqkvytnvHfpeLJMV+l4sumL1ajdfQsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACtfaNbsdpjRT1UY6/nnc3+lQ6mXzb7v1+mRz77vFfpFCmogGALbzNt2msdJt3yprRy8Yal1jhfmbHGv2xx/43eLfviif07ZYWAAAAAAAAAAAAAAAAAAAAAAD4dWPeXVHNw5uDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuHzUrxSbcopJNt3rUltOdocm0QpbKFrdarUrPbUlKV3BN6l5K5eRh3t2tNnz+S/e02+3geXgAATP2bW/DUq0JO5TSnH5o6pdU4/lL3CvqZrLR4GTUzWf+p/pY95dUaPaGnuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuGYzT2NPzG3dvo6AAAAAAAAAAAAAcDOPNajaljuVOvuqpLtcpL/JepXzceuT38/atn4tcvvxP2rPKuSalnno61PC90tsJrjF7/qZWTHbHOrMfJitjnVoaeFcF0PCMwrgugDCuC6AMK4LoAwrgugDCuC6AfQAAAAw0BjCuC6AMK4LoAwrgugDCuC6AMK4LoAwrgugElzbzPnaLqlVOlQ2p3f6lRfCnsXN+V5aw8W1/beQucfhzk9t5Cycn2CnQgqdGEacFuS2vi3vfNmpSlaRqrWpStI1WGyensAAAAAAAAAAAAABrZQsFOvB06sFOD3Pc+Ke580eL0i8as8XpW8atCt85M0qlmvqU76tDbfd26a+JLaviXncZmbjWp7HsMnkcS2P2vsI0VVNlIOjQcAAAAAAAbFLYrvN+bvv8rtuokjWkkfDwnt1Hifl4n5YOOAAD0s9CVSShTi5zlqUUr2zsRMzqHa1m06hYObWZcad1W0pVKm1U9tOn495+njtNLDxIr7f5avH4cV/tf2UwRdXwAAAAAAAAAAAAAAAAANAQ3OTMuNS+rZUqdTa6WynPw7r9PApZuJFv7U+VDkcOLf2p8oHXoyhJwnBxlHVJNXOL+/qZ81ms6mGdNZrOph5ve9ut/f1EvMspaum5cLxrx3Xj5Wy+76fv96zjzDOHX5fvcNO69PLbfuW5eH9AYUdvK8RDkR6yny46tXw8g7EjW3UvuL/AKAylu8OHG4QQ+btj+/DV4eoNMzS+7uokt8OjkPINa1SuprDBPtVWngjy+J8l6EmLBbJPiTDx75Z8+PtZuQ8g0bLG6nG+b96o/fn/S5I1cWGuOPGxhwUxR46hKmAAAAAAAAAAAAAAAAAAAAAcrLeQKNqjdNYZr3aquxx/tcvoRZcNckeoc2CuSPfn7VllzIdayyw1FfBvs1V7k/6fJ+plZcN8fk/H2x82G+Lyfj7c1SItyh3JjY2bMT9Ltw27sxel/qNubkxMbNsJnNkTpnF6ndm5MT+7hs3LF+xdBs3KY5uZmzqXVbUnTp7VS92c/m7q5bfAu4eLNvb/DQwcS1v7X8j6T+zWeNOKhCKjGOpRSuSNGIiI1DTiIiNQ9TroAAAAAAAAAAAAAAAAAAAAAAA8rRZ4VIuE4qcJK5xavTRyaxMaly1YtGpVRnbkylZrS6VKTcXGMnF69G232b9+pJ+Zj8jHWl9VYnKxVx31VxiBWAAAAAAAWHmHkWhooWprSVW5bUrqTTauS48+e40+Jip1i/5a3Dw06xf5lMi6vgAAAAAAAAAAAAAAAAAAAAAAAAAxJ3a3qQFL5YtumtFWtunNtfKtUV+VIw8t+95s+ey373mzTI0YAAAAAACc+zO3f71nb4VIrpGf8DQ4N/mv7af8ff5p+08NBpAAAAAAAAAAAAAAAAAAAAAAAAAA4meNu0NjqtO6U1o48b56n0jifkQcm/THMq/Kv0xTKpDGYTIAAAAAAAHTzZt2htdGpfdHFhl8s+y35Xp+RNgv0yRKfj5OmSJXEbTeAAAAAAAAAAAAAAAAAAAAAAAAABX3tKt19SlZ09UE6kvmlqj0Sl+Yzedf2K/tl/yF/Yp+0LKLOAAG9kjJNW0zwUY33XYpvVCC4t/ttJMeK2SdVS4sNsk6qkmVcw5wpqVCo6s4rtwaUcT4w4eD6lrJw5iu6ztbycGYruk7lDpxabjJOLTuaaaafBp7CjrXyoTGvlgOAGGBcmbdu09lpVW75OKUvnj2Zeqb8zbw370iW/gyd8cWdIlTAAAAAAAAAAAAAAAAAAAAAAAA2BTGXbbp7TVrbVKTw/JHsx9EjDy373mz5/NfvkmzRI0TAEozbzQqV7qla+lR2rdUqrknsXN+XEt4OLN/beQu8fh2v7byFjWKx06MFTpQUIR2JL1fF8zTrSKxqGtSlaRqrYPT04ecObNK1Jyf+nWS1VUtvBSX+S9Svm49cnv5V8/Grlj/f2rPK2Sqtmno60Lu7Ja4TXGL3+G0y8mK2OdWY2XFbHOrNIjRgE89mlu1VbO3saqRXJ9mXqo9TR4N/Jq0/4+/k0/acl9pAAAAAAAAAAAAAAAAAAAAAAADj5227Q2OrNO6UlgjxxT1X+SbfkQ8i/THMoOTfpjmVQmKwXrZrPOpNU6cHOctkUr2/8AzmdrWbTqHqtZtOohYebWZsKV1W0XVaupqG2nTf8AJ89n1NPBxYr7b5avH4cV/tf2UuLi8AAAGvbrFTrQdOrBTg9z3PinufNHm1ItGpeL0reNWhW+cmaNSz31KV9Whte+pTXxJbVzXmZefi2p7X2GTn4lqe19hGSqpuvmpbtDbKU27oyeCXyz1ejufkTce/TJErHGv0yxP6W+bTdAAAAAAAAAAAAAAAAAAAAAAAEB9pduvlRs6exOpJc3fGH8+pnc6/xX9sz+Qv7FP2juQc361ql2Fhpp9qq08K5LvPl9CthwWyT58KmDj2yz58fazciZDo2WGGlHtP3qjuc5+L3LktRq4sNccahsYcFcUaq6ZKmAAAAAAAQ/OXMyFW+rZrqdXa6eynUfLuv0+pSz8SLe0+VDkcOL/wBqeSr600J05OnUjKE46nFq5r74mbas1nUsu1ZrOp+Vw5At2ns1KtvlFYvnWqX6kzbxX70izew3744s6BIlAAAAAAAAAAAAAAAAAAAAAAIbHNiVqtVS1Wq+NJyup0b7pShHsxcn/imlfdt17il/jzkvN7/H0of405Mk3yfH4hLqFGMIqEIqMYq5RSSSXBIuRERGoXoiIjUPQ66AAAAAAAAAOXlzIdG1Rw1I3SXu1FqnDz3rkyLLhrkj1DmwUyx/Zo5o5PrWZVbNV7UFLHSqL3ZRlqkvhaaTu+LeR8else6T+kfGx2xxNLfpIiytAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q=="
+                                                }, void 0, false, {
+                                                    fileName: "src/components/RestaurantMenu.tsx",
+                                                    lineNumber: 76,
+                                                    columnNumber: 76
+                                                }, undefined),
+                                                " ",
+                                                menu?.card?.info?.ratings?.aggregatedRating?.rating
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 76,
+                                            columnNumber: 19
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "quicksand-regular",
+                                            children: [
+                                                " ",
+                                                menu?.card?.info?.itemAttribute?.vegClassifier,
+                                                " "
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 77,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/RestaurantMenu.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "h-[140px] w-[160px] transition duration-300 ease-in-out hover:scale-110 rounded-2xl",
+                                            src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 80,
+                                            columnNumber: 20
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "grid",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    className: "bg-white border transition duration-300 ease-in-out hover:scale-110 font-bold border-gray-700 mx-5 text-green-500 p-1 h-[34px] w-[119px] rounded-lg ",
+                                                    onClick: ()=>handleAddItem(menu?.card?.info),
+                                                    children: "ADD"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/RestaurantMenu.tsx",
+                                                    lineNumber: 84,
+                                                    columnNumber: 10
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-xs mx-11",
+                                                    children: "Customisable"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/RestaurantMenu.tsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 17
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/RestaurantMenu.tsx",
+                                            lineNumber: 83,
+                                            columnNumber: 10
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/RestaurantMenu.tsx",
+                                    lineNumber: 79,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, menu?.card?.info?.id, true, {
+                            fileName: "src/components/RestaurantMenu.tsx",
+                            lineNumber: 71,
+                            columnNumber: 15
+                        }, undefined);
+                    })
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantMenu.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantMenu.tsx",
+        lineNumber: 40,
+        columnNumber: 5
+    }, undefined);
+};
+_s(RestaurantMenu, "DbtFkCi06TeahOjgWGrjwvWrS6s=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams),
+        (0, _useRestaurantJsDefault.default),
+        (0, _reactRedux.useDispatch)
+    ];
+});
+_c = RestaurantMenu;
+exports.default = RestaurantMenu;
+var _c;
+$RefreshReg$(_c, "RestaurantMenu");
+
+  $parcel$ReactRefreshHelpers$2f77.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../utils/constants.js":"fIuAL","./Shimmer.jsx":"eA23l","../utils/useRestaurant.js":"7ULyH","react-redux":"62sf7","../utils/cartSlice.js":"3jYYw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fIuAL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_CDN_URl", ()=>IMG_CDN_URl);
+parcelHelpers.export(exports, "FETCH_MENU_URL", ()=>FETCH_MENU_URL);
+const IMG_CDN_URl = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eA23l":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$82d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$82d1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex gap-12 flex-wrap px-60 mt-28",
+        children: Array(13).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "h-[220px] w-[300px] rounded-md bg-gray-200 "
+            }, index, false, {
+                fileName: "src/components/Shimmer.tsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.tsx",
+        lineNumber: 8,
+        columnNumber: 7
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$82d1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -34833,2093 +35006,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"5n5Rz":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$db52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$db52.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Contact = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-            className: "relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "-mx-4 flex flex-wrap lg:justify-between px-64",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-full px-4 lg:w-1/2 xl:w-6/12",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mb-12 max-w-[570px] lg:mb-0",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "mb-4 block text-blue-800 font-semibold text-primary",
-                                        children: "Contact Us"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 11,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                        className: "mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]",
-                                        children: "GET IN TOUCH WITH US"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 14,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "mb-9 text-base leading-relaxed text-body-color dark:text-dark-6",
-                                        children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 17,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "mb-8 flex w-full max-w-[370px]",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: "32",
-                                                    height: "32",
-                                                    viewBox: "0 0 32 32",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                        d: "M30.6 11.8002L17.7 3.5002C16.65 2.8502 15.3 2.8502 14.3 3.5002L1.39998 11.8002C0.899983 12.1502 0.749983 12.8502 1.04998 13.3502C1.39998 13.8502 2.09998 14.0002 2.59998 13.7002L3.44998 13.1502V25.8002C3.44998 27.5502 4.84998 28.9502 6.59998 28.9502H25.4C27.15 28.9502 28.55 27.5502 28.55 25.8002V13.1502L29.4 13.7002C29.6 13.8002 29.8 13.9002 30 13.9002C30.35 13.9002 30.75 13.7002 30.95 13.4002C31.3 12.8502 31.15 12.1502 30.6 11.8002ZM13.35 26.7502V18.5002C13.35 18.0002 13.75 17.6002 14.25 17.6002H17.75C18.25 17.6002 18.65 18.0002 18.65 18.5002V26.7502H13.35ZM26.3 25.8002C26.3 26.3002 25.9 26.7002 25.4 26.7002H20.9V18.5002C20.9 16.8002 19.5 15.4002 17.8 15.4002H14.3C12.6 15.4002 11.2 16.8002 11.2 18.5002V26.7502H6.69998C6.19998 26.7502 5.79998 26.3502 5.79998 25.8502V11.7002L15.5 5.4002C15.8 5.2002 16.2 5.2002 16.5 5.4002L26.3 11.7002V25.8002Z",
-                                                        fill: "currentColor"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 31,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 24,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 23,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "w-full",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
-                                                        children: "Our Location"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 38,
-                                                        columnNumber: 21
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        className: "text-base text-body-color dark:text-dark-6",
-                                                        children: "99 S.t Jomblo Park Peranbu 28292. India"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 41,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 37,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 22,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "mb-8 flex w-full max-w-[370px]",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: "32",
-                                                    height: "32",
-                                                    viewBox: "0 0 32 32",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("g", {
-                                                            "clip-path": "url(#clip0_941_17577)",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    d: "M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z",
-                                                                    fill: "currentColor"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Contact.tsx",
-                                                                    lineNumber: 57,
-                                                                    columnNumber: 25
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    d: "M29.3 14.25C28.7 14.25 28.25 13.8 28.2 13.2C27.8 8.15003 23.65 4.10003 18.55 3.75003C17.95 3.70003 17.45 3.20003 17.5 2.55003C17.55 1.95003 18.05 1.45003 18.7 1.50003C24.9 1.90003 29.95 6.80003 30.45 13C30.5 13.6 30.05 14.15 29.4 14.2C29.4 14.25 29.35 14.25 29.3 14.25Z",
-                                                                    fill: "currentColor"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Contact.tsx",
-                                                                    lineNumber: 61,
-                                                                    columnNumber: 25
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                                    d: "M24.35 14.7002C23.8 14.7002 23.3 14.3002 23.25 13.7002C22.95 11.0002 20.85 8.90018 18.15 8.55018C17.55 8.50018 17.1 7.90018 17.15 7.30018C17.2 6.70018 17.8 6.25018 18.4 6.30018C22.15 6.75018 25.05 9.65018 25.5 13.4002C25.55 14.0002 25.15 14.5502 24.5 14.6502C24.4 14.7002 24.35 14.7002 24.35 14.7002Z",
-                                                                    fill: "currentColor"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Contact.tsx",
-                                                                    lineNumber: 65,
-                                                                    columnNumber: 25
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 56,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("clipPath", {
-                                                                id: "clip0_941_17577",
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("rect", {
-                                                                    width: "32",
-                                                                    height: "32",
-                                                                    fill: "white"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Contact.tsx",
-                                                                    lineNumber: 72,
-                                                                    columnNumber: 27
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Contact.tsx",
-                                                                lineNumber: 71,
-                                                                columnNumber: 25
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 70,
-                                                            columnNumber: 23
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 49,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 48,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "w-full",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
-                                                        children: "Phone Number"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 78,
-                                                        columnNumber: 21
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        className: "text-base text-body-color dark:text-dark-6",
-                                                        children: "(+62)81 414 257 9980"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 81,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 77,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "mb-8 flex w-full max-w-[370px]",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: "32",
-                                                    height: "32",
-                                                    viewBox: "0 0 32 32",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                        d: "M28 4.7998H3.99998C2.29998 4.7998 0.849976 6.1998 0.849976 7.9498V24.1498C0.849976 25.8498 2.24998 27.2998 3.99998 27.2998H28C29.7 27.2998 31.15 25.8998 31.15 24.1498V7.8998C31.15 6.1998 29.7 4.7998 28 4.7998ZM28 7.0498C28.05 7.0498 28.1 7.0498 28.15 7.0498L16 14.8498L3.84998 7.0498C3.89998 7.0498 3.94998 7.0498 3.99998 7.0498H28ZM28 24.9498H3.99998C3.49998 24.9498 3.09998 24.5498 3.09998 24.0498V9.2498L14.8 16.7498C15.15 16.9998 15.55 17.0998 15.95 17.0998C16.35 17.0998 16.75 16.9998 17.1 16.7498L28.8 9.2498V24.0998C28.9 24.5998 28.5 24.9498 28 24.9498Z",
-                                                        fill: "currentColor"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 96,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 89,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 88,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "w-full",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
-                                                        children: "Email Address"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 103,
-                                                        columnNumber: 21
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                        className: "text-base text-body-color dark:text-dark-6",
-                                                        children: "info@yumhive.com"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 106,
-                                                        columnNumber: 21
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 102,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 87,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Contact.tsx",
-                                lineNumber: 10,
-                                columnNumber: 15
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Contact.tsx",
-                            lineNumber: 9,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-full px-4 lg:w-1/2 xl:w-5/12",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
-                                                type: "text",
-                                                name: "name",
-                                                placeholder: "Your Name"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 116,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
-                                                type: "text",
-                                                name: "email",
-                                                placeholder: "Your Email"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
-                                                type: "text",
-                                                name: "phone",
-                                                placeholder: "Your Phone"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 126,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactTextArea, {
-                                                row: "6",
-                                                placeholder: "Your Message",
-                                                name: "details",
-                                                defaultValue: ""
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 131,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    type: "submit",
-                                                    className: "w-full rounded border border-primary bg-blue-700 p-3 text-gray-400 transition hover:bg-opacity-90",
-                                                    children: "Send Message"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 138,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 137,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 115,
-                                        columnNumber: 17
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "absolute -right-9 -top-10 z-[-1]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: 100,
-                                                    height: 100,
-                                                    viewBox: "0 0 100 100",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                        fillRule: "evenodd",
-                                                        clipRule: "evenodd",
-                                                        d: "M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z",
-                                                        fill: "#3056D3"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/Contact.tsx",
-                                                        lineNumber: 155,
-                                                        columnNumber: 23
-                                                    }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 148,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 147,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "absolute -right-10 top-[90px] z-[-1]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: 34,
-                                                    height: 134,
-                                                    viewBox: "0 0 34 134",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 171,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 178,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 185,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 192,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 199,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 206,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 213,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 220,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 227,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 234,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 241,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 248,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 255,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 262,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 269,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 276,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 283,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 290,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 297,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 304,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 311,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 318,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 325,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 332,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 339,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 346,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 353,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 360,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 367,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 374,
-                                                            columnNumber: 23
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 164,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 163,
-                                                columnNumber: 19
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "absolute -bottom-7 -left-7 z-[-1]",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                    width: 107,
-                                                    height: 134,
-                                                    viewBox: "0 0 107 134",
-                                                    fill: "none",
-                                                    xmlns: "http://www.w3.org/2000/svg",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 391,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 398,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 405,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 412,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 419,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 426,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 433,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 440,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 447,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "104.999",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 104.999 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 454,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 461,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 468,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 475,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 482,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 489,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 496,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 503,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 510,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 517,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "90.3333",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 90.3333 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 524,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 531,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 538,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 545,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 552,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 559,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 566,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 573,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 580,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 587,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 594,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 601,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 608,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 615,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 622,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 629,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 636,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 643,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 650,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "75.6654",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 75.6654 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 657,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "31.9993",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 31.9993 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 664,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 671,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 678,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 685,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 692,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 699,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 706,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 713,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 720,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 727,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 734,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 741,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 748,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 755,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 762,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 769,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 776,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 783,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 790,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "60.9993",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 60.9993 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 797,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "17.3333",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 17.3333 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 804,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 811,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 132,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 132)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 818,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 825,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "117.333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 117.333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 832,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 839,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "102.667",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 102.667)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 846,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 853,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 88,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 88)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 860,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 867,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "73.3333",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 73.3333)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 874,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 881,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 45,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 45)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 888,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 895,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 16,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 16)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 902,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 909,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: 59,
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 59)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 916,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 923,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "30.6666",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 30.6666)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 930,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "46.3333",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 46.3333 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 937,
-                                                            columnNumber: 23
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
-                                                            cx: "2.66536",
-                                                            cy: "1.66665",
-                                                            r: "1.66667",
-                                                            transform: "rotate(180 2.66536 1.66665)",
-                                                            fill: "#13C296"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Contact.tsx",
-                                                            lineNumber: 944,
-                                                            columnNumber: 23
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Contact.tsx",
-                                                    lineNumber: 384,
-                                                    columnNumber: 21
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Contact.tsx",
-                                                lineNumber: 383,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Contact.tsx",
-                                        lineNumber: 146,
-                                        columnNumber: 17
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Contact.tsx",
-                                lineNumber: 114,
-                                columnNumber: 15
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Contact.tsx",
-                            lineNumber: 113,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Contact.tsx",
-                    lineNumber: 8,
-                    columnNumber: 11
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Contact.tsx",
-                lineNumber: 7,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Contact.tsx",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
-};
-_c = Contact;
-exports.default = Contact;
-const ContactTextArea = ({ row, placeholder, name, defaultValue })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "mb-6",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                rows: row,
-                placeholder: placeholder,
-                name: name,
-                className: "w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6",
-                defaultValue: defaultValue
-            }, void 0, false, {
-                fileName: "src/components/Contact.tsx",
-                lineNumber: 969,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Contact.tsx",
-            lineNumber: 968,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
-};
-_c1 = ContactTextArea;
-const ContactInputBox = ({ type, placeholder, name })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "mb-6",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                type: type,
-                placeholder: placeholder,
-                name: name,
-                className: "w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
-            }, void 0, false, {
-                fileName: "src/components/Contact.tsx",
-                lineNumber: 985,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Contact.tsx",
-            lineNumber: 984,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
-};
-_c2 = ContactInputBox;
-var _c, _c1, _c2;
-$RefreshReg$(_c, "Contact");
-$RefreshReg$(_c1, "ContactTextArea");
-$RefreshReg$(_c2, "ContactInputBox");
-
-  $parcel$ReactRefreshHelpers$db52.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5cbj0":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2f77 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2f77.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _react = require("react");
-var _constantsJs = require("../constants.js");
-var _shimmerJsx = require("./Shimmer.jsx");
-var _shimmerJsxDefault = parcelHelpers.interopDefault(_shimmerJsx);
-var _useRestaurantJs = require("../utils/useRestaurant.js");
-var _useRestaurantJsDefault = parcelHelpers.interopDefault(_useRestaurantJs);
-var _reactRedux = require("react-redux");
-var _cartSliceJs = require("../utils/cartSlice.js");
-var _s = $RefreshSig$();
-const RestaurantMenu = ()=>{
-    _s();
-    const { id } = (0, _reactRouterDom.useParams)();
-    const restaurant = (0, _useRestaurantJsDefault.default)(id);
-    const [menus, setMenus] = (0, _react.useState)([]);
-    const dispatch = (0, _reactRedux.useDispatch)();
-    const handleAddItem = (item)=>{
-        dispatch((0, _cartSliceJs.addItem)(item));
-    };
-    (0, _react.useEffect)(()=>{
-        const menuId = restaurant?.id;
-        if (menuId === undefined) console.log("wait");
-        else {
-            async function getMenus() {
-                const data = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=${menuId}&catalog_qa=undefined&submitAction=ENTER`);
-                const json = await data.json();
-                setMenus(json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card?.itemCards);
-            }
-            getMenus();
-        }
-    }, [
-        restaurant
-    ]);
-    // resturant card
-    return !restaurant && !menus ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsxDefault.default), {}, void 0, false, {
-        fileName: "src/components/RestaurantMenu.tsx",
-        lineNumber: 38,
-        columnNumber: 36
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "grid pl-5 pt-5",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex mx-72 my-20",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "w-96 rounded-lg",
-                            src: (0, _constantsJs.IMG_CDN_URl) + restaurant?.cloudinaryImageId
-                        }, void 0, false, {
-                            fileName: "src/components/RestaurantMenu.tsx",
-                            lineNumber: 42,
-                            columnNumber: 7
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantMenu.tsx",
-                        lineNumber: 41,
-                        columnNumber: 7
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex text-end my-44",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20 text-2xl",
-                                children: [
-                                    " ",
-                                    restaurant?.name,
-                                    " "
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 46,
-                                columnNumber: 8
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20 text-xl",
-                                children: [
-                                    " ",
-                                    restaurant?.locality,
-                                    " "
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 47,
-                                columnNumber: 8
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20 text-xl",
-                                children: restaurant?.city
-                            }, void 0, false, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 48,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20 text-md",
-                                children: [
-                                    restaurant?.avgRating,
-                                    " "
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 50,
-                                columnNumber: 19
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20",
-                                children: restaurant?.costForTwo
-                            }, void 0, false, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 52,
-                                columnNumber: 8
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "font-mono ml-20",
-                                children: restaurant?.isOpen ? "Open" : "Closed"
-                            }, void 0, false, {
-                                fileName: "src/components/RestaurantMenu.tsx",
-                                lineNumber: 53,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/RestaurantMenu.tsx",
-                        lineNumber: 45,
-                        columnNumber: 8
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestaurantMenu.tsx",
-                lineNumber: 40,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid decoration",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-3xl font-mono text-center border-b p-2 ",
-                        children: " Menu Card "
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantMenu.tsx",
-                        lineNumber: 63,
-                        columnNumber: 9
-                    }, undefined),
-                    menus == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: " Empty "
-                    }, void 0, false, {
-                        fileName: "src/components/RestaurantMenu.tsx",
-                        lineNumber: 66,
-                        columnNumber: 9
-                    }, undefined) : menus.map((menu, index)=>{
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "h-[217px] w-[800px] border-b flex justify-between m-4 mx-auto ",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "grid p-10",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "h-7",
-                                            src: "https://packagingguruji.com/wp-content/uploads/2022/09/New-Non-Logo.png"
-                                        }, void 0, false, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 72,
-                                            columnNumber: 17
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                            className: "font-semibold  quicksand-regular",
-                                            children: [
-                                                " ",
-                                                menu?.card?.info?.name,
-                                                " "
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 73,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "quicksand-regular",
-                                            children: [
-                                                " \u20B9 ",
-                                                menu?.card?.info?.price
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 74,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "quicksand-regular text-green-600 flex",
-                                            children: [
-                                                " ",
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                    className: "h-5",
-                                                    src: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBIPEA8QDxAQFRAVExAXDw8SEA8SFREXGBURGRUYHSgkGBonGxMVITEhJykrMC8uFyMzOTMtNygtOisBCgoKDg0OGxAQGzUmICUtLS0tLy0tLS0rLS0vLS0tLS0tLS0tLS0wKy0tLS0rLSstLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcBBAUDAv/EADoQAAIBAQMJBQYGAQUAAAAAAAABAgMEERIFBhMhMUFRYZEiUnGBoQcyYnKx8IKSosHC0UIjM0OD4f/EABoBAQADAQEBAAAAAAAAAAAAAAADBAUBAgb/xAAlEQEAAgIDAAICAgMBAAAAAAAAAQIDEQQSITFRQYEFIhRhcZH/2gAMAwEAAhEDEQA/ALxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHhZ7XCcqkYu90pYJcpYYy+kkeYtE7iPw8xaJmYj8Pc9PQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADytNZQhKpJ3RhGUm+UVe/ocmdRty0xEblAcwcquVrrRm9dpxVP+yLbuX4ZS/KZ3Ey7vMT+fWZwsszkmJ/PqwzSagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACM+0C3aOyOCfarSUPwrtSfRJfiKvLv1x6+1Pm364tfaucmWx0a1Osv+OcZPnG/tLzV68zMx262izJx36Xi30uqEk0mnenc0+K4m6+ih9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArL2h27HalST1UIpfjn2pemDoZXMvu/X6Y/Ov2ydfpFyopLXzJt2lsdO93ypX05fh939LibHFv2xxv/AI3OJfvij/XjvFhZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8V6qhGU5O6MU5N8ElezkzqNuTOo3Kk7baXVqTqy21JSk+V7vu/YwrW7TNnzt7drTafy8Ty8pj7NrdhrVKDeqpFTj80NT6p/pL3Cvq01aHAvq01+1iGk1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARvP23aOxyin2qzVNeD1y9E15lbl364/wDqpzL9cevvxVxkMUA28j23QWilW3U5Jv5XqkvytnvHfpeLJMV+l4sumL1ajdfQsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACtfaNbsdpjRT1UY6/nnc3+lQ6mXzb7v1+mRz77vFfpFCmogGALbzNt2msdJt3yprRy8Yal1jhfmbHGv2xx/43eLfviif07ZYWAAAAAAAAAAAAAAAAAAAAAAD4dWPeXVHNw5uDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuHzUrxSbcopJNt3rUltOdocm0QpbKFrdarUrPbUlKV3BN6l5K5eRh3t2tNnz+S/e02+3geXgAATP2bW/DUq0JO5TSnH5o6pdU4/lL3CvqZrLR4GTUzWf+p/pY95dUaPaGnuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuDSx7y6odoNwaWPeXVDtBuGYzT2NPzG3dvo6AAAAAAAAAAAAAcDOPNajaljuVOvuqpLtcpL/JepXzceuT38/atn4tcvvxP2rPKuSalnno61PC90tsJrjF7/qZWTHbHOrMfJitjnVoaeFcF0PCMwrgugDCuC6AMK4LoAwrgugDCuC6AfQAAAAw0BjCuC6AMK4LoAwrgugDCuC6AMK4LoAwrgugElzbzPnaLqlVOlQ2p3f6lRfCnsXN+V5aw8W1/beQucfhzk9t5Cycn2CnQgqdGEacFuS2vi3vfNmpSlaRqrWpStI1WGyensAAAAAAAAAAAAABrZQsFOvB06sFOD3Pc+Ke580eL0i8as8XpW8atCt85M0qlmvqU76tDbfd26a+JLaviXncZmbjWp7HsMnkcS2P2vsI0VVNlIOjQcAAAAAAAbFLYrvN+bvv8rtuokjWkkfDwnt1Hifl4n5YOOAAD0s9CVSShTi5zlqUUr2zsRMzqHa1m06hYObWZcad1W0pVKm1U9tOn495+njtNLDxIr7f5avH4cV/tf2UwRdXwAAAAAAAAAAAAAAAAANAQ3OTMuNS+rZUqdTa6WynPw7r9PApZuJFv7U+VDkcOLf2p8oHXoyhJwnBxlHVJNXOL+/qZ81ms6mGdNZrOph5ve9ut/f1EvMspaum5cLxrx3Xj5Wy+76fv96zjzDOHX5fvcNO69PLbfuW5eH9AYUdvK8RDkR6yny46tXw8g7EjW3UvuL/AKAylu8OHG4QQ+btj+/DV4eoNMzS+7uokt8OjkPINa1SuprDBPtVWngjy+J8l6EmLBbJPiTDx75Z8+PtZuQ8g0bLG6nG+b96o/fn/S5I1cWGuOPGxhwUxR46hKmAAAAAAAAAAAAAAAAAAAAAcrLeQKNqjdNYZr3aquxx/tcvoRZcNckeoc2CuSPfn7VllzIdayyw1FfBvs1V7k/6fJ+plZcN8fk/H2x82G+Lyfj7c1SItyh3JjY2bMT9Ltw27sxel/qNubkxMbNsJnNkTpnF6ndm5MT+7hs3LF+xdBs3KY5uZmzqXVbUnTp7VS92c/m7q5bfAu4eLNvb/DQwcS1v7X8j6T+zWeNOKhCKjGOpRSuSNGIiI1DTiIiNQ9TroAAAAAAAAAAAAAAAAAAAAAAA8rRZ4VIuE4qcJK5xavTRyaxMaly1YtGpVRnbkylZrS6VKTcXGMnF69G232b9+pJ+Zj8jHWl9VYnKxVx31VxiBWAAAAAAAWHmHkWhooWprSVW5bUrqTTauS48+e40+Jip1i/5a3Dw06xf5lMi6vgAAAAAAAAAAAAAAAAAAAAAAAAAxJ3a3qQFL5YtumtFWtunNtfKtUV+VIw8t+95s+ey373mzTI0YAAAAAACc+zO3f71nb4VIrpGf8DQ4N/mv7af8ff5p+08NBpAAAAAAAAAAAAAAAAAAAAAAAAAA4meNu0NjqtO6U1o48b56n0jifkQcm/THMq/Kv0xTKpDGYTIAAAAAAAHTzZt2htdGpfdHFhl8s+y35Xp+RNgv0yRKfj5OmSJXEbTeAAAAAAAAAAAAAAAAAAAAAAAAABX3tKt19SlZ09UE6kvmlqj0Sl+Yzedf2K/tl/yF/Yp+0LKLOAAG9kjJNW0zwUY33XYpvVCC4t/ttJMeK2SdVS4sNsk6qkmVcw5wpqVCo6s4rtwaUcT4w4eD6lrJw5iu6ztbycGYruk7lDpxabjJOLTuaaaafBp7CjrXyoTGvlgOAGGBcmbdu09lpVW75OKUvnj2Zeqb8zbw370iW/gyd8cWdIlTAAAAAAAAAAAAAAAAAAAAAAAA2BTGXbbp7TVrbVKTw/JHsx9EjDy373mz5/NfvkmzRI0TAEozbzQqV7qla+lR2rdUqrknsXN+XEt4OLN/beQu8fh2v7byFjWKx06MFTpQUIR2JL1fF8zTrSKxqGtSlaRqrYPT04ecObNK1Jyf+nWS1VUtvBSX+S9Svm49cnv5V8/Grlj/f2rPK2Sqtmno60Lu7Ja4TXGL3+G0y8mK2OdWY2XFbHOrNIjRgE89mlu1VbO3saqRXJ9mXqo9TR4N/Jq0/4+/k0/acl9pAAAAAAAAAAAAAAAAAAAAAAADj5227Q2OrNO6UlgjxxT1X+SbfkQ8i/THMoOTfpjmVQmKwXrZrPOpNU6cHOctkUr2/8AzmdrWbTqHqtZtOohYebWZsKV1W0XVaupqG2nTf8AJ89n1NPBxYr7b5avH4cV/tf2UuLi8AAAGvbrFTrQdOrBTg9z3PinufNHm1ItGpeL0reNWhW+cmaNSz31KV9Whte+pTXxJbVzXmZefi2p7X2GTn4lqe19hGSqpuvmpbtDbKU27oyeCXyz1ejufkTce/TJErHGv0yxP6W+bTdAAAAAAAAAAAAAAAAAAAAAAAEB9pduvlRs6exOpJc3fGH8+pnc6/xX9sz+Qv7FP2juQc361ql2Fhpp9qq08K5LvPl9CthwWyT58KmDj2yz58fazciZDo2WGGlHtP3qjuc5+L3LktRq4sNccahsYcFcUaq6ZKmAAAAAAAQ/OXMyFW+rZrqdXa6eynUfLuv0+pSz8SLe0+VDkcOL/wBqeSr600J05OnUjKE46nFq5r74mbas1nUsu1ZrOp+Vw5At2ns1KtvlFYvnWqX6kzbxX70izew3744s6BIlAAAAAAAAAAAAAAAAAAAAAAIbHNiVqtVS1Wq+NJyup0b7pShHsxcn/imlfdt17il/jzkvN7/H0of405Mk3yfH4hLqFGMIqEIqMYq5RSSSXBIuRERGoXoiIjUPQ66AAAAAAAAAOXlzIdG1Rw1I3SXu1FqnDz3rkyLLhrkj1DmwUyx/Zo5o5PrWZVbNV7UFLHSqL3ZRlqkvhaaTu+LeR8else6T+kfGx2xxNLfpIiytAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q=="
-                                                }, void 0, false, {
-                                                    fileName: "src/components/RestaurantMenu.tsx",
-                                                    lineNumber: 75,
-                                                    columnNumber: 76
-                                                }, undefined),
-                                                " ",
-                                                menu?.card?.info?.ratings?.aggregatedRating?.rating
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 75,
-                                            columnNumber: 19
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "quicksand-regular",
-                                            children: [
-                                                " ",
-                                                menu?.card?.info?.itemAttribute?.vegClassifier,
-                                                " "
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 76,
-                                            columnNumber: 19
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/RestaurantMenu.tsx",
-                                    lineNumber: 71,
-                                    columnNumber: 17
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "h-[140px] w-[160px] transition duration-300 ease-in-out hover:scale-110 rounded-2xl",
-                                            src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`
-                                        }, void 0, false, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 79,
-                                            columnNumber: 20
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "grid",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                    className: "bg-white border transition duration-300 ease-in-out hover:scale-110 font-bold border-gray-700 mx-5 text-green-500 p-1 h-[34px] w-[119px] rounded-lg ",
-                                                    onClick: ()=>handleAddItem(menu?.card?.info),
-                                                    children: "ADD"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/RestaurantMenu.tsx",
-                                                    lineNumber: 83,
-                                                    columnNumber: 10
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "text-xs mx-11",
-                                                    children: "Customisable"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/RestaurantMenu.tsx",
-                                                    lineNumber: 88,
-                                                    columnNumber: 17
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/RestaurantMenu.tsx",
-                                            lineNumber: 82,
-                                            columnNumber: 10
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/RestaurantMenu.tsx",
-                                    lineNumber: 78,
-                                    columnNumber: 17
-                                }, undefined)
-                            ]
-                        }, menu?.card?.info?.id, true, {
-                            fileName: "src/components/RestaurantMenu.tsx",
-                            lineNumber: 70,
-                            columnNumber: 15
-                        }, undefined);
-                    })
-                ]
-            }, void 0, true, {
-                fileName: "src/components/RestaurantMenu.tsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/RestaurantMenu.tsx",
-        lineNumber: 39,
-        columnNumber: 5
-    }, undefined);
-};
-_s(RestaurantMenu, "DbtFkCi06TeahOjgWGrjwvWrS6s=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams),
-        (0, _useRestaurantJsDefault.default),
-        (0, _reactRedux.useDispatch)
-    ];
-});
-_c = RestaurantMenu;
-exports.default = RestaurantMenu;
-var _c;
-$RefreshReg$(_c, "RestaurantMenu");
-
-  $parcel$ReactRefreshHelpers$2f77.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../constants.js":"45DZp","./Shimmer.jsx":"eA23l","../utils/useRestaurant.js":"7ULyH","react-redux":"62sf7","../utils/cartSlice.js":"3jYYw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"45DZp":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "IMG_CDN_URl", ()=>IMG_CDN_URl);
-parcelHelpers.export(exports, "FETCH_MENU_URL", ()=>FETCH_MENU_URL);
-const IMG_CDN_URl = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eA23l":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$82d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$82d1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex gap-12 flex-wrap px-60 mt-28",
-        children: Array(13).fill("").map((e, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "h-[220px] w-[300px] rounded-md bg-gray-200 "
-            }, index, false, {
-                fileName: "src/components/Shimmer.tsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/components/Shimmer.tsx",
-        lineNumber: 5,
-        columnNumber: 7
-    }, undefined);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$82d1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7ULyH":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"7ULyH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$35be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36929,7 +35016,7 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
-var _constants = require("../constants");
+var _constants = require("./constants");
 const useRestaurant = (resId)=>{
     const [restaurant, setRestaurant] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
@@ -36949,7 +35036,7 @@ exports.default = useRestaurant;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../constants":"45DZp"}],"62sf7":[function(require,module,exports) {
+},{"react":"21dqq","./constants":"fIuAL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"62sf7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Provider", ()=>Provider_default);
@@ -42020,7 +40107,1858 @@ function createThunkMiddleware(extraArgument) {
 var thunk = createThunkMiddleware();
 var withExtraArgument = createThunkMiddleware;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f8TzL":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"41vRu":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$083f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$083f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Section = ({ title, description })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, _react.useState)(false);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "instamart-div",
+        children: [
+            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "font-serif",
+                onClick: ()=>setIsVisible(false),
+                children: " Hide "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "font-serif",
+                onClick: ()=>setIsVisible(true),
+                children: " Show "
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 16,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: description
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 19,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/InstMart.tsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
+_c = Section;
+const InstaMart = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "grid gap-12 px-44 pt-44 pb-44",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "About us",
+                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.tsx",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "Contact us",
+                    description: "is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including vers ey of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.tsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "border border-black rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                    title: "Team us",
+                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
+                }, void 0, false, {
+                    fileName: "src/components/InstMart.tsx",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/InstMart.tsx",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/InstMart.tsx",
+        lineNumber: 27,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = InstaMart;
+exports.default = InstaMart;
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "InstaMart");
+
+  $parcel$ReactRefreshHelpers$083f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5n5Rz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$db52 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$db52.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Contact = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+            className: "relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "-mx-4 flex flex-wrap lg:justify-between px-64",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-1/2 xl:w-6/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mb-12 max-w-[570px] lg:mb-0",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "mb-4 block text-blue-800 font-semibold text-primary",
+                                        children: "Contact Us"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 11,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]",
+                                        children: "GET IN TOUCH WITH US"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "mb-9 text-base leading-relaxed text-body-color dark:text-dark-6",
+                                        children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor incididunt ut labore e dolore magna aliqua. Ut enim adiqua minim veniam quis nostrud exercitation ullamco"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 17,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        d: "M30.6 11.8002L17.7 3.5002C16.65 2.8502 15.3 2.8502 14.3 3.5002L1.39998 11.8002C0.899983 12.1502 0.749983 12.8502 1.04998 13.3502C1.39998 13.8502 2.09998 14.0002 2.59998 13.7002L3.44998 13.1502V25.8002C3.44998 27.5502 4.84998 28.9502 6.59998 28.9502H25.4C27.15 28.9502 28.55 27.5502 28.55 25.8002V13.1502L29.4 13.7002C29.6 13.8002 29.8 13.9002 30 13.9002C30.35 13.9002 30.75 13.7002 30.95 13.4002C31.3 12.8502 31.15 12.1502 30.6 11.8002ZM13.35 26.7502V18.5002C13.35 18.0002 13.75 17.6002 14.25 17.6002H17.75C18.25 17.6002 18.65 18.0002 18.65 18.5002V26.7502H13.35ZM26.3 25.8002C26.3 26.3002 25.9 26.7002 25.4 26.7002H20.9V18.5002C20.9 16.8002 19.5 15.4002 17.8 15.4002H14.3C12.6 15.4002 11.2 16.8002 11.2 18.5002V26.7502H6.69998C6.19998 26.7502 5.79998 26.3502 5.79998 25.8502V11.7002L15.5 5.4002C15.8 5.2002 16.2 5.2002 16.5 5.4002L26.3 11.7002V25.8002Z",
+                                                        fill: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 31,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 24,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 23,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Our Location"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "99 S.t Jomblo Park Peranbu 28292. India"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 41,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 37,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 22,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("g", {
+                                                            "clip-path": "url(#clip0_941_17577)",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.tsx",
+                                                                    lineNumber: 57,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M29.3 14.25C28.7 14.25 28.25 13.8 28.2 13.2C27.8 8.15003 23.65 4.10003 18.55 3.75003C17.95 3.70003 17.45 3.20003 17.5 2.55003C17.55 1.95003 18.05 1.45003 18.7 1.50003C24.9 1.90003 29.95 6.80003 30.45 13C30.5 13.6 30.05 14.15 29.4 14.2C29.4 14.25 29.35 14.25 29.3 14.25Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.tsx",
+                                                                    lineNumber: 61,
+                                                                    columnNumber: 25
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                    d: "M24.35 14.7002C23.8 14.7002 23.3 14.3002 23.25 13.7002C22.95 11.0002 20.85 8.90018 18.15 8.55018C17.55 8.50018 17.1 7.90018 17.15 7.30018C17.2 6.70018 17.8 6.25018 18.4 6.30018C22.15 6.75018 25.05 9.65018 25.5 13.4002C25.55 14.0002 25.15 14.5502 24.5 14.6502C24.4 14.7002 24.35 14.7002 24.35 14.7002Z",
+                                                                    fill: "currentColor"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.tsx",
+                                                                    lineNumber: 65,
+                                                                    columnNumber: 25
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 56,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("clipPath", {
+                                                                id: "clip0_941_17577",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("rect", {
+                                                                    width: "32",
+                                                                    height: "32",
+                                                                    fill: "white"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Contact.tsx",
+                                                                    lineNumber: 72,
+                                                                    columnNumber: 27
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.tsx",
+                                                                lineNumber: 71,
+                                                                columnNumber: 25
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 70,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Phone Number"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "(+62)81 414 257 9980"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 81,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 77,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 47,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mb-8 flex w-full max-w-[370px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "32",
+                                                    height: "32",
+                                                    viewBox: "0 0 32 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        d: "M28 4.7998H3.99998C2.29998 4.7998 0.849976 6.1998 0.849976 7.9498V24.1498C0.849976 25.8498 2.24998 27.2998 3.99998 27.2998H28C29.7 27.2998 31.15 25.8998 31.15 24.1498V7.8998C31.15 6.1998 29.7 4.7998 28 4.7998ZM28 7.0498C28.05 7.0498 28.1 7.0498 28.15 7.0498L16 14.8498L3.84998 7.0498C3.89998 7.0498 3.94998 7.0498 3.99998 7.0498H28ZM28 24.9498H3.99998C3.49998 24.9498 3.09998 24.5498 3.09998 24.0498V9.2498L14.8 16.7498C15.15 16.9998 15.55 17.0998 15.95 17.0998C16.35 17.0998 16.75 16.9998 17.1 16.7498L28.8 9.2498V24.0998C28.9 24.5998 28.5 24.9498 28 24.9498Z",
+                                                        fill: "currentColor"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 96,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 89,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 88,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "w-full",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                        className: "mb-1 text-xl font-bold text-dark dark:text-white",
+                                                        children: "Email Address"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 103,
+                                                        columnNumber: 21
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-base text-body-color dark:text-dark-6",
+                                                        children: "info@yumhive.com"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 102,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Contact.tsx",
+                                lineNumber: 10,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.tsx",
+                            lineNumber: 9,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "w-full px-4 lg:w-1/2 xl:w-5/12",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "name",
+                                                placeholder: "Your Name"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 116,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "email",
+                                                placeholder: "Your Email"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 121,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactInputBox, {
+                                                type: "text",
+                                                name: "phone",
+                                                placeholder: "Your Phone"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ContactTextArea, {
+                                                row: "6",
+                                                placeholder: "Your Message",
+                                                name: "details",
+                                                defaultValue: ""
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 131,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                    type: "submit",
+                                                    className: "w-full rounded border border-primary bg-blue-700 p-3 text-gray-400 transition hover:bg-opacity-90",
+                                                    children: "Send Message"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 138,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 137,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 115,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -right-9 -top-10 z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 100,
+                                                    height: 100,
+                                                    viewBox: "0 0 100 100",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        fillRule: "evenodd",
+                                                        clipRule: "evenodd",
+                                                        d: "M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z",
+                                                        fill: "#3056D3"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Contact.tsx",
+                                                        lineNumber: 155,
+                                                        columnNumber: 23
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 148,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 147,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -right-10 top-[90px] z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 34,
+                                                    height: 134,
+                                                    viewBox: "0 0 34 134",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 171,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 178,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 185,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 192,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 199,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 206,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 213,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 220,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 227,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 234,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 241,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 248,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 255,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 262,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 269,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 276,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 283,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 290,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 297,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 304,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 311,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 318,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 325,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 332,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 339,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 346,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 353,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 360,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 367,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 374,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 164,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 163,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "absolute -bottom-7 -left-7 z-[-1]",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: 107,
+                                                    height: 134,
+                                                    viewBox: "0 0 107 134",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 391,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 398,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 405,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 412,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 419,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 426,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 433,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 440,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 447,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "104.999",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 104.999 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 454,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 461,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 468,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 475,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 482,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 489,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 496,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 503,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 510,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 517,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "90.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 90.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 524,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 531,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 538,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 545,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 552,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 559,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 566,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 573,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 580,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 587,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 594,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 601,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 608,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 615,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 622,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 629,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 636,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 643,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 650,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "75.6654",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 75.6654 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 657,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "31.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 31.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 664,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 671,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 678,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 685,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 692,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 699,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 706,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 713,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 720,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 727,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 734,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 741,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 748,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 755,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 762,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 769,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 776,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 783,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 790,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "60.9993",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 60.9993 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 797,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "17.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 17.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 804,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 811,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 132,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 132)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 818,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 825,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "117.333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 117.333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 832,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 839,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "102.667",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 102.667)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 846,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 853,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 88,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 88)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 860,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 867,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "73.3333",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 73.3333)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 874,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 881,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 45,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 45)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 888,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 895,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 16,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 16)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 902,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 909,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: 59,
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 59)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 916,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 923,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "30.6666",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 30.6666)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 930,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "46.3333",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 46.3333 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 937,
+                                                            columnNumber: 23
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                            cx: "2.66536",
+                                                            cy: "1.66665",
+                                                            r: "1.66667",
+                                                            transform: "rotate(180 2.66536 1.66665)",
+                                                            fill: "#13C296"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Contact.tsx",
+                                                            lineNumber: 944,
+                                                            columnNumber: 23
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Contact.tsx",
+                                                    lineNumber: 384,
+                                                    columnNumber: 21
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Contact.tsx",
+                                                lineNumber: 383,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Contact.tsx",
+                                        lineNumber: 146,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Contact.tsx",
+                                lineNumber: 114,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.tsx",
+                            lineNumber: 113,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.tsx",
+                    lineNumber: 8,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Contact.tsx",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Contact.tsx",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c = Contact;
+exports.default = Contact;
+const ContactTextArea = ({ row, placeholder, name, defaultValue })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "mb-6",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                rows: row,
+                placeholder: placeholder,
+                name: name,
+                className: "w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6",
+                defaultValue: defaultValue
+            }, void 0, false, {
+                fileName: "src/components/Contact.tsx",
+                lineNumber: 970,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Contact.tsx",
+            lineNumber: 969,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c1 = ContactTextArea;
+const ContactInputBox = ({ type, placeholder, name })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "mb-6",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+            type: type,
+            placeholder: placeholder,
+            name: name,
+            className: "w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+        }, void 0, false, {
+            fileName: "src/components/Contact.tsx",
+            lineNumber: 986,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Contact.tsx",
+        lineNumber: 985,
+        columnNumber: 7
+    }, undefined);
+};
+_c2 = ContactInputBox;
+var _c, _c1, _c2;
+$RefreshReg$(_c, "Contact");
+$RefreshReg$(_c1, "ContactTextArea");
+$RefreshReg$(_c2, "ContactInputBox");
+
+  $parcel$ReactRefreshHelpers$db52.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f8TzL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9185 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42030,18 +41968,20 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 const Profile = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: " This is a profile "
         }, void 0, false, {
             fileName: "src/components/Profile.tsx",
-            lineNumber: 5,
+            lineNumber: 7,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Profile.tsx",
-        lineNumber: 4,
+        lineNumber: 6,
         columnNumber: 9
     }, undefined);
 };
@@ -42055,780 +41995,7 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"d09Wa":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$fba3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$fba3.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRedux = require("react-redux");
-var _cartMenuJs = require("./CartMenu.js");
-var _cartMenuJsDefault = parcelHelpers.interopDefault(_cartMenuJs);
-var _cartSliceJs = require("../utils/cartSlice.js");
-var _s = $RefreshSig$();
-const Cart = ()=>{
-    _s();
-    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const dispatch = (0, _reactRedux.useDispatch)();
-    const handleClearCart = ()=>{
-        dispatch((0, _cartSliceJs.clearCart)());
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "font-bold text-3xl",
-                children: " Cart Items"
-            }, void 0, false, {
-                fileName: "src/components/Cart.tsx",
-                lineNumber: 16,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid",
-                children: cartItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartMenuJsDefault.default), {
-                        ...item
-                    }, item.id, false, {
-                        fileName: "src/components/Cart.tsx",
-                        lineNumber: 19,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Cart.tsx",
-                lineNumber: 17,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "bg-gray-500 p-2 m-3",
-                    onClick: ()=>handleClearCart(),
-                    children: "Clear Cart"
-                }, void 0, false, {
-                    fileName: "src/components/Cart.tsx",
-                    lineNumber: 25,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Cart.tsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Cart.tsx",
-        lineNumber: 15,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Cart, "ClsVU7OzYQ50hVvtHIih2dVFL+s=", false, function() {
-    return [
-        (0, _reactRedux.useSelector),
-        (0, _reactRedux.useDispatch)
-    ];
-});
-_c = Cart;
-exports.default = Cart;
-var _c;
-$RefreshReg$(_c, "Cart");
-
-  $parcel$ReactRefreshHelpers$fba3.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","../utils/cartSlice.js":"3jYYw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./CartMenu.js":"23o5y"}],"23o5y":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$52f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$52f2.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const CartMenu = ({ id, name, imageId, inStock, price })=>{
-    console.log("name: ", imageId);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: " flex gap-3 mx-96 my-6 bg-stone-200 rounded-2xl w-[1000px] h-[100px]",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "h-[100px] w-[300px] object-cover rounded-md",
-                src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imageId}`,
-                alt: name
-            }, void 0, false, {
-                fileName: "src/components/CartMenu.tsx",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-1",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                        className: "text-xl font-mono",
-                        children: name
-                    }, void 0, false, {
-                        fileName: "src/components/CartMenu.tsx",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                        className: "text-xs",
-                        children: [
-                            "Stock left ",
-                            inStock
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/CartMenu.tsx",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                        className: "text-xs",
-                        children: [
-                            "Price ",
-                            price
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/CartMenu.tsx",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/CartMenu.tsx",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, id, true, {
-        fileName: "src/components/CartMenu.tsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = CartMenu;
-exports.default = CartMenu;
-var _c;
-$RefreshReg$(_c, "CartMenu");
-
-  $parcel$ReactRefreshHelpers$52f2.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1sOW7":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "store", ()=>store);
-var _toolkit = require("@reduxjs/toolkit");
-var _cartSlice = require("./cartSlice");
-var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
-const store = (0, _toolkit.configureStore)({
-    reducer: {
-        cart: (0, _cartSliceDefault.default)
-    }
-});
-
-},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./cartSlice":"3jYYw"}],"lnxaO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5a2c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5a2c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _resturarntCardJsx = require("./ResturarntCard.jsx");
-var _resturarntCardJsxDefault = parcelHelpers.interopDefault(_resturarntCardJsx);
-var _react = require("react");
-var _shimmerTsx = require("./Shimmer.tsx");
-var _shimmerTsxDefault = parcelHelpers.interopDefault(_shimmerTsx);
-var _reactRouterDom = require("react-router-dom");
-var _helperJs = require("../utils/helper.js");
-var _s = $RefreshSig$();
-let Body = ()=>{
-    _s();
-    const [allRestaurant, setAllRestaurent] = (0, _react.useState)([]);
-    const [filteredRestaurant, setFilteredRestaurent] = (0, _react.useState)([]);
-    const [searchText, setSearchText] = (0, _react.useState)("");
-    (0, _react.useEffect)(()=>{
-        getRestaurants();
-    }, []);
-    async function getRestaurants() {
-        try {
-            const [swiggyResponse, secondApiResponse, thirdApiResponse, fourthApiResponse, fifthApiResponse] = await Promise.all([
-                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
-                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.007849499999999&lng=76.5411712&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
-                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
-                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
-                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.1766701&lng=78.00807449999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-            ]);
-            const swiggyJson = await swiggyResponse.json();
-            const secondApiJson = await secondApiResponse.json();
-            const thirdApiJson = await thirdApiResponse.json();
-            const fourthApiJson = await fourthApiResponse.json();
-            const fifthApiJson = await fifthApiResponse.json();
-            const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-            const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-            const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-            const fourthApiRestaurants = fourthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-            const fifthApiRestaurants = fifthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-            const combinedRestaurants = [
-                ...swiggyRestaurants,
-                ...secondApiRestaurants,
-                ...thirdApiRestaurants,
-                ...fourthApiRestaurants,
-                ...fifthApiRestaurants
-            ];
-            setAllRestaurent(combinedRestaurants);
-            setFilteredRestaurent(combinedRestaurants);
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    // if(offline) {
-    //   return <h1> 🔴 Offline, please check your internet connection!</h1>
-    // }
-    //search
-    return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerTsxDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.tsx",
-        lineNumber: 81,
-        columnNumber: 5
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                class: "max-w-md mx-auto mt-5 shadow-xl rounded-md",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    class: "relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            class: "grid place-items-center h-full w-12 text-gray-300",
-                            onClick: ()=>{
-                                const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
-                                setFilteredRestaurent(filteredData);
-                            },
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                xmlns: "http://www.w3.org/2000/svg",
-                                class: "h-6 w-6",
-                                fill: "none",
-                                viewBox: "0 0 24 24",
-                                stroke: "currentColor",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                    "stroke-linecap": "round",
-                                    "stroke-linejoin": "round",
-                                    "stroke-width": "2",
-                                    d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                }, void 0, false, {
-                                    fileName: "src/components/Body.tsx",
-                                    lineNumber: 121,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Body.tsx",
-                                lineNumber: 114,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Body.tsx",
-                            lineNumber: 107,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            class: "peer h-full w-full outline-none text-sm text-gray-700 pr-2",
-                            type: "text",
-                            value: searchText,
-                            onChange: (e)=>{
-                                setSearchText(e.target.value);
-                            },
-                            placeholder: "Search something.."
-                        }, void 0, false, {
-                            fileName: "src/components/Body.tsx",
-                            lineNumber: 130,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Body.tsx",
-                    lineNumber: 106,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Body.tsx",
-                lineNumber: 105,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-12 px-60 mt-12",
-                children: filteredRestaurant.map((restraunt)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/restraunt/" + restraunt?.info?.id,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "hover:scale-110 transition duration-500",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturarntCardJsxDefault.default), {
-                                ...restraunt
-                            }, void 0, false, {
-                                fileName: "src/components/Body.tsx",
-                                lineNumber: 148,
-                                columnNumber: 17
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Body.tsx",
-                            lineNumber: 147,
-                            columnNumber: 15
-                        }, undefined)
-                    }, restraunt?.id, false, {
-                        fileName: "src/components/Body.tsx",
-                        lineNumber: 146,
-                        columnNumber: 13
-                    }, undefined);
-                })
-            }, void 0, false, {
-                fileName: "src/components/Body.tsx",
-                lineNumber: 143,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
-};
-_s(Body, "8/9q31aBYD/o8XZ9O11gpNU+Vm4=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$5a2c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./ResturarntCard.jsx":"lw42U","react":"21dqq","react-router-dom":"9xmpe","../utils/helper.js":"3uqAg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer.tsx":"eA23l"}],"lw42U":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2959 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2959.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const ResturarntCard = (res)=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "overflow-hidden",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "h-[200px] w-[300px] object-cover rounded-md",
-                src: res.image ? res.image : `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${res?.info?.cloudinaryImageId}`,
-                alt: res.name ? res.name : res?.info?.name
-            }, void 0, false, {
-                fileName: "src/components/ResturarntCard.tsx",
-                lineNumber: 6,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                className: "text-xl font-mono",
-                children: res.name ? res.name : res?.info?.name
-            }, void 0, false, {
-                fileName: "src/components/ResturarntCard.tsx",
-                lineNumber: 15,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "font-mono",
-                children: res.cuisine ? res.cuisine.slice(0, 2).join(", ") : res?.info?.cuisines?.slice(0, 2).join(", ")
-            }, void 0, false, {
-                fileName: "src/components/ResturarntCard.tsx",
-                lineNumber: 18,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "font-mono text-xs",
-                children: res?.info.areaName
-            }, void 0, false, {
-                fileName: "src/components/ResturarntCard.tsx",
-                lineNumber: 23,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "font-mono",
-                children: [
-                    res.rating ? res.rating : res?.info?.avgRating,
-                    " \u2B50"
-                ]
-            }, void 0, true, {
-                fileName: "src/components/ResturarntCard.tsx",
-                lineNumber: 26,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, res?.info?.id, true, {
-        fileName: "src/components/ResturarntCard.tsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = ResturarntCard;
-exports.default = ResturarntCard;
-var _c;
-$RefreshReg$(_c, "ResturarntCard");
-
-  $parcel$ReactRefreshHelpers$2959.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3uqAg":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "filterData", ()=>filterData);
-const filterData = (searchText, allRestaurant)=>{
-    const founded = allRestaurant.filter((restaurant)=>restaurant?.info?.name.includes(searchText));
-    return founded;
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"juaHo":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$987f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$987f.prelude(module);
-
-try {
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col lg:flex-row justify-between gap-8 p-44",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-full lg:w-5/12 flex flex-col justify-center",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
-                                children: "About Us"
-                            }, void 0, false, {
-                                fileName: "dist-TS/components/About.js",
-                                lineNumber: 7,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-normal text-base leading-6 text-gray-600 ",
-                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
-                            }, void 0, false, {
-                                fileName: "dist-TS/components/About.js",
-                                lineNumber: 8,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "dist-TS/components/About.js",
-                        lineNumber: 6,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-full lg:w-8/12 ",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "w-full h-full rounded-xl",
-                            src: "https://exotel.com/wp-content/uploads/2023/04/home-page-images-Swiggy-scaled.jpg",
-                            alt: "A group of People"
-                        }, void 0, false, {
-                            fileName: "dist-TS/components/About.js",
-                            lineNumber: 11,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "dist-TS/components/About.js",
-                        lineNumber: 10,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "dist-TS/components/About.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex lg:flex-row flex-col justify-between gap-8 pt-12",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-full lg:w-5/12 flex flex-col justify-center",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
-                                children: "Our Story"
-                            }, void 0, false, {
-                                fileName: "dist-TS/components/About.js",
-                                lineNumber: 17,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-normal text-base leading-6 text-gray-600 ",
-                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
-                            }, void 0, false, {
-                                fileName: "dist-TS/components/About.js",
-                                lineNumber: 18,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "dist-TS/components/About.js",
-                        lineNumber: 16,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-full lg:w-8/12 lg:pt-8",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:block hidden",
-                                            src: "https://i.ibb.co/FYTKDG6/Rectangle-118-2.png",
-                                            alt: "Alexa featured Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 23,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:hidden block",
-                                            src: "https://i.ibb.co/zHjXqg4/Rectangle-118.png",
-                                            alt: "Alexa featured Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 24,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
-                                            children: "Alexa"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 25,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "dist-TS/components/About.js",
-                                    lineNumber: 22,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:block hidden",
-                                            src: "https://i.ibb.co/fGmxhVy/Rectangle-119.png",
-                                            alt: "Olivia featured Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 28,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:hidden block",
-                                            src: "https://i.ibb.co/NrWKJ1M/Rectangle-119.png",
-                                            alt: "Olivia featured Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 29,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
-                                            children: "Olivia"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 30,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "dist-TS/components/About.js",
-                                    lineNumber: 27,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:block hidden",
-                                            src: "https://i.ibb.co/Pc6XVVC/Rectangle-120.png",
-                                            alt: "Liam featued Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 33,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:hidden block",
-                                            src: "https://i.ibb.co/C5MMBcs/Rectangle-120.png",
-                                            alt: "Liam featued Img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 34,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
-                                            children: "Liam"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 35,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "dist-TS/components/About.js",
-                                    lineNumber: 32,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:block hidden",
-                                            src: "https://i.ibb.co/7nSJPXQ/Rectangle-121.png",
-                                            alt: "Elijah featured img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 38,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            className: "md:hidden block",
-                                            src: "https://i.ibb.co/ThZBWxH/Rectangle-121.png",
-                                            alt: "Elijah featured img"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 39,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
-                                            children: "Elijah"
-                                        }, void 0, false, {
-                                            fileName: "dist-TS/components/About.js",
-                                            lineNumber: 40,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "dist-TS/components/About.js",
-                                    lineNumber: 37,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "dist-TS/components/About.js",
-                            lineNumber: 21,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "dist-TS/components/About.js",
-                        lineNumber: 20,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "dist-TS/components/About.js",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "dist-TS/components/About.js",
-        lineNumber: 4,
-        columnNumber: 13
-    }, undefined);
-};
-_c = About;
-exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
-
-  $parcel$ReactRefreshHelpers$987f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hU72F":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$7f2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$7f2f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const Error = ()=>{
-    _s();
-    const { status, statusText } = (0, _reactRouterDom.useRouteError)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Opp!!!"
-            }, void 0, false, {
-                fileName: "src/components/Error.tsx",
-                lineNumber: 9,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Something went wrong"
-            }, void 0, false, {
-                fileName: "src/components/Error.tsx",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    " ",
-                    status + " " + statusText,
-                    " "
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Error.tsx",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Error.tsx",
-        lineNumber: 8,
-        columnNumber: 9
-    }, undefined);
-};
-_s(Error, "Oy98LL43PDuJ11oV+3jrYQNkBIM=", false, function() {
-    return [
-        (0, _reactRouterDom.useRouteError)
-    ];
-});
-_c = Error;
-exports.default = Error //01. 09
-;
-var _c;
-$RefreshReg$(_c, "Error");
-
-  $parcel$ReactRefreshHelpers$7f2f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jCg0q":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jCg0q":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$30a2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42839,6 +42006,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
@@ -43070,131 +42238,982 @@ $RefreshReg$(_c, "Header2");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"41vRu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$083f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eHp76":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b676 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$083f.prelude(module);
+$parcel$ReactRefreshHelpers$b676.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _s = $RefreshSig$();
-const Section = ({ title, description })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(false);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "instamart-div",
-        children: [
-            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "font-serif",
-                onClick: ()=>setIsVisible(false),
-                children: " Hide "
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                className: "font-serif",
-                onClick: ()=>setIsVisible(true),
-                children: " Show "
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 11,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: title
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 13,
-                columnNumber: 7
-            }, undefined),
-            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: description
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 14,
-                columnNumber: 21
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/InstMart.tsx",
-        lineNumber: 7,
-        columnNumber: 5
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+        className: "bg-white rounded-lg shadow :bg-gray-900 m-4",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-full max-w-screen-xl mx-auto p-4 md:py-8",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "sm:flex sm:items-center sm:justify-between",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "",
+                                className: "flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg",
+                                        className: "h-12 w-20",
+                                        alt: "Flowbite Logo"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 14,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "self-center text-2xl font-semibold whitespace-nowrap",
+                                        children: "YumHive"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 15,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Footer.tsx",
+                                lineNumber: 13,
+                                columnNumber: 17
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Footer.tsx",
+                            lineNumber: 12,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                            className: "flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 :text-gray-400",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/about",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            className: "hover:underline me-4 md:me-6",
+                                            children: "About"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.tsx",
+                                            lineNumber: 22,
+                                            columnNumber: 21
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 21,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.tsx",
+                                    lineNumber: 20,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        className: "hover:underline me-4 md:me-6",
+                                        children: "Privacy Policy"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 27,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.tsx",
+                                    lineNumber: 26,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: "#",
+                                        className: "hover:underline me-4 md:me-6",
+                                        children: "Licensing"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 21
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.tsx",
+                                    lineNumber: 29,
+                                    columnNumber: 17
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/contact",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "#",
+                                            className: "hover:underline",
+                                            children: "Contact"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.tsx",
+                                            lineNumber: 34,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.tsx",
+                                        lineNumber: 33,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.tsx",
+                                    lineNumber: 32,
+                                    columnNumber: 17
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.tsx",
+                            lineNumber: 19,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.tsx",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                    className: "my-6 border-gray-200 sm:mx-auto :border-gray-700 lg:my-8"
+                }, void 0, false, {
+                    fileName: "src/components/Footer.tsx",
+                    lineNumber: 40,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    className: "block text-sm text-gray-500 sm:text-center :text-gray-400",
+                    children: [
+                        "\xa9 2024 ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://flowbite.com/",
+                            className: "hover:underline",
+                            children: "YumHive"
+                        }, void 0, false, {
+                            fileName: "src/components/Footer.tsx",
+                            lineNumber: 41,
+                            columnNumber: 92
+                        }, undefined),
+                        ". All Rights Reserved."
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Footer.tsx",
+            lineNumber: 9,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Footer.tsx",
+        lineNumber: 8,
+        columnNumber: 1
     }, undefined);
 };
-_s(Section, "QjDZesRvLCmcrZLxgN677nXnVLA=");
-_c = Section;
-const InstaMart = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "grid gap-12 px-44 pt-44 pb-44",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border border-black rounded-md",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "About us",
-                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
-                }, void 0, false, {
-                    fileName: "src/components/InstMart.tsx",
-                    lineNumber: 24,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 23,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border border-black rounded-md",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Contact us",
-                    description: "is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including vers ey of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
-                }, void 0, false, {
-                    fileName: "src/components/InstMart.tsx",
-                    lineNumber: 31,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 30,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border border-black rounded-md",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
-                    title: "Team us",
-                    description: "is simply dummy text of the printing and t xt ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu"
-                }, void 0, false, {
-                    fileName: "src/components/InstMart.tsx",
-                    lineNumber: 38,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/InstMart.tsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/InstMart.tsx",
-        lineNumber: 22,
-        columnNumber: 5
-    }, undefined);
-};
-_c1 = InstaMart;
-exports.default = InstaMart;
-var _c, _c1;
-$RefreshReg$(_c, "Section");
-$RefreshReg$(_c1, "InstaMart");
+_c = Footer;
+exports.default = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
 
-  $parcel$ReactRefreshHelpers$083f.postlude(module);
+  $parcel$ReactRefreshHelpers$b676.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9A6dT","1xC6H","7F5Te"], "7F5Te", "parcelRequire5d3f")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hU72F":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7f2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7f2f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const Error = ()=>{
+    _s();
+    const { status, statusText } = (0, _reactRouterDom.useRouteError)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Opp!!!"
+            }, void 0, false, {
+                fileName: "src/components/Error.tsx",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Something went wrong"
+            }, void 0, false, {
+                fileName: "src/components/Error.tsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: [
+                    " ",
+                    status + " " + statusText,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Error.tsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Error.tsx",
+        lineNumber: 9,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Error, "id7DwyZK1SL6nKPuJ7tPdJZjr0Y=", false, function() {
+    return [
+        (0, _reactRouterDom.useRouteError)
+    ];
+});
+_c = Error;
+exports.default = Error //01. 09
+;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$7f2f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i01Mg":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3649 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3649.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const About = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col lg:flex-row justify-between gap-8 p-44",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-5/12 flex flex-col justify-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
+                                children: "About Us"
+                            }, void 0, false, {
+                                fileName: "src/components/About.tsx",
+                                lineNumber: 8,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "font-normal text-base leading-6 text-gray-600 ",
+                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
+                            }, void 0, false, {
+                                fileName: "src/components/About.tsx",
+                                lineNumber: 9,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.tsx",
+                        lineNumber: 7,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-8/12 ",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "w-full h-full rounded-xl",
+                            src: "https://exotel.com/wp-content/uploads/2023/04/home-page-images-Swiggy-scaled.jpg",
+                            alt: "A group of People"
+                        }, void 0, false, {
+                            fileName: "src/components/About.tsx",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/About.tsx",
+                        lineNumber: 11,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/About.tsx",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex lg:flex-row flex-col justify-between gap-8 pt-12",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-5/12 flex flex-col justify-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4",
+                                children: "Our Story"
+                            }, void 0, false, {
+                                fileName: "src/components/About.tsx",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "font-normal text-base leading-6 text-gray-600 ",
+                                children: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from"
+                            }, void 0, false, {
+                                fileName: "src/components/About.tsx",
+                                lineNumber: 19,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/About.tsx",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full lg:w-8/12 lg:pt-8",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-4 shadow-lg rounded-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/FYTKDG6/Rectangle-118-2.png",
+                                            alt: "Alexa featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 24,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/zHjXqg4/Rectangle-118.png",
+                                            alt: "Alexa featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 25,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Alexa"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 26,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.tsx",
+                                    lineNumber: 23,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/fGmxhVy/Rectangle-119.png",
+                                            alt: "Olivia featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 29,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/NrWKJ1M/Rectangle-119.png",
+                                            alt: "Olivia featured Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 30,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Olivia"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 31,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/Pc6XVVC/Rectangle-120.png",
+                                            alt: "Liam featued Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 34,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/C5MMBcs/Rectangle-120.png",
+                                            alt: "Liam featued Img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 35,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Liam"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 36,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.tsx",
+                                    lineNumber: 33,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 pb-6 flex justify-center flex-col items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:block hidden",
+                                            src: "https://i.ibb.co/7nSJPXQ/Rectangle-121.png",
+                                            alt: "Elijah featured img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 39,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "md:hidden block",
+                                            src: "https://i.ibb.co/ThZBWxH/Rectangle-121.png",
+                                            alt: "Elijah featured img"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 40,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "font-medium text-xl leading-5 text-gray-800 mt-4",
+                                            children: "Elijah"
+                                        }, void 0, false, {
+                                            fileName: "src/components/About.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/About.tsx",
+                                    lineNumber: 38,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/About.tsx",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/About.tsx",
+                        lineNumber: 21,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/About.tsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/About.tsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = About;
+exports.default = About;
+var _c;
+$RefreshReg$(_c, "About");
+
+  $parcel$ReactRefreshHelpers$3649.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lnxaO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5a2c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5a2c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _resturarntCardJsx = require("./ResturarntCard.jsx");
+var _resturarntCardJsxDefault = parcelHelpers.interopDefault(_resturarntCardJsx);
+var _react = require("react");
+var _shimmerTsx = require("./Shimmer.tsx");
+var _shimmerTsxDefault = parcelHelpers.interopDefault(_shimmerTsx);
+var _reactRouterDom = require("react-router-dom");
+var _helperJs = require("../utils/helper.js");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+let Body = ()=>{
+    _s();
+    const [allRestaurant, setAllRestaurent] = (0, _react.useState)([]);
+    const [filteredRestaurant, setFilteredRestaurent] = (0, _react.useState)([]);
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        try {
+            const [swiggyResponse, secondApiResponse, thirdApiResponse, fourthApiResponse, fifthApiResponse] = await Promise.all([
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.007849499999999&lng=76.5411712&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"),
+                fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.1766701&lng=78.00807449999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+            ]);
+            const swiggyJson = await swiggyResponse.json();
+            const secondApiJson = await secondApiResponse.json();
+            const thirdApiJson = await thirdApiResponse.json();
+            const fourthApiJson = await fourthApiResponse.json();
+            const fifthApiJson = await fifthApiResponse.json();
+            const swiggyRestaurants = swiggyJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const secondApiRestaurants = secondApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const thirdApiRestaurants = thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const fourthApiRestaurants = fourthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const fifthApiRestaurants = fifthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+            const combinedRestaurants = [
+                ...swiggyRestaurants,
+                ...secondApiRestaurants,
+                ...thirdApiRestaurants,
+                ...fourthApiRestaurants,
+                ...fifthApiRestaurants
+            ];
+            setAllRestaurent(combinedRestaurants);
+            setFilteredRestaurent(combinedRestaurants);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+    // if(offline) {
+    //   return <h1> 🔴 Offline, please check your internet connection!</h1>
+    // }
+    //search
+    return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerTsxDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.tsx",
+        lineNumber: 82,
+        columnNumber: 5
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "max-w-md mx-auto mt-5 shadow-xl rounded-md",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid place-items-center h-full w-12 text-gray-300",
+                            onClick: ()=>{
+                                const filteredData = (0, _helperJs.filterData)(searchText, allRestaurant);
+                                setFilteredRestaurent(filteredData);
+                            },
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                xmlns: "http://www.w3.org/2000/svg",
+                                className: "h-6 w-6",
+                                fill: "none",
+                                viewBox: "0 0 24 24",
+                                stroke: "currentColor",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                    "stroke-linecap": "round",
+                                    "stroke-linejoin": "round",
+                                    "stroke-width": "2",
+                                    d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.tsx",
+                                    lineNumber: 122,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Body.tsx",
+                                lineNumber: 115,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Body.tsx",
+                            lineNumber: 108,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "peer h-full w-full outline-none text-sm text-gray-700 pr-2",
+                            type: "text",
+                            value: searchText,
+                            onChange: (e)=>{
+                                setSearchText(e.target.value);
+                            },
+                            placeholder: "Search something.."
+                        }, void 0, false, {
+                            fileName: "src/components/Body.tsx",
+                            lineNumber: 131,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Body.tsx",
+                    lineNumber: 107,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.tsx",
+                lineNumber: 106,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-wrap gap-12 px-60 mt-12",
+                children: filteredRestaurant.map((restraunt)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/restraunt/" + restraunt?.info?.id,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "hover:scale-110 transition duration-500",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturarntCardJsxDefault.default), {
+                                ...restraunt
+                            }, void 0, false, {
+                                fileName: "src/components/Body.tsx",
+                                lineNumber: 149,
+                                columnNumber: 17
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Body.tsx",
+                            lineNumber: 148,
+                            columnNumber: 15
+                        }, undefined)
+                    }, restraunt?.id, false, {
+                        fileName: "src/components/Body.tsx",
+                        lineNumber: 147,
+                        columnNumber: 13
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.tsx",
+                lineNumber: 144,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_s(Body, "8/9q31aBYD/o8XZ9O11gpNU+Vm4=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$5a2c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./ResturarntCard.jsx":"lw42U","react":"21dqq","./Shimmer.tsx":"eA23l","react-router-dom":"9xmpe","../utils/helper.js":"3uqAg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lw42U":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2959 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2959.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const ResturarntCard = (res)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "h-[200px] w-[300px] object-cover rounded-md",
+                src: res.image ? res.image : `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${res?.info?.cloudinaryImageId}`,
+                alt: res.name ? res.name : res?.info?.name
+            }, void 0, false, {
+                fileName: "src/components/ResturarntCard.tsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "text-xl font-mono",
+                children: res.name ? res.name : res?.info?.name
+            }, void 0, false, {
+                fileName: "src/components/ResturarntCard.tsx",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "font-mono",
+                children: res.cuisine ? res.cuisine.slice(0, 2).join(", ") : res?.info?.cuisines?.slice(0, 2).join(", ")
+            }, void 0, false, {
+                fileName: "src/components/ResturarntCard.tsx",
+                lineNumber: 20,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "font-mono text-xs",
+                children: res?.info.areaName
+            }, void 0, false, {
+                fileName: "src/components/ResturarntCard.tsx",
+                lineNumber: 25,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "font-mono",
+                children: [
+                    res.rating ? res.rating : res?.info?.avgRating,
+                    " \u2B50"
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ResturarntCard.tsx",
+                lineNumber: 28,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, res?.info?.id, true, {
+        fileName: "src/components/ResturarntCard.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ResturarntCard;
+exports.default = ResturarntCard;
+var _c;
+$RefreshReg$(_c, "ResturarntCard");
+
+  $parcel$ReactRefreshHelpers$2959.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3uqAg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "filterData", ()=>filterData);
+const filterData = (searchText, allRestaurant)=>{
+    const founded = allRestaurant.filter((restaurant)=>restaurant?.info?.name.includes(searchText));
+    return founded;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d09Wa":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fba3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fba3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRedux = require("react-redux");
+var _cartMenuJs = require("./CartMenu.js");
+var _cartMenuJsDefault = parcelHelpers.interopDefault(_cartMenuJs);
+var _cartSliceJs = require("../utils/cartSlice.js");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Cart = ()=>{
+    _s();
+    const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const handleClearCart = ()=>{
+        dispatch((0, _cartSliceJs.clearCart)());
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-center",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "font-bold text-3xl",
+                children: " Cart Items"
+            }, void 0, false, {
+                fileName: "src/components/Cart.tsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid",
+                children: cartItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartMenuJsDefault.default), {
+                        ...item
+                    }, item.id, false, {
+                        fileName: "src/components/Cart.tsx",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Cart.tsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "bg-gray-500 p-2 m-3",
+                    onClick: ()=>handleClearCart(),
+                    children: "Clear Cart"
+                }, void 0, false, {
+                    fileName: "src/components/Cart.tsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Cart.tsx",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Cart.tsx",
+        lineNumber: 16,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Cart, "ClsVU7OzYQ50hVvtHIih2dVFL+s=", false, function() {
+    return [
+        (0, _reactRedux.useSelector),
+        (0, _reactRedux.useDispatch)
+    ];
+});
+_c = Cart;
+exports.default = Cart;
+var _c;
+$RefreshReg$(_c, "Cart");
+
+  $parcel$ReactRefreshHelpers$fba3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartMenu.js":"23o5y","../utils/cartSlice.js":"3jYYw","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"23o5y":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$52f2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$52f2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const CartMenu = ({ id, name, imageId, inStock, price })=>{
+    console.log("name: ", imageId);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: " flex gap-3 mx-96 my-6 bg-stone-200 rounded-2xl w-[1000px] h-[100px]",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "h-[100px] w-[300px] object-cover rounded-md",
+                src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imageId}`,
+                alt: name
+            }, void 0, false, {
+                fileName: "src/components/CartMenu.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "m-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-xl font-mono",
+                        children: name
+                    }, void 0, false, {
+                        fileName: "src/components/CartMenu.tsx",
+                        lineNumber: 25,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        className: "text-xs",
+                        children: [
+                            "Stock left ",
+                            inStock
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/CartMenu.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "text-xs",
+                        children: [
+                            "Price ",
+                            price
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/CartMenu.tsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/CartMenu.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, id, true, {
+        fileName: "src/components/CartMenu.tsx",
+        lineNumber: 15,
+        columnNumber: 5
+    }, undefined);
+};
+_c = CartMenu;
+exports.default = CartMenu;
+var _c;
+$RefreshReg$(_c, "CartMenu");
+
+  $parcel$ReactRefreshHelpers$52f2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1sOW7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "store", ()=>store);
+var _toolkit = require("@reduxjs/toolkit");
+var _cartSlice = require("./cartSlice");
+var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
+const store = (0, _toolkit.configureStore)({
+    reducer: {
+        cart: (0, _cartSliceDefault.default)
+    }
+});
+
+},{"@reduxjs/toolkit":"fuua8","./cartSlice":"3jYYw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9A6dT","1xC6H","7F5Te"], "7F5Te", "parcelRequire5d3f")
 
 //# sourceMappingURL=index.0513734e.js.map

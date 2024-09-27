@@ -1,10 +1,11 @@
 import { useSelector } from "react-redux";
 import CartMenu from "./CartMenu.js";
 import { useDispatch } from "react-redux";
-import { clearCart } from "../utils/cartSlice.js";
+import { clearCart } from "../utils/cartSlice.js"
+import React from 'react'
 
 const Cart = () => {
-  const cartItems = useSelector((store) => store.cart.items);
+  const cartItems = useSelector((store: any) => store.cart.items);
   const dispatch = useDispatch();
 
   const handleClearCart = () => {
@@ -15,7 +16,7 @@ const Cart = () => {
     <div className="text-center">
       <h1 className="font-bold text-3xl"> Cart Items</h1>
       <div className="grid">
-        {cartItems.map((item) => (
+        {cartItems.map((item: any) => (
           <CartMenu key={item.id} {...item} />
        
         ))}
@@ -33,4 +34,4 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+export default Cart

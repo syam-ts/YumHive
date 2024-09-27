@@ -1,18 +1,19 @@
-import React, { lazy } from "react";
-import ReactDOM from "react-dom/client";
-import Body from "./components/Body.tsx";
-import Header2 from "./components/Header2.js";
-import Footer from "./components/Footer.jsx";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import About from "../dist-TS/components/About.js
-import Error from "./components/Error.js";
-import Contact from "./components/Contact.jsx";
-import RestaurantMenu from "./components/RestaurantMenu.jsx";
-import Profile from "./components/Profile.jsx";
-import InstaMart from "./components/InstMart.js";
-import Cart from './components/Cart.js'
-import { Provider } from "react-redux";
-import { store } from './utils/store.js'
+import React, { lazy } from "react"
+import ReactDOM from "react-dom/client"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
+import RestaurantMenu from "./components/RestaurantMenu.tsx"
+import InstaMart from "./components/InstMart.tsx"
+import Contact from "./components/Contact.tsx"
+import Profile from "./components/Profile.tsx"
+import Header2 from "./components/Header2.tsx"
+import Footer from "./components/Footer.tsx"
+import Error from "./components/Error.tsx"
+import About from "./components/About.tsx"
+import Body from "./components/Body.tsx"
+import Cart from './components/Cart.tsx'
+import { store } from './utils/store.ts'
+import { Provider } from "react-redux"
+
 
 const AppLayout = () => {
   return (
@@ -23,8 +24,8 @@ const AppLayout = () => {
         <Footer />
       </React.Fragment>
     </Provider>
-  );
-};
+  )
+}
 
 const AppRouter = createBrowserRouter([
   {
@@ -64,7 +65,14 @@ const AppRouter = createBrowserRouter([
       }
     ],
   },
-]);
+])
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={AppRouter} />);
+
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<RouterProvider router={AppRouter} />);
+} else {
+  console.error("Root element not found");
+}
+ 

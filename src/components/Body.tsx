@@ -1,17 +1,18 @@
-import ResturarntCard from "./ResturarntCard.jsx";
-import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer.tsx";
-import { Link } from "react-router-dom";
-import { filterData } from "../utils/helper.js";
+import ResturarntCard from "./ResturarntCard.jsx"
+import { useState, useEffect } from "react"
+import Shimmer from "./Shimmer.tsx"
+import { Link } from "react-router-dom"
+import { filterData } from "../utils/helper.js"
+import React from 'react'
 
 let Body = () => {
-  const [allRestaurant, setAllRestaurent] = useState([]);
-  const [filteredRestaurant, setFilteredRestaurent] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const [allRestaurant, setAllRestaurent] = useState([])
+  const [filteredRestaurant, setFilteredRestaurent] = useState([])
+  const [searchText, setSearchText] = useState("")
 
   useEffect(() => {
-    getRestaurants();
-  }, []);
+    getRestaurants()
+  }, [])
 
   async function getRestaurants() {
     try {
@@ -102,10 +103,10 @@ let Body = () => {
                 </button>
               </div> */}
 
-      <div class="max-w-md mx-auto mt-5 shadow-xl rounded-md">
-        <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+      <div className="max-w-md mx-auto mt-5 shadow-xl rounded-md">
+        <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
           <div
-            class="grid place-items-center h-full w-12 text-gray-300"
+            className="grid place-items-center h-full w-12 text-gray-300"
             onClick={() => {
               const filteredData = filterData(searchText, allRestaurant);
               setFilteredRestaurent(filteredData);
@@ -113,7 +114,7 @@ let Body = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -128,7 +129,7 @@ let Body = () => {
           </div>
 
           <input
-            class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
+            className="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
             type="text"
             value={searchText}
             onChange={(e) => {
@@ -141,7 +142,7 @@ let Body = () => {
 
       {/* restaurant card */}
       <div className="flex flex-wrap gap-12 px-60 mt-12">
-        {filteredRestaurant.map((restraunt) => {
+        {filteredRestaurant.map((restraunt: any) => {
           return (
             <Link to={"/restraunt/" + restraunt?.info?.id} key={restraunt?.id}>
               <div className="hover:scale-110 transition duration-500">
