@@ -1,16 +1,16 @@
 import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
-import Body from "./components/Body.jsx";
-import Header2 from "./components/Header2.jsx";
+import Body from "./components/Body.tsx";
+import Header2 from "./components/Header2.js";
 import Footer from "./components/Footer.jsx";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import About from "./components/About.jsx";
-import Error from "./components/Error.jsx";
+import About from "../dist-TS/components/About.js
+import Error from "./components/Error.js";
 import Contact from "./components/Contact.jsx";
 import RestaurantMenu from "./components/RestaurantMenu.jsx";
 import Profile from "./components/Profile.jsx";
-import InstaMart from "./components/InstMart.jsx";
-import Cart from './components/Cart.jsx'
+import InstaMart from "./components/InstMart.js";
+import Cart from './components/Cart.js'
 import { Provider } from "react-redux";
 import { store } from './utils/store.js'
 

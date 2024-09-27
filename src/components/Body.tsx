@@ -1,6 +1,6 @@
 import ResturarntCard from "./ResturarntCard.jsx";
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer.jsx";
+import Shimmer from "./Shimmer.tsx";
 import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper.js";
 
@@ -15,7 +15,7 @@ let Body = () => {
 
   async function getRestaurants() {
     try {
-      const [swiggyResponse, secondApiResponse, thirdApiResponse] =
+      const [swiggyResponse, secondApiResponse, thirdApiResponse, fourthApiResponse, fifthApiResponse] =
         await Promise.all([
           fetch(
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
@@ -26,11 +26,19 @@ let Body = () => {
           fetch(
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
           ),
+          fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0759837&lng=72.8776559&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+          ),
+          fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.1766701&lng=78.00807449999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+          )
         ]);
 
       const swiggyJson = await swiggyResponse.json();
       const secondApiJson = await secondApiResponse.json();
       const thirdApiJson = await thirdApiResponse.json();
+      const fourthApiJson = await fourthApiResponse.json();
+      const fifthApiJson = await fifthApiResponse.json();
 
 
       const swiggyRestaurants =
@@ -42,11 +50,19 @@ let Body = () => {
       const thirdApiRestaurants =
         thirdApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants || [];
+      const fourthApiRestaurants =
+        fourthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants || [];
+      const fifthApiRestaurants =
+        fifthApiJson.data.cards[4]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants || [];
 
-      const combinedRestaurants = [
+      const combinedRestaurants: any = [
         ...swiggyRestaurants,
         ...secondApiRestaurants,
         ...thirdApiRestaurants,
+        ...fourthApiRestaurants,
+        ...fifthApiRestaurants,
       ];
 
       setAllRestaurent(combinedRestaurants);

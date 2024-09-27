@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import CartMenu from "../components/CartMenu.jsx";
+import CartMenu from "./CartMenu.js";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../utils/cartSlice.js";
 
