@@ -2966,8 +2966,8 @@ var _contactTsx = require("./components/Contact.tsx");
 var _contactTsxDefault = parcelHelpers.interopDefault(_contactTsx);
 var _profileTsx = require("./components/Profile.tsx");
 var _profileTsxDefault = parcelHelpers.interopDefault(_profileTsx);
-var _header2Tsx = require("./components/Header2.tsx");
-var _header2TsxDefault = parcelHelpers.interopDefault(_header2Tsx);
+var _headerTsx = require("./components/Header.tsx");
+var _headerTsxDefault = parcelHelpers.interopDefault(_headerTsx);
 var _footerTsx = require("./components/Footer.tsx");
 var _footerTsxDefault = parcelHelpers.interopDefault(_footerTsx);
 var _errorTsx = require("./components/Error.tsx");
@@ -2979,38 +2979,42 @@ var _bodyTsxDefault = parcelHelpers.interopDefault(_bodyTsx);
 var _cartTsx = require("./components/Cart.tsx");
 var _cartTsxDefault = parcelHelpers.interopDefault(_cartTsx);
 var _storeTs = require("./utils/store.ts");
+var _storeTsDefault = parcelHelpers.interopDefault(_storeTs);
 var _reactRedux = require("react-redux");
 var _homeTsx = require("./components/Home.tsx");
 var _homeTsxDefault = parcelHelpers.interopDefault(_homeTsx);
+var _react1 = require("redux-persist/integration/react");
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
-        store: (0, _storeTs.store),
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
+        store: (0, _storeTsDefault.default),
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.PersistGate), {
+            loading: null,
+            persistor: (0, _storeTs.persistor),
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header2TsxDefault.default), {}, void 0, false, {
-                    fileName: "source/App.tsx",
-                    lineNumber: 23,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
                     lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerTsxDefault.default), {}, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "source/App.tsx",
                     lineNumber: 25,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerTsxDefault.default), {}, void 0, false, {
+                    fileName: "source/App.tsx",
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "source/App.tsx",
-            lineNumber: 22,
-            columnNumber: 7
+            lineNumber: 23,
+            columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -3020,12 +3024,12 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorTsxDefault.default), {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 35,
+            lineNumber: 36,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3033,7 +3037,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 18
                 }, undefined),
                 children: [
@@ -3041,7 +3045,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileTsxDefault.default), {}, void 0, false, {
                             fileName: "source/App.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 22
                         }, undefined)
                     }
@@ -3051,7 +3055,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3059,7 +3063,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3067,7 +3071,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3075,7 +3079,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restraunt/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 61,
+                    lineNumber: 62,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3083,7 +3087,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/instamart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 65,
+                    lineNumber: 66,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3091,7 +3095,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 69,
+                    lineNumber: 70,
                     columnNumber: 18
                 }, undefined)
             }
@@ -3105,7 +3109,7 @@ if (rootElement) {
         router: AppRouter
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 15
     }, undefined));
 } else console.error("Root element not found");
@@ -3117,7 +3121,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header2.tsx":"aX5VQ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header.tsx":"gWcyZ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","redux-persist/integration/react":"5TqVL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -34563,7 +34567,7 @@ const RestaurantMenu = ()=>{
     // resturant card
     return !restaurant && !menus ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsDefault.default), {}, void 0, false, {
         fileName: "source/components/RestaurantMenu.tsx",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 36
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "grid pl-5 pt-5",
@@ -34577,12 +34581,12 @@ const RestaurantMenu = ()=>{
                             src: (0, _constantsJs.IMG_CDN_URl) + restaurant?.cloudinaryImageId
                         }, void 0, false, {
                             fileName: "source/components/RestaurantMenu.tsx",
-                            lineNumber: 43,
+                            lineNumber: 45,
                             columnNumber: 7
                         }, undefined)
                     }, void 0, false, {
                         fileName: "source/components/RestaurantMenu.tsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34597,7 +34601,7 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 47,
+                                lineNumber: 49,
                                 columnNumber: 8
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34609,7 +34613,7 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 48,
+                                lineNumber: 50,
                                 columnNumber: 8
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34617,7 +34621,7 @@ const RestaurantMenu = ()=>{
                                 children: restaurant?.city
                             }, void 0, false, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 49,
+                                lineNumber: 51,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34628,7 +34632,7 @@ const RestaurantMenu = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 51,
+                                lineNumber: 53,
                                 columnNumber: 19
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34636,7 +34640,7 @@ const RestaurantMenu = ()=>{
                                 children: restaurant?.costForTwo
                             }, void 0, false, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 53,
+                                lineNumber: 55,
                                 columnNumber: 8
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34644,19 +34648,19 @@ const RestaurantMenu = ()=>{
                                 children: restaurant?.isOpen ? "Open" : "Closed"
                             }, void 0, false, {
                                 fileName: "source/components/RestaurantMenu.tsx",
-                                lineNumber: 54,
+                                lineNumber: 56,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "source/components/RestaurantMenu.tsx",
-                        lineNumber: 46,
+                        lineNumber: 48,
                         columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "source/components/RestaurantMenu.tsx",
-                lineNumber: 41,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34667,14 +34671,14 @@ const RestaurantMenu = ()=>{
                         children: " Menu Card "
                     }, void 0, false, {
                         fileName: "source/components/RestaurantMenu.tsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, undefined),
                     menus == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: " Empty "
                     }, void 0, false, {
                         fileName: "source/components/RestaurantMenu.tsx",
-                        lineNumber: 67,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, undefined) : menus.map((menu, index)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34688,7 +34692,7 @@ const RestaurantMenu = ()=>{
                                             src: "https://packagingguruji.com/wp-content/uploads/2022/09/New-Non-Logo.png"
                                         }, void 0, false, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -34700,7 +34704,7 @@ const RestaurantMenu = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34711,7 +34715,7 @@ const RestaurantMenu = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 77,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34723,7 +34727,7 @@ const RestaurantMenu = ()=>{
                                                     src: "data:image/jpeg;base64,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"
                                                 }, void 0, false, {
                                                     fileName: "source/components/RestaurantMenu.tsx",
-                                                    lineNumber: 76,
+                                                    lineNumber: 78,
                                                     columnNumber: 76
                                                 }, undefined),
                                                 " ",
@@ -34731,7 +34735,7 @@ const RestaurantMenu = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 78,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34743,13 +34747,13 @@ const RestaurantMenu = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 77,
+                                            lineNumber: 79,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "source/components/RestaurantMenu.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 74,
                                     columnNumber: 17
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34760,7 +34764,7 @@ const RestaurantMenu = ()=>{
                                             src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`
                                         }, void 0, false, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 82,
                                             columnNumber: 20
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34772,7 +34776,7 @@ const RestaurantMenu = ()=>{
                                                     children: "ADD"
                                                 }, void 0, false, {
                                                     fileName: "source/components/RestaurantMenu.tsx",
-                                                    lineNumber: 84,
+                                                    lineNumber: 86,
                                                     columnNumber: 10
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -34780,38 +34784,38 @@ const RestaurantMenu = ()=>{
                                                     children: "Customisable"
                                                 }, void 0, false, {
                                                     fileName: "source/components/RestaurantMenu.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 91,
                                                     columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/RestaurantMenu.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 85,
                                             columnNumber: 10
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "source/components/RestaurantMenu.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 81,
                                     columnNumber: 17
                                 }, undefined)
                             ]
                         }, menu?.card?.info?.id, true, {
                             fileName: "source/components/RestaurantMenu.tsx",
-                            lineNumber: 71,
+                            lineNumber: 73,
                             columnNumber: 15
                         }, undefined);
                     })
                 ]
             }, void 0, true, {
                 fileName: "source/components/RestaurantMenu.tsx",
-                lineNumber: 63,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "source/components/RestaurantMenu.tsx",
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 5
     }, undefined);
 };
@@ -42035,11 +42039,11 @@ $RefreshReg$(_c, "Profile");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aX5VQ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$dfe0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gWcyZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6237 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$dfe0.prelude(module);
+$parcel$ReactRefreshHelpers$6237.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -42052,15 +42056,21 @@ var _reactRedux = require("react-redux");
 var _oauth = require("./OAuth");
 var _oauthDefault = parcelHelpers.interopDefault(_oauth);
 var _s = $RefreshSig$();
-const Header2 = ()=>{
+const Header = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     const user = (0, _reactRedux.useSelector)((store)=>store.cart.currentUser);
     const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
     (0, _react.useEffect)(()=>{
-        if (!userIn) navigate("/home");
-    }, []);
+        const checkUserIn = ()=>{
+            if (!userIn) navigate("/home");
+        };
+        checkUserIn();
+    }, [
+        userIn,
+        navigate
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
         className: "header sticky top-0 bg-white shadow-md z-0 flex items-center py-02",
         children: [
@@ -42073,19 +42083,19 @@ const Header2 = ()=>{
                         src: "https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg",
                         alt: "logo-yumgive"
                     }, void 0, false, {
-                        fileName: "source/components/Header2.tsx",
-                        lineNumber: 28,
-                        columnNumber: 6
+                        fileName: "source/components/Header.tsx",
+                        lineNumber: 33,
+                        columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "source/components/Header2.tsx",
-                    lineNumber: 27,
-                    columnNumber: 6
+                    fileName: "source/components/Header.tsx",
+                    lineNumber: 32,
+                    columnNumber: 13
                 }, undefined)
             }, void 0, false, {
-                fileName: "source/components/Header2.tsx",
-                lineNumber: 26,
-                columnNumber: 2
+                fileName: "source/components/Header.tsx",
+                lineNumber: 31,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
                 className: "nav quicksand-regular text-sm",
@@ -42098,14 +42108,14 @@ const Header2 = ()=>{
                                 to: "/",
                                 children: " HOME "
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 38,
-                                columnNumber: 10
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 43,
+                                columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 37,
-                            columnNumber: 10
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 42,
+                            columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer",
@@ -42113,14 +42123,14 @@ const Header2 = ()=>{
                                 to: "/about",
                                 children: "ABOUT"
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 41,
-                                columnNumber: 12
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 46,
+                                columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 40,
-                            columnNumber: 10
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 45,
+                            columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer",
@@ -42128,14 +42138,14 @@ const Header2 = ()=>{
                                 to: "/contact",
                                 children: "CONTACT"
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 44,
-                                columnNumber: 12
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 49,
+                                columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 43,
-                            columnNumber: 10
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 48,
+                            columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer",
@@ -42143,14 +42153,14 @@ const Header2 = ()=>{
                                 to: "/instamart",
                                 children: "INSTAMART"
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 47,
-                                columnNumber: 12
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 52,
+                                columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 46,
-                            columnNumber: 10
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 51,
+                            columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "p-4 border-b-2 border-green-500 border-opacity-0 hover:text-green-400 duration-200 cursor-pointer",
@@ -42162,9 +42172,9 @@ const Header2 = ()=>{
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: " CART "
                                         }, void 0, false, {
-                                            fileName: "source/components/Header2.tsx",
-                                            lineNumber: 54,
-                                            columnNumber: 12
+                                            fileName: "source/components/Header.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                             className: "h-4 ml-2 hover:text-green-500 opacity-55 duration-200",
@@ -42179,14 +42189,14 @@ const Header2 = ()=>{
                                                 fill: "currentColor",
                                                 d: "M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
                                             }, void 0, false, {
-                                                fileName: "source/components/Header2.tsx",
-                                                lineNumber: 56,
-                                                columnNumber: 12
+                                                fileName: "source/components/Header.tsx",
+                                                lineNumber: 61,
+                                                columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
-                                            fileName: "source/components/Header2.tsx",
-                                            lineNumber: 55,
-                                            columnNumber: 12
+                                            fileName: "source/components/Header.tsx",
+                                            lineNumber: 60,
+                                            columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "pl-2",
@@ -42195,51 +42205,51 @@ const Header2 = ()=>{
                                                 cartItems.length
                                             ]
                                         }, void 0, true, {
-                                            fileName: "source/components/Header2.tsx",
-                                            lineNumber: 59,
-                                            columnNumber: 11
+                                            fileName: "source/components/Header.tsx",
+                                            lineNumber: 64,
+                                            columnNumber: 18
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
-                                    fileName: "source/components/Header2.tsx",
-                                    lineNumber: 53,
-                                    columnNumber: 11
+                                    fileName: "source/components/Header.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 18
                                 }, undefined)
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 52,
-                                columnNumber: 11
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 57,
+                                columnNumber: 18
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 49,
-                            columnNumber: 10
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 54,
+                            columnNumber: 17
                         }, undefined),
                         userIn,
                         userIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
                                 method: "sign-out"
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 66,
-                                columnNumber: 16
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 71,
+                                columnNumber: 23
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 65,
-                            columnNumber: 16
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 70,
+                            columnNumber: 23
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
                                 method: "sign-in"
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 70,
-                                columnNumber: 13
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 75,
+                                columnNumber: 20
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 69,
-                            columnNumber: 13
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 74,
+                            columnNumber: 20
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "pl-96",
@@ -42247,34 +42257,34 @@ const Header2 = ()=>{
                                 className: "w-8 rounded-full",
                                 src: user
                             }, void 0, false, {
-                                fileName: "source/components/Header2.tsx",
-                                lineNumber: 75,
-                                columnNumber: 13
+                                fileName: "source/components/Header.tsx",
+                                lineNumber: 80,
+                                columnNumber: 20
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "source/components/Header2.tsx",
-                            lineNumber: 74,
-                            columnNumber: 11
+                            fileName: "source/components/Header.tsx",
+                            lineNumber: 79,
+                            columnNumber: 18
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "source/components/Header2.tsx",
-                    lineNumber: 36,
-                    columnNumber: 6
+                    fileName: "source/components/Header.tsx",
+                    lineNumber: 41,
+                    columnNumber: 13
                 }, undefined)
             }, void 0, false, {
-                fileName: "source/components/Header2.tsx",
-                lineNumber: 35,
-                columnNumber: 2
+                fileName: "source/components/Header.tsx",
+                lineNumber: 40,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "source/components/Header2.tsx",
-        lineNumber: 24,
-        columnNumber: 1
+        fileName: "source/components/Header.tsx",
+        lineNumber: 29,
+        columnNumber: 9
     }, undefined);
 };
-_s(Header2, "h+heO54eOo7PiUZKAQ3Hu0mJnP4=", false, function() {
+_s(Header, "h+heO54eOo7PiUZKAQ3Hu0mJnP4=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useSelector),
@@ -42282,12 +42292,12 @@ _s(Header2, "h+heO54eOo7PiUZKAQ3Hu0mJnP4=", false, function() {
         (0, _reactRouterDom.useNavigate)
     ];
 });
-_c = Header2;
-exports.default = Header2;
+_c = Header;
+exports.default = Header;
 var _c;
-$RefreshReg$(_c, "Header2");
+$RefreshReg$(_c, "Header");
 
-  $parcel$ReactRefreshHelpers$dfe0.postlude(module);
+  $parcel$ReactRefreshHelpers$6237.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -42319,6 +42329,7 @@ const OAuth = (method)=>{
     const handleGoogleSignIn = async ()=>{
         try {
             const provider = new (0, _auth.GoogleAuthProvider)();
+            (0, _auth.setPersistence)(auth, (0, _auth.browserLocalPersistence));
             const result = await (0, _auth.signInWithPopup)(auth, provider);
             const user = result.user;
             const userData = {
@@ -42328,7 +42339,6 @@ const OAuth = (method)=>{
                 image: user.photoURL
             };
             dispatch((0, _cartSliceTs.signInUser)(userData.image));
-            console.log("Logged in successfully", userData.image);
             navigate("/");
         } catch (err) {
             console.error("Sign-in error:", err);
@@ -56646,8 +56656,10 @@ let Body = ()=>{
     const [searchText, setSearchText] = (0, _react.useState)("");
     const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
+    console.log("this", userIn);
     (0, _react.useEffect)(()=>{
         if (!userIn) navigate("/home");
+        else if (userIn) navigate("/");
     }, []);
     (0, _react.useEffect)(()=>{
         getRestaurants();
@@ -56690,7 +56702,7 @@ let Body = ()=>{
     //search
     return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerTsxDefault.default), {}, void 0, false, {
         fileName: "source/components/Body.tsx",
-        lineNumber: 92,
+        lineNumber: 96,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -56718,17 +56730,17 @@ let Body = ()=>{
                                     d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                                 }, void 0, false, {
                                     fileName: "source/components/Body.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 136,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "source/components/Body.tsx",
-                                lineNumber: 125,
+                                lineNumber: 129,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 118,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -56741,18 +56753,18 @@ let Body = ()=>{
                             placeholder: "Search something.."
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 141,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "source/components/Body.tsx",
-                    lineNumber: 117,
+                    lineNumber: 121,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Body.tsx",
-                lineNumber: 116,
+                lineNumber: 120,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56766,23 +56778,23 @@ let Body = ()=>{
                                 ...restraunt
                             }, void 0, false, {
                                 fileName: "source/components/Body.tsx",
-                                lineNumber: 159,
+                                lineNumber: 163,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 158,
+                            lineNumber: 162,
                             columnNumber: 15
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "source/components/Body.tsx",
-                        lineNumber: 157,
+                        lineNumber: 161,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "source/components/Body.tsx",
-                lineNumber: 154,
+                lineNumber: 158,
                 columnNumber: 7
             }, undefined)
         ]
@@ -57062,17 +57074,851 @@ $RefreshReg$(_c, "CartMenu");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2c52X":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "store", ()=>store);
+parcelHelpers.export(exports, "persistor", ()=>persistor);
 var _toolkit = require("@reduxjs/toolkit");
 var _cartSlice = require("./cartSlice");
 var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
+var _reduxPersist = require("redux-persist");
+var _storage = require("redux-persist/lib/storage");
+var _storageDefault = parcelHelpers.interopDefault(_storage);
+const persistConfig = {
+    key: "root",
+    storage: (0, _storageDefault.default),
+    whitelist: [
+        "cart"
+    ]
+};
+const persistedCartReducer = (0, _reduxPersist.persistReducer)(persistConfig, (0, _cartSliceDefault.default));
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        cart: (0, _cartSliceDefault.default)
+        cart: persistedCartReducer
     }
 });
+const persistor = (0, _reduxPersist.persistStore)(store);
+exports.default = store;
 
-},{"@reduxjs/toolkit":"fuua8","./cartSlice":"6ouwu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9xaaN":[function(require,module,exports) {
+},{"@reduxjs/toolkit":"fuua8","./cartSlice":"6ouwu","redux-persist":"bx0vU","redux-persist/lib/storage":"5o1jm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bx0vU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "persistReducer", ()=>(0, _persistReducerDefault.default));
+parcelHelpers.export(exports, "persistCombineReducers", ()=>(0, _persistCombineReducersDefault.default));
+parcelHelpers.export(exports, "persistStore", ()=>(0, _persistStoreDefault.default));
+parcelHelpers.export(exports, "createMigrate", ()=>(0, _createMigrateDefault.default));
+parcelHelpers.export(exports, "createTransform", ()=>(0, _createTransformDefault.default));
+parcelHelpers.export(exports, "getStoredState", ()=>(0, _getStoredStateDefault.default));
+parcelHelpers.export(exports, "createPersistoid", ()=>(0, _createPersistoidDefault.default));
+parcelHelpers.export(exports, "purgeStoredState", ()=>(0, _purgeStoredStateDefault.default));
+var _persistReducer = require("./persistReducer");
+var _persistReducerDefault = parcelHelpers.interopDefault(_persistReducer);
+var _persistCombineReducers = require("./persistCombineReducers");
+var _persistCombineReducersDefault = parcelHelpers.interopDefault(_persistCombineReducers);
+var _persistStore = require("./persistStore");
+var _persistStoreDefault = parcelHelpers.interopDefault(_persistStore);
+var _createMigrate = require("./createMigrate");
+var _createMigrateDefault = parcelHelpers.interopDefault(_createMigrate);
+var _createTransform = require("./createTransform");
+var _createTransformDefault = parcelHelpers.interopDefault(_createTransform);
+var _getStoredState = require("./getStoredState");
+var _getStoredStateDefault = parcelHelpers.interopDefault(_getStoredState);
+var _createPersistoid = require("./createPersistoid");
+var _createPersistoidDefault = parcelHelpers.interopDefault(_createPersistoid);
+var _purgeStoredState = require("./purgeStoredState");
+var _purgeStoredStateDefault = parcelHelpers.interopDefault(_purgeStoredState);
+var _constants = require("./constants");
+parcelHelpers.exportAll(_constants, exports);
+
+},{"./persistReducer":"9qFLX","./persistCombineReducers":"5MpKh","./persistStore":"cWd7D","./createMigrate":"ROm8K","./createTransform":"2hGKs","./getStoredState":"jG6oA","./createPersistoid":"cPLsO","./purgeStoredState":"hY2vm","./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9qFLX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>persistReducer);
+var _constants = require("./constants");
+var _autoMergeLevel1 = require("./stateReconciler/autoMergeLevel1");
+var _autoMergeLevel1Default = parcelHelpers.interopDefault(_autoMergeLevel1);
+var _createPersistoid = require("./createPersistoid");
+var _createPersistoidDefault = parcelHelpers.interopDefault(_createPersistoid);
+var _getStoredState = require("./getStoredState");
+var _getStoredStateDefault = parcelHelpers.interopDefault(_getStoredState);
+var _purgeStoredState = require("./purgeStoredState");
+var _purgeStoredStateDefault = parcelHelpers.interopDefault(_purgeStoredState);
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(source, true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(source).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function _objectWithoutProperties(source, excluded) {
+    if (source == null) return {};
+    var target = _objectWithoutPropertiesLoose(source, excluded);
+    var key, i;
+    if (Object.getOwnPropertySymbols) {
+        var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+        for(i = 0; i < sourceSymbolKeys.length; i++){
+            key = sourceSymbolKeys[i];
+            if (excluded.indexOf(key) >= 0) continue;
+            if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {};
+    var target = {};
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+var DEFAULT_TIMEOUT = 5000;
+function persistReducer(config, baseReducer) {
+    if (!config) throw new Error("config is required for persistReducer");
+    if (!config.key) throw new Error("key is required in persistor config");
+    if (!config.storage) throw new Error("redux-persist: config.storage is required. Try using one of the provided storage engines `import storage from 'redux-persist/lib/storage'`");
+    var version = config.version !== undefined ? config.version : (0, _constants.DEFAULT_VERSION);
+    var debug = config.debug || false;
+    var stateReconciler = config.stateReconciler === undefined ? (0, _autoMergeLevel1Default.default) : config.stateReconciler;
+    var getStoredState = config.getStoredState || (0, _getStoredStateDefault.default);
+    var timeout = config.timeout !== undefined ? config.timeout : DEFAULT_TIMEOUT;
+    var _persistoid = null;
+    var _purge = false;
+    var _paused = true;
+    var conditionalUpdate = function conditionalUpdate(state) {
+        // update the persistoid only if we are rehydrated and not paused
+        state._persist.rehydrated && _persistoid && !_paused && _persistoid.update(state);
+        return state;
+    };
+    return function(state, action) {
+        var _ref = state || {}, _persist = _ref._persist, rest = _objectWithoutProperties(_ref, [
+            "_persist"
+        ]); // $FlowIgnore need to update State type
+        var restState = rest;
+        if (action.type === (0, _constants.PERSIST)) {
+            var _sealed = false;
+            var _rehydrate = function _rehydrate(payload, err) {
+                // dev warning if we are already sealed
+                if (_sealed) console.error('redux-persist: rehydrate for "'.concat(config.key, '" called after timeout.'), payload, err); // only rehydrate if we are not already sealed
+                if (!_sealed) {
+                    action.rehydrate(config.key, payload, err);
+                    _sealed = true;
+                }
+            };
+            timeout && setTimeout(function() {
+                !_sealed && _rehydrate(undefined, new Error('redux-persist: persist timed out for persist key "'.concat(config.key, '"')));
+            }, timeout); // @NOTE PERSIST resumes if paused.
+            _paused = false; // @NOTE only ever create persistoid once, ensure we call it at least once, even if _persist has already been set
+            if (!_persistoid) _persistoid = (0, _createPersistoidDefault.default)(config); // @NOTE PERSIST can be called multiple times, noop after the first
+            if (_persist) // We still need to call the base reducer because there might be nested
+            // uses of persistReducer which need to be aware of the PERSIST action
+            return _objectSpread({}, baseReducer(restState, action), {
+                _persist: _persist
+            });
+            if (typeof action.rehydrate !== "function" || typeof action.register !== "function") throw new Error("redux-persist: either rehydrate or register is not a function on the PERSIST action. This can happen if the action is being replayed. This is an unexplored use case, please open an issue and we will figure out a resolution.");
+            action.register(config.key);
+            getStoredState(config).then(function(restoredState) {
+                var migrate = config.migrate || function(s, v) {
+                    return Promise.resolve(s);
+                };
+                migrate(restoredState, version).then(function(migratedState) {
+                    _rehydrate(migratedState);
+                }, function(migrateErr) {
+                    if (migrateErr) console.error("redux-persist: migration error", migrateErr);
+                    _rehydrate(undefined, migrateErr);
+                });
+            }, function(err) {
+                _rehydrate(undefined, err);
+            });
+            return _objectSpread({}, baseReducer(restState, action), {
+                _persist: {
+                    version: version,
+                    rehydrated: false
+                }
+            });
+        } else if (action.type === (0, _constants.PURGE)) {
+            _purge = true;
+            action.result((0, _purgeStoredStateDefault.default)(config));
+            return _objectSpread({}, baseReducer(restState, action), {
+                _persist: _persist
+            });
+        } else if (action.type === (0, _constants.FLUSH)) {
+            action.result(_persistoid && _persistoid.flush());
+            return _objectSpread({}, baseReducer(restState, action), {
+                _persist: _persist
+            });
+        } else if (action.type === (0, _constants.PAUSE)) _paused = true;
+        else if (action.type === (0, _constants.REHYDRATE)) {
+            // noop on restState if purging
+            if (_purge) return _objectSpread({}, restState, {
+                _persist: _objectSpread({}, _persist, {
+                    rehydrated: true
+                }) // @NOTE if key does not match, will continue to default else below
+            });
+            if (action.key === config.key) {
+                var reducedState = baseReducer(restState, action);
+                var inboundState = action.payload; // only reconcile state if stateReconciler and inboundState are both defined
+                var reconciledRest = stateReconciler !== false && inboundState !== undefined ? stateReconciler(inboundState, state, reducedState, config) : reducedState;
+                var _newState = _objectSpread({}, reconciledRest, {
+                    _persist: _objectSpread({}, _persist, {
+                        rehydrated: true
+                    })
+                });
+                return conditionalUpdate(_newState);
+            }
+        } // if we have not already handled PERSIST, straight passthrough
+        if (!_persist) return baseReducer(state, action); // run base reducer:
+        // is state modified ? return original : return updated
+        var newState = baseReducer(restState, action);
+        if (newState === restState) return state;
+        return conditionalUpdate(_objectSpread({}, newState, {
+            _persist: _persist
+        }));
+    };
+}
+
+},{"./constants":"lVkgs","./stateReconciler/autoMergeLevel1":"7HfeF","./createPersistoid":"cPLsO","./getStoredState":"jG6oA","./purgeStoredState":"hY2vm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lVkgs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "KEY_PREFIX", ()=>KEY_PREFIX);
+parcelHelpers.export(exports, "FLUSH", ()=>FLUSH);
+parcelHelpers.export(exports, "REHYDRATE", ()=>REHYDRATE);
+parcelHelpers.export(exports, "PAUSE", ()=>PAUSE);
+parcelHelpers.export(exports, "PERSIST", ()=>PERSIST);
+parcelHelpers.export(exports, "PURGE", ()=>PURGE);
+parcelHelpers.export(exports, "REGISTER", ()=>REGISTER);
+parcelHelpers.export(exports, "DEFAULT_VERSION", ()=>DEFAULT_VERSION);
+var KEY_PREFIX = "persist:";
+var FLUSH = "persist/FLUSH";
+var REHYDRATE = "persist/REHYDRATE";
+var PAUSE = "persist/PAUSE";
+var PERSIST = "persist/PERSIST";
+var PURGE = "persist/PURGE";
+var REGISTER = "persist/REGISTER";
+var DEFAULT_VERSION = -1;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7HfeF":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>autoMergeLevel1);
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(source, true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(source).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function autoMergeLevel1(inboundState, originalState, reducedState, _ref) {
+    var debug = _ref.debug;
+    var newState = _objectSpread({}, reducedState); // only rehydrate if inboundState exists and is an object
+    if (inboundState && _typeof(inboundState) === "object") Object.keys(inboundState).forEach(function(key) {
+        // ignore _persist data
+        if (key === "_persist") return; // if reducer modifies substate, skip auto rehydration
+        if (originalState[key] !== reducedState[key]) {
+            if (debug) console.log("redux-persist/stateReconciler: sub state for key `%s` modified, skipping.", key);
+            return;
+        } // otherwise hard set the new value
+        newState[key] = inboundState[key];
+    });
+    if (debug && inboundState && _typeof(inboundState) === "object") console.log("redux-persist/stateReconciler: rehydrated keys '".concat(Object.keys(inboundState).join(", "), "'"));
+    return newState;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cPLsO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>createPersistoid);
+var _constants = require("./constants");
+function createPersistoid(config) {
+    // defaults
+    var blacklist = config.blacklist || null;
+    var whitelist = config.whitelist || null;
+    var transforms = config.transforms || [];
+    var throttle = config.throttle || 0;
+    var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : (0, _constants.KEY_PREFIX)).concat(config.key);
+    var storage = config.storage;
+    var serialize;
+    if (config.serialize === false) serialize = function serialize(x) {
+        return x;
+    };
+    else if (typeof config.serialize === "function") serialize = config.serialize;
+    else serialize = defaultSerialize;
+    var writeFailHandler = config.writeFailHandler || null; // initialize stateful values
+    var lastState = {};
+    var stagedState = {};
+    var keysToProcess = [];
+    var timeIterator = null;
+    var writePromise = null;
+    var update = function update(state) {
+        // add any changed keys to the queue
+        Object.keys(state).forEach(function(key) {
+            if (!passWhitelistBlacklist(key)) return; // is keyspace ignored? noop
+            if (lastState[key] === state[key]) return; // value unchanged? noop
+            if (keysToProcess.indexOf(key) !== -1) return; // is key already queued? noop
+            keysToProcess.push(key); // add key to queue
+        }); //if any key is missing in the new state which was present in the lastState,
+        //add it for processing too
+        Object.keys(lastState).forEach(function(key) {
+            if (state[key] === undefined && passWhitelistBlacklist(key) && keysToProcess.indexOf(key) === -1 && lastState[key] !== undefined) keysToProcess.push(key);
+        }); // start the time iterator if not running (read: throttle)
+        if (timeIterator === null) timeIterator = setInterval(processNextKey, throttle);
+        lastState = state;
+    };
+    function processNextKey() {
+        if (keysToProcess.length === 0) {
+            if (timeIterator) clearInterval(timeIterator);
+            timeIterator = null;
+            return;
+        }
+        var key = keysToProcess.shift();
+        var endState = transforms.reduce(function(subState, transformer) {
+            return transformer.in(subState, key, lastState);
+        }, lastState[key]);
+        if (endState !== undefined) try {
+            stagedState[key] = serialize(endState);
+        } catch (err) {
+            console.error("redux-persist/createPersistoid: error serializing state", err);
+        }
+        else //if the endState is undefined, no need to persist the existing serialized content
+        delete stagedState[key];
+        if (keysToProcess.length === 0) writeStagedState();
+    }
+    function writeStagedState() {
+        // cleanup any removed keys just before write.
+        Object.keys(stagedState).forEach(function(key) {
+            if (lastState[key] === undefined) delete stagedState[key];
+        });
+        writePromise = storage.setItem(storageKey, serialize(stagedState)).catch(onWriteFail);
+    }
+    function passWhitelistBlacklist(key) {
+        if (whitelist && whitelist.indexOf(key) === -1 && key !== "_persist") return false;
+        if (blacklist && blacklist.indexOf(key) !== -1) return false;
+        return true;
+    }
+    function onWriteFail(err) {
+        // @TODO add fail handlers (typically storage full)
+        if (writeFailHandler) writeFailHandler(err);
+        if (err && true) console.error("Error storing data", err);
+    }
+    var flush = function flush() {
+        while(keysToProcess.length !== 0)processNextKey();
+        return writePromise || Promise.resolve();
+    }; // return `persistoid`
+    return {
+        update: update,
+        flush: flush
+    };
+} // @NOTE in the future this may be exposed via config
+function defaultSerialize(data) {
+    return JSON.stringify(data);
+}
+
+},{"./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jG6oA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>getStoredState);
+var _constants = require("./constants");
+function getStoredState(config) {
+    var transforms = config.transforms || [];
+    var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : (0, _constants.KEY_PREFIX)).concat(config.key);
+    var storage = config.storage;
+    var debug = config.debug;
+    var deserialize;
+    if (config.deserialize === false) deserialize = function deserialize(x) {
+        return x;
+    };
+    else if (typeof config.deserialize === "function") deserialize = config.deserialize;
+    else deserialize = defaultDeserialize;
+    return storage.getItem(storageKey).then(function(serialized) {
+        if (!serialized) return undefined;
+        else try {
+            var state = {};
+            var rawState = deserialize(serialized);
+            Object.keys(rawState).forEach(function(key) {
+                state[key] = transforms.reduceRight(function(subState, transformer) {
+                    return transformer.out(subState, key, rawState);
+                }, deserialize(rawState[key]));
+            });
+            return state;
+        } catch (err) {
+            if (debug) console.log("redux-persist/getStoredState: Error restoring data ".concat(serialized), err);
+            throw err;
+        }
+    });
+}
+function defaultDeserialize(serial) {
+    return JSON.parse(serial);
+}
+
+},{"./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hY2vm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>purgeStoredState);
+var _constants = require("./constants");
+function purgeStoredState(config) {
+    var storage = config.storage;
+    var storageKey = "".concat(config.keyPrefix !== undefined ? config.keyPrefix : (0, _constants.KEY_PREFIX)).concat(config.key);
+    return storage.removeItem(storageKey, warnIfRemoveError);
+}
+function warnIfRemoveError(err) {
+    if (err && true) console.error("redux-persist/purgeStoredState: Error purging data stored state", err);
+}
+
+},{"./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5MpKh":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>persistCombineReducers);
+var _redux = require("redux");
+var _persistReducer = require("./persistReducer");
+var _persistReducerDefault = parcelHelpers.interopDefault(_persistReducer);
+var _autoMergeLevel2 = require("./stateReconciler/autoMergeLevel2");
+var _autoMergeLevel2Default = parcelHelpers.interopDefault(_autoMergeLevel2);
+function persistCombineReducers(config, reducers) {
+    config.stateReconciler = config.stateReconciler === undefined ? (0, _autoMergeLevel2Default.default) : config.stateReconciler;
+    return (0, _persistReducerDefault.default)(config, (0, _redux.combineReducers)(reducers));
+}
+
+},{"redux":"anWnS","./persistReducer":"9qFLX","./stateReconciler/autoMergeLevel2":"6urdB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6urdB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>autoMergeLevel2);
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(source, true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(source).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+function autoMergeLevel2(inboundState, originalState, reducedState, _ref) {
+    var debug = _ref.debug;
+    var newState = _objectSpread({}, reducedState); // only rehydrate if inboundState exists and is an object
+    if (inboundState && _typeof(inboundState) === "object") Object.keys(inboundState).forEach(function(key) {
+        // ignore _persist data
+        if (key === "_persist") return; // if reducer modifies substate, skip auto rehydration
+        if (originalState[key] !== reducedState[key]) {
+            if (debug) console.log("redux-persist/stateReconciler: sub state for key `%s` modified, skipping.", key);
+            return;
+        }
+        if (isPlainEnoughObject(reducedState[key])) {
+            // if object is plain enough shallow merge the new values (hence "Level2")
+            newState[key] = _objectSpread({}, newState[key], {}, inboundState[key]);
+            return;
+        } // otherwise hard set
+        newState[key] = inboundState[key];
+    });
+    if (debug && inboundState && _typeof(inboundState) === "object") console.log("redux-persist/stateReconciler: rehydrated keys '".concat(Object.keys(inboundState).join(", "), "'"));
+    return newState;
+}
+function isPlainEnoughObject(o) {
+    return o !== null && !Array.isArray(o) && _typeof(o) === "object";
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cWd7D":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>persistStore);
+var _redux = require("redux");
+var _constants = require("./constants");
+function _toConsumableArray(arr) {
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+function _iterableToArray(iter) {
+    if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+function _arrayWithoutHoles(arr) {
+    if (Array.isArray(arr)) {
+        for(var i = 0, arr2 = new Array(arr.length); i < arr.length; i++)arr2[i] = arr[i];
+        return arr2;
+    }
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(source, true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(source).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var initialState = {
+    registry: [],
+    bootstrapped: false
+};
+var persistorReducer = function persistorReducer() {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+    var action = arguments.length > 1 ? arguments[1] : undefined;
+    switch(action.type){
+        case 0, _constants.REGISTER:
+            return _objectSpread({}, state, {
+                registry: [].concat(_toConsumableArray(state.registry), [
+                    action.key
+                ])
+            });
+        case 0, _constants.REHYDRATE:
+            var firstIndex = state.registry.indexOf(action.key);
+            var registry = _toConsumableArray(state.registry);
+            registry.splice(firstIndex, 1);
+            return _objectSpread({}, state, {
+                registry: registry,
+                bootstrapped: registry.length === 0
+            });
+        default:
+            return state;
+    }
+};
+function persistStore(store, options, cb) {
+    var optionsToTest = options || {};
+    var bannedKeys = [
+        "blacklist",
+        "whitelist",
+        "transforms",
+        "storage",
+        "keyPrefix",
+        "migrate"
+    ];
+    bannedKeys.forEach(function(k) {
+        if (!!optionsToTest[k]) console.error('redux-persist: invalid option passed to persistStore: "'.concat(k, '". You may be incorrectly passing persistConfig into persistStore, whereas it should be passed into persistReducer.'));
+    });
+    var boostrappedCb = cb || false;
+    var _pStore = (0, _redux.createStore)(persistorReducer, initialState, options && options.enhancer ? options.enhancer : undefined);
+    var register = function register(key) {
+        _pStore.dispatch({
+            type: (0, _constants.REGISTER),
+            key: key
+        });
+    };
+    var rehydrate = function rehydrate(key, payload, err) {
+        var rehydrateAction = {
+            type: (0, _constants.REHYDRATE),
+            payload: payload,
+            err: err,
+            key: key // dispatch to `store` to rehydrate and `persistor` to track result
+        };
+        store.dispatch(rehydrateAction);
+        _pStore.dispatch(rehydrateAction);
+        if (boostrappedCb && persistor.getState().bootstrapped) {
+            boostrappedCb();
+            boostrappedCb = false;
+        }
+    };
+    var persistor = _objectSpread({}, _pStore, {
+        purge: function purge() {
+            var results = [];
+            store.dispatch({
+                type: (0, _constants.PURGE),
+                result: function result(purgeResult) {
+                    results.push(purgeResult);
+                }
+            });
+            return Promise.all(results);
+        },
+        flush: function flush() {
+            var results = [];
+            store.dispatch({
+                type: (0, _constants.FLUSH),
+                result: function result(flushResult) {
+                    results.push(flushResult);
+                }
+            });
+            return Promise.all(results);
+        },
+        pause: function pause() {
+            store.dispatch({
+                type: (0, _constants.PAUSE)
+            });
+        },
+        persist: function persist() {
+            store.dispatch({
+                type: (0, _constants.PERSIST),
+                register: register,
+                rehydrate: rehydrate
+            });
+        }
+    });
+    if (!(options && options.manualPersist)) persistor.persist();
+    return persistor;
+}
+
+},{"redux":"anWnS","./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ROm8K":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>createMigrate);
+var _constants = require("./constants");
+function createMigrate(migrations, config) {
+    var _ref = config || {}, debug = _ref.debug;
+    return function(state, currentVersion) {
+        if (!state) {
+            if (debug) console.log("redux-persist: no inbound state, skipping migration");
+            return Promise.resolve(undefined);
+        }
+        var inboundVersion = state._persist && state._persist.version !== undefined ? state._persist.version : (0, _constants.DEFAULT_VERSION);
+        if (inboundVersion === currentVersion) {
+            if (debug) console.log("redux-persist: versions match, noop migration");
+            return Promise.resolve(state);
+        }
+        if (inboundVersion > currentVersion) {
+            console.error("redux-persist: downgrading version is not supported");
+            return Promise.resolve(state);
+        }
+        var migrationKeys = Object.keys(migrations).map(function(ver) {
+            return parseInt(ver);
+        }).filter(function(key) {
+            return currentVersion >= key && key > inboundVersion;
+        }).sort(function(a, b) {
+            return a - b;
+        });
+        if (debug) console.log("redux-persist: migrationKeys", migrationKeys);
+        try {
+            var migratedState = migrationKeys.reduce(function(state, versionKey) {
+                if (debug) console.log("redux-persist: running migration for versionKey", versionKey);
+                return migrations[versionKey](state);
+            }, state);
+            return Promise.resolve(migratedState);
+        } catch (err) {
+            return Promise.reject(err);
+        }
+    };
+}
+
+},{"./constants":"lVkgs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hGKs":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>createTransform);
+function createTransform(inbound, outbound) {
+    var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var whitelist = config.whitelist || null;
+    var blacklist = config.blacklist || null;
+    function whitelistBlacklistCheck(key) {
+        if (whitelist && whitelist.indexOf(key) === -1) return true;
+        if (blacklist && blacklist.indexOf(key) !== -1) return true;
+        return false;
+    }
+    return {
+        in: function _in(state, key, fullState) {
+            return !whitelistBlacklistCheck(key) && inbound ? inbound(state, key, fullState) : state;
+        },
+        out: function out(state, key, fullState) {
+            return !whitelistBlacklistCheck(key) && outbound ? outbound(state, key, fullState) : state;
+        }
+    };
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5o1jm":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.default = void 0;
+var _createWebStorage = _interopRequireDefault(require("566a036f96cb9270"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+var _default = (0, _createWebStorage.default)("local");
+exports.default = _default;
+
+},{"566a036f96cb9270":"044Lg"}],"044Lg":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.default = createWebStorage;
+var _getStorage = _interopRequireDefault(require("d5ab56750dbb65fc"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function createWebStorage(type) {
+    var storage = (0, _getStorage.default)(type);
+    return {
+        getItem: function getItem(key) {
+            return new Promise(function(resolve, reject) {
+                resolve(storage.getItem(key));
+            });
+        },
+        setItem: function setItem(key, item) {
+            return new Promise(function(resolve, reject) {
+                resolve(storage.setItem(key, item));
+            });
+        },
+        removeItem: function removeItem(key) {
+            return new Promise(function(resolve, reject) {
+                resolve(storage.removeItem(key));
+            });
+        }
+    };
+}
+
+},{"d5ab56750dbb65fc":"6Dg7V"}],"6Dg7V":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.default = getStorage;
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function noop() {}
+var noopStorage = {
+    getItem: noop,
+    setItem: noop,
+    removeItem: noop
+};
+function hasStorage(storageType) {
+    if ((typeof self === "undefined" ? "undefined" : _typeof(self)) !== "object" || !(storageType in self)) return false;
+    try {
+        var storage = self[storageType];
+        var testKey = "redux-persist ".concat(storageType, " test");
+        storage.setItem(testKey, "test");
+        storage.getItem(testKey);
+        storage.removeItem(testKey);
+    } catch (e) {
+        console.warn("redux-persist ".concat(storageType, " test failed, persistence will be disabled."));
+        return false;
+    }
+    return true;
+}
+function getStorage(type) {
+    var storageType = "".concat(type, "Storage");
+    if (hasStorage(storageType)) return self[storageType];
+    else {
+        console.error("redux-persist failed to create sync storage. falling back to noop storage.");
+        return noopStorage;
+    }
+}
+
+},{}],"9xaaN":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$30f8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -57086,27 +57932,30 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRedux = require("react-redux");
 var _reactRouterDom = require("react-router-dom");
+var _oauth = require("./OAuth");
+var _oauthDefault = parcelHelpers.interopDefault(_oauth);
 var _s = $RefreshSig$();
 const Home = ()=>{
     _s();
     const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
-    console.log("user ", userIn);
+    console.log(userIn);
     (0, _react.useEffect)(()=>{
-        if (!userIn) navigate("/home");
+        if (userIn) navigate("/");
     }, []);
+    // https://img.freepik.com/free-photo/top-view-asparagus-with-salad_23-2148622386.jpg?t=st=1727520039~exp=1727523639~hmac=3e9fd3ca00b56446a063a87b1c52f6827954e4481c075559f76e53174638f9c9&w=1800
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30",
+            className: "w-screen h-screen overflow-x-hidden overflow-hidden relative ",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: "https://picsum.photos/seed/picsum/1900/850",
-                    className: "absolute top-0 left-0 min-h-full ob",
+                    src: "https://img.freepik.com/premium-photo/large-table-chinese-new-years-eve-dinner-spread_1316316-16632.jpg?w=1380",
+                    className: "absolute top-0 left-0 min-h-full ",
                     alt: ""
                 }, void 0, false, {
                     fileName: "source/components/Home.tsx",
-                    lineNumber: 22,
-                    columnNumber: 9
+                    lineNumber: 24,
+                    columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center",
@@ -57118,54 +57967,60 @@ const Home = ()=>{
                                 children: "Welcome To Yumhive"
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 25,
-                                columnNumber: 13
+                                lineNumber: 27,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 className: "text-white font-extrabold text-5xl mb-8",
                                 children: "Findout Latest Tasteful and quality foods"
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 26,
-                                columnNumber: 13
+                                lineNumber: 28,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: "text-stone-100 text-base",
                                 children: "Log in to chose , order and enjoying the feast of foods..."
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 27,
-                                columnNumber: 13
+                                lineNumber: 29,
+                                columnNumber: 15
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10",
-                                children: "Get started"
+                                className: "mt-8 text-white uppercase py-2 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-50 hover:text-black",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
+                                    method: "sign-in"
+                                }, void 0, false, {
+                                    fileName: "source/components/Home.tsx",
+                                    lineNumber: 33,
+                                    columnNumber: 15
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 30,
-                                columnNumber: 13
+                                lineNumber: 32,
+                                columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "source/components/Home.tsx",
-                        lineNumber: 24,
-                        columnNumber: 11
+                        lineNumber: 26,
+                        columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "source/components/Home.tsx",
-                    lineNumber: 23,
-                    columnNumber: 9
+                    lineNumber: 25,
+                    columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "source/components/Home.tsx",
-            lineNumber: 21,
-            columnNumber: 7
+            lineNumber: 23,
+            columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "source/components/Home.tsx",
-        lineNumber: 20,
-        columnNumber: 5
+        lineNumber: 22,
+        columnNumber: 7
     }, undefined);
 };
 _s(Home, "qxLBAr8CTeauYqff3huyM14FBZk=", false, function() {
@@ -57184,6 +58039,141 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["5kuJl","1xC6H","cWBxW"], "cWBxW", "parcelRequire5d3f")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","react-router-dom":"9xmpe","./OAuth":"1FNjI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5TqVL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PersistGate", ()=>PersistGate);
+var _react = require("react"); // eslint-disable-line import/no-unresolved
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var PersistGate = /*#__PURE__*/ function(_PureComponent) {
+    _inherits(PersistGate, _PureComponent);
+    function PersistGate() {
+        var _getPrototypeOf2;
+        var _this;
+        _classCallCheck(this, PersistGate);
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(PersistGate)).call.apply(_getPrototypeOf2, [
+            this
+        ].concat(args)));
+        _defineProperty(_assertThisInitialized(_this), "state", {
+            bootstrapped: false
+        });
+        _defineProperty(_assertThisInitialized(_this), "_unsubscribe", void 0);
+        _defineProperty(_assertThisInitialized(_this), "handlePersistorState", function() {
+            var persistor = _this.props.persistor;
+            var _persistor$getState = persistor.getState(), bootstrapped = _persistor$getState.bootstrapped;
+            if (bootstrapped) {
+                if (_this.props.onBeforeLift) Promise.resolve(_this.props.onBeforeLift()).finally(function() {
+                    return _this.setState({
+                        bootstrapped: true
+                    });
+                });
+                else _this.setState({
+                    bootstrapped: true
+                });
+                _this._unsubscribe && _this._unsubscribe();
+            }
+        });
+        return _this;
+    }
+    _createClass(PersistGate, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this._unsubscribe = this.props.persistor.subscribe(this.handlePersistorState);
+                this.handlePersistorState();
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                this._unsubscribe && this._unsubscribe();
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                if (typeof this.props.children === "function" && this.props.loading) console.error("redux-persist: PersistGate expects either a function child or loading prop, but not both. The loading prop will be ignored.");
+                if (typeof this.props.children === "function") return this.props.children(this.state.bootstrapped);
+                return this.state.bootstrapped ? this.props.children : this.props.loading;
+            }
+        }
+    ]);
+    return PersistGate;
+}((0, _react.PureComponent));
+_defineProperty(PersistGate, "defaultProps", {
+    children: null,
+    loading: null
+});
+
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["5kuJl","1xC6H","cWBxW"], "cWBxW", "parcelRequire5d3f")
 
 //# sourceMappingURL=index.225c7c84.js.map

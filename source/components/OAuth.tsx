@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleAuthProvider, signInWithPopup, getAuth } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 import app from "../Firebase/firebase.ts";
 import { signInUser, signOutUser } from "../utils/cartSlice.ts";
 import { useDispatch } from "react-redux";
@@ -17,6 +17,7 @@ const OAuth = (method: any) => {
     try {
 
       const provider = new GoogleAuthProvider()
+      setPersistence(auth, browserLocalPersistence)
       const result: any = await signInWithPopup(auth, provider)
  
       const user = result.user;
@@ -28,7 +29,6 @@ const OAuth = (method: any) => {
     };
 
       dispatch(signInUser(userData.image))
-      console.log("Logged in successfully", userData.image)
       navigate('/')
     } catch (err: any) {
       console.error("Sign-in error:", err)

@@ -13,12 +13,16 @@ let Body = () => {
   const userIn = useSelector((store: any) => store.cart.isUser)
   const navigate = useNavigate()
  
+ console.log('this', userIn)
 
   useEffect(() => {
      if(!userIn) {
         navigate('/home')
+     } else if( userIn) {
+      navigate('/')
      }
   },[])
+  
 
   useEffect(() => {
     getRestaurants()

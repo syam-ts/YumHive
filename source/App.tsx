@@ -5,25 +5,26 @@ import RestaurantMenu from "./components/RestaurantMenu.tsx"
 import InstaMart from "./components/InstMart.tsx"
 import Contact from "./components/Contact.tsx"
 import Profile from "./components/Profile.tsx"
-import Header2 from "./components/Header2.tsx"
+import Header from "./components/Header.tsx"
 import Footer from "./components/Footer.tsx"
 import Error from "./components/Error.tsx"
 import About from "./components/About.tsx"
 import Body from "./components/Body.tsx"
 import Cart from './components/Cart.tsx'
-import { store } from './utils/store.ts'
+import store, { persistor } from './utils/store.ts'
 import { Provider } from "react-redux"
 import Home from "./components/Home.tsx" 
+import { PersistGate } from 'redux-persist/integration/react';
 
 
 const AppLayout = () => {
   return (
     <Provider store={store}>
-      <React.Fragment>
-        <Header2 />
+        <PersistGate loading={null} persistor={persistor}>  
+        <Header />
         <Outlet />
-        <Footer />
-      </React.Fragment>
+        <Footer /> 
+      </PersistGate>
     </Provider>
   )
 }
