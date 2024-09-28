@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleAuthProvider, signInWithPopup, getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 import app from "../Firebase/firebase.ts";
-import { signInUser, signOutUser } from "../utils/cartSlice.ts";
+import { signInUser, signOutUser } from "../utils/userSlice.ts";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

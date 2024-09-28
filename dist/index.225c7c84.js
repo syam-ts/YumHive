@@ -36131,13 +36131,9 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "addItem", ()=>addItem);
 parcelHelpers.export(exports, "removeItem", ()=>removeItem);
 parcelHelpers.export(exports, "clearCart", ()=>clearCart);
-parcelHelpers.export(exports, "signInUser", ()=>signInUser);
-parcelHelpers.export(exports, "signOutUser", ()=>signOutUser);
 var _toolkit = require("@reduxjs/toolkit");
 const initialState = {
-    items: [],
-    currentUser: null,
-    isUser: false
+    items: []
 };
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
@@ -36151,19 +36147,11 @@ const cartSlice = (0, _toolkit.createSlice)({
         },
         clearCart: (state)=>{
             state.items = [];
-        },
-        signInUser: (state, action)=>{
-            state.currentUser = action.payload;
-            state.isUser = true;
-        },
-        signOutUser: (state)=>{
-            state.currentUser = "";
-            state.isUser = false;
         }
     }
 });
 exports.default = cartSlice.reducer;
-const { addItem, removeItem, clearCart, signInUser, signOutUser } = cartSlice.actions;
+const { addItem, removeItem, clearCart } = cartSlice.actions;
 
 },{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fuua8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -42059,8 +42047,8 @@ var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const user = (0, _reactRedux.useSelector)((store)=>store.cart.currentUser);
-    const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
+    const user = (0, _reactRedux.useSelector)((store)=>store.user.currentUser);
+    const userIn = (0, _reactRedux.useSelector)((store)=>store.user.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
     (0, _react.useEffect)(()=>{
         const checkUserIn = ()=>{
@@ -42317,7 +42305,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _auth = require("firebase/auth");
 var _firebaseTs = require("../Firebase/firebase.ts");
 var _firebaseTsDefault = parcelHelpers.interopDefault(_firebaseTs);
-var _cartSliceTs = require("../utils/cartSlice.ts");
+var _userSliceTs = require("../utils/userSlice.ts");
 var _reactRedux = require("react-redux");
 var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
@@ -42338,7 +42326,7 @@ const OAuth = (method)=>{
                 email: user.email,
                 image: user.photoURL
             };
-            dispatch((0, _cartSliceTs.signInUser)(userData.image));
+            dispatch((0, _userSliceTs.signInUser)(userData.image));
             navigate("/");
         } catch (err) {
             console.error("Sign-in error:", err);
@@ -42349,7 +42337,7 @@ const OAuth = (method)=>{
             console.log("Signout");
             const auth = (0, _auth.getAuth)();
             await auth.signOut();
-            dispatch((0, _cartSliceTs.signOutUser)());
+            dispatch((0, _userSliceTs.signOutUser)());
             console.log("Signed out successfully");
             navigate("/home");
         } catch (err) {
@@ -42404,7 +42392,7 @@ $RefreshReg$(_c, "OAuth");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","firebase/auth":"79vzg","../Firebase/firebase.ts":"amTfU","../utils/cartSlice.ts":"6ouwu","react-redux":"62sf7","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"79vzg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","firebase/auth":"79vzg","../Firebase/firebase.ts":"amTfU","react-redux":"62sf7","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/userSlice.ts":"9TytH"}],"79vzg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _auth = require("@firebase/auth");
@@ -56095,7 +56083,34 @@ var version = "10.13.2";
  * limitations under the License.
  */ (0, _app.registerVersion)(name, version, "app");
 
-},{"@firebase/app":"3AcPV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Uafc":[function(require,module,exports) {
+},{"@firebase/app":"3AcPV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9TytH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "signInUser", ()=>signInUser);
+parcelHelpers.export(exports, "signOutUser", ()=>signOutUser);
+var _toolkit = require("@reduxjs/toolkit");
+const initialState = {
+    currentUser: null,
+    isUser: false
+};
+const userSlice = (0, _toolkit.createSlice)({
+    name: "user",
+    initialState,
+    reducers: {
+        signInUser: (state, action)=>{
+            state.currentUser = action.payload;
+            state.isUser = true;
+        },
+        signOutUser: (state)=>{
+            state.currentUser = "";
+            state.isUser = false;
+        }
+    }
+});
+exports.default = userSlice.reducer;
+const { signInUser, signOutUser } = userSlice.actions;
+
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Uafc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$598e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56654,7 +56669,7 @@ let Body = ()=>{
     const [allRestaurant, setAllRestaurent] = (0, _react.useState)([]);
     const [filteredRestaurant, setFilteredRestaurent] = (0, _react.useState)([]);
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
+    const userIn = (0, _reactRedux.useSelector)((store)=>store.user.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
     console.log("this", userIn);
     (0, _react.useEffect)(()=>{
@@ -57078,6 +57093,8 @@ parcelHelpers.export(exports, "persistor", ()=>persistor);
 var _toolkit = require("@reduxjs/toolkit");
 var _cartSlice = require("./cartSlice");
 var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
+var _userSlice = require("./userSlice");
+var _userSliceDefault = parcelHelpers.interopDefault(_userSlice);
 var _reduxPersist = require("redux-persist");
 var _storage = require("redux-persist/lib/storage");
 var _storageDefault = parcelHelpers.interopDefault(_storage);
@@ -57085,19 +57102,20 @@ const persistConfig = {
     key: "root",
     storage: (0, _storageDefault.default),
     whitelist: [
-        "cart"
+        "user"
     ]
 };
-const persistedCartReducer = (0, _reduxPersist.persistReducer)(persistConfig, (0, _cartSliceDefault.default));
+const persistedUserReducer = (0, _reduxPersist.persistReducer)(persistConfig, (0, _userSliceDefault.default));
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        cart: persistedCartReducer
+        cart: (0, _cartSliceDefault.default),
+        user: persistedUserReducer
     }
 });
 const persistor = (0, _reduxPersist.persistStore)(store);
 exports.default = store;
 
-},{"@reduxjs/toolkit":"fuua8","./cartSlice":"6ouwu","redux-persist":"bx0vU","redux-persist/lib/storage":"5o1jm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bx0vU":[function(require,module,exports) {
+},{"@reduxjs/toolkit":"fuua8","redux-persist":"bx0vU","redux-persist/lib/storage":"5o1jm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./userSlice":"9TytH","./cartSlice":"6ouwu"}],"bx0vU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "persistReducer", ()=>(0, _persistReducerDefault.default));
@@ -57937,7 +57955,7 @@ var _oauthDefault = parcelHelpers.interopDefault(_oauth);
 var _s = $RefreshSig$();
 const Home = ()=>{
     _s();
-    const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
+    const userIn = (0, _reactRedux.useSelector)((store)=>store.user.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
     console.log(userIn);
     (0, _react.useEffect)(()=>{

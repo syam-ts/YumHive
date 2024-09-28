@@ -6,8 +6,8 @@ import OAuth from "./OAuth"
 const Header =() => {
  
     const cartItems = useSelector((store: any )=> store.cart.items) 
-    const user = useSelector((store: any ) => store.cart.currentUser)
-    const userIn = useSelector((store: any) => store.cart.isUser)
+    const user = useSelector((store: any ) => store.user.currentUser)
+    const userIn = useSelector((store: any) => store.user.isUser)
     const navigate = useNavigate()
 
     useEffect(() => {

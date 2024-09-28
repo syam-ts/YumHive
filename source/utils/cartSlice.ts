@@ -1,18 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-
-interface User {
-    id: string;
-    name: string;
-    image: string;
-    email: string;
-}
-
  
 
 const initialState = {
-    items: [],
-    currentUser: null, 
-    isUser: false,
+    items: [] 
 };
 
 const cartSlice = createSlice({
@@ -27,17 +17,9 @@ const cartSlice = createSlice({
         },
         clearCart: (state) => {
             state.items = [];
-        },
-        signInUser: (state: any, action: PayloadAction<User>) => {
-            state.currentUser = action.payload
-            state.isUser = true;
-        },
-        signOutUser: (state: any) => {
-            state.currentUser = '';  
-            state.isUser = false;
-        },
+        } 
     },
 });
 
 export default cartSlice.reducer;
-export const { addItem, removeItem, clearCart, signInUser, signOutUser } = cartSlice.actions;
+export const { addItem, removeItem, clearCart } = cartSlice.actions;

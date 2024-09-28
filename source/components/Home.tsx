@@ -5,7 +5,7 @@ import OAuth from './OAuth'
 
 const Home = () => {
 
-  const userIn = useSelector((store: any) => store.cart.isUser)
+  const userIn = useSelector((store: any) => store.user.isUser)
   const navigate = useNavigate() 
 
   console.log(userIn)

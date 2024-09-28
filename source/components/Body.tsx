@@ -10,7 +10,7 @@ let Body = () => {
   const [allRestaurant, setAllRestaurent] = useState([])
   const [filteredRestaurant, setFilteredRestaurent] = useState([])
   const [searchText, setSearchText] = useState("")
-  const userIn = useSelector((store: any) => store.cart.isUser)
+  const userIn = useSelector((store: any) => store.user.isUser)
   const navigate = useNavigate()
  
  console.log('this', userIn)
