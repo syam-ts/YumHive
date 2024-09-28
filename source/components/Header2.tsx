@@ -1,16 +1,21 @@
-import React, { useState } from "react"
-import { Link } from 'react-router-dom' 
+import React, { useEffect, useState } from "react"
+import { Link, useNavigate } from 'react-router-dom' 
 import { useSelector } from 'react-redux'
 import OAuth from "./OAuth"
 
 const Header2 =() => {
  
-    const cartItems = useSelector((store: any )=> store.cart.items)
-    const [isloggedIn, setIsLoggedIn] = useState(false)
+    const cartItems = useSelector((store: any )=> store.cart.items) 
     const user = useSelector((store: any ) => store.cart.currentUser)
     const userIn = useSelector((store: any) => store.cart.isUser)
+    const navigate = useNavigate()
 
-    console.log('The user : ',userIn)
+            useEffect(() => {
+              if(!userIn) {
+                navigate('/home')
+              }
+
+            }, [])
 
  
 

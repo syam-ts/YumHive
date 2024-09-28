@@ -2982,8 +2982,6 @@ var _storeTs = require("./utils/store.ts");
 var _reactRedux = require("react-redux");
 var _homeTsx = require("./components/Home.tsx");
 var _homeTsxDefault = parcelHelpers.interopDefault(_homeTsx);
-var _emTsx = require("./components/Em.tsx");
-var _emTsxDefault = parcelHelpers.interopDefault(_emTsx);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
         store: (0, _storeTs.store),
@@ -2991,28 +2989,28 @@ const AppLayout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header2TsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 24,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 25,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "source/App.tsx",
-            lineNumber: 23,
+            lineNumber: 22,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 22,
+        lineNumber: 21,
         columnNumber: 5
     }, undefined);
 };
@@ -3022,12 +3020,12 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 35,
+            lineNumber: 34,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorTsxDefault.default), {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 36,
+            lineNumber: 35,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3035,7 +3033,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 40,
+                    lineNumber: 39,
                     columnNumber: 18
                 }, undefined),
                 children: [
@@ -3043,7 +3041,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileTsxDefault.default), {}, void 0, false, {
                             fileName: "source/App.tsx",
-                            lineNumber: 44,
+                            lineNumber: 43,
                             columnNumber: 22
                         }, undefined)
                     }
@@ -3053,7 +3051,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 50,
+                    lineNumber: 49,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3061,7 +3059,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 54,
+                    lineNumber: 53,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3069,7 +3067,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 58,
+                    lineNumber: 57,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3077,7 +3075,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restraunt/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 62,
+                    lineNumber: 61,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3085,7 +3083,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/instamart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 66,
+                    lineNumber: 65,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3093,19 +3091,11 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 70,
+                    lineNumber: 69,
                     columnNumber: 18
                 }, undefined)
             }
         ]
-    },
-    {
-        path: "/em",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emTsxDefault.default), {}, void 0, false, {
-            fileName: "source/App.tsx",
-            lineNumber: 76,
-            columnNumber: 14
-        }, undefined)
     }
 ]);
 const rootElement = document.getElementById("root");
@@ -3115,7 +3105,7 @@ if (rootElement) {
         router: AppRouter
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 84,
+        lineNumber: 79,
         columnNumber: 15
     }, undefined));
 } else console.error("Root element not found");
@@ -3127,7 +3117,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header2.tsx":"aX5VQ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","./components/Em.tsx":"Rrdt2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header2.tsx":"aX5VQ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -42065,10 +42055,12 @@ var _s = $RefreshSig$();
 const Header2 = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const [isloggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     const user = (0, _reactRedux.useSelector)((store)=>store.cart.currentUser);
     const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
-    console.log("The user : ", userIn);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    (0, _react.useEffect)(()=>{
+        if (!userIn) navigate("/home");
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
         className: "header sticky top-0 bg-white shadow-md z-0 flex items-center py-02",
         children: [
@@ -42082,17 +42074,17 @@ const Header2 = ()=>{
                         alt: "logo-yumgive"
                     }, void 0, false, {
                         fileName: "source/components/Header2.tsx",
-                        lineNumber: 23,
+                        lineNumber: 28,
                         columnNumber: 6
                     }, undefined)
                 }, void 0, false, {
                     fileName: "source/components/Header2.tsx",
-                    lineNumber: 22,
+                    lineNumber: 27,
                     columnNumber: 6
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Header2.tsx",
-                lineNumber: 21,
+                lineNumber: 26,
                 columnNumber: 2
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -42107,12 +42099,12 @@ const Header2 = ()=>{
                                 children: " HOME "
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 33,
+                                lineNumber: 38,
                                 columnNumber: 10
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 32,
+                            lineNumber: 37,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42122,12 +42114,12 @@ const Header2 = ()=>{
                                 children: "ABOUT"
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 36,
+                                lineNumber: 41,
                                 columnNumber: 12
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 35,
+                            lineNumber: 40,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42137,12 +42129,12 @@ const Header2 = ()=>{
                                 children: "CONTACT"
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 39,
+                                lineNumber: 44,
                                 columnNumber: 12
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 38,
+                            lineNumber: 43,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42152,12 +42144,12 @@ const Header2 = ()=>{
                                 children: "INSTAMART"
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 42,
+                                lineNumber: 47,
                                 columnNumber: 12
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 41,
+                            lineNumber: 46,
                             columnNumber: 10
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42171,7 +42163,7 @@ const Header2 = ()=>{
                                             children: " CART "
                                         }, void 0, false, {
                                             fileName: "source/components/Header2.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 54,
                                             columnNumber: 12
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -42188,12 +42180,12 @@ const Header2 = ()=>{
                                                 d: "M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
                                             }, void 0, false, {
                                                 fileName: "source/components/Header2.tsx",
-                                                lineNumber: 51,
+                                                lineNumber: 56,
                                                 columnNumber: 12
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "source/components/Header2.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 55,
                                             columnNumber: 12
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -42204,23 +42196,23 @@ const Header2 = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/Header2.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 59,
                                             columnNumber: 11
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "source/components/Header2.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 53,
                                     columnNumber: 11
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 47,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 44,
+                            lineNumber: 49,
                             columnNumber: 10
                         }, undefined),
                         userIn,
@@ -42229,24 +42221,24 @@ const Header2 = ()=>{
                                 method: "sign-out"
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 61,
+                                lineNumber: 66,
                                 columnNumber: 16
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 60,
+                            lineNumber: 65,
                             columnNumber: 16
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
                                 method: "sign-in"
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 65,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 64,
+                            lineNumber: 69,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42256,37 +42248,38 @@ const Header2 = ()=>{
                                 src: user
                             }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 70,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 69,
+                            lineNumber: 74,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "source/components/Header2.tsx",
-                    lineNumber: 31,
+                    lineNumber: 36,
                     columnNumber: 6
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Header2.tsx",
-                lineNumber: 30,
+                lineNumber: 35,
                 columnNumber: 2
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "source/components/Header2.tsx",
-        lineNumber: 19,
+        lineNumber: 24,
         columnNumber: 1
     }, undefined);
 };
-_s(Header2, "wfPWwRw1kFSEaQh8pNKAK6Q4gq0=", false, function() {
+_s(Header2, "h+heO54eOo7PiUZKAQ3Hu0mJnP4=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useSelector),
-        (0, _reactRedux.useSelector)
+        (0, _reactRedux.useSelector),
+        (0, _reactRouterDom.useNavigate)
     ];
 });
 _c = Header2;
@@ -42299,7 +42292,7 @@ $RefreshReg$(_c, "Header2");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./OAuth":"1FNjI"}],"1FNjI":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","react-redux":"62sf7","./OAuth":"1FNjI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1FNjI":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e841 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42348,7 +42341,7 @@ const OAuth = (method)=>{
             await auth.signOut();
             dispatch((0, _cartSliceTs.signOutUser)());
             console.log("Signed out successfully");
-            navigate("/");
+            navigate("/home");
         } catch (err) {
             console.log(err);
         }
@@ -56644,19 +56637,18 @@ var _shimmerTsxDefault = parcelHelpers.interopDefault(_shimmerTsx);
 var _reactRouterDom = require("react-router-dom");
 var _helperJs = require("../utils/helper.js");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
 let Body = ()=>{
     _s();
     const [allRestaurant, setAllRestaurent] = (0, _react.useState)([]);
     const [filteredRestaurant, setFilteredRestaurent] = (0, _react.useState)([]);
     const [searchText, setSearchText] = (0, _react.useState)("");
+    const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
-    const user = false;
-    // useEffect(() => {
-    //    if(!user) {
-    //       navigate('/contact')
-    //    }
-    // },[])
+    (0, _react.useEffect)(()=>{
+        if (!userIn) navigate("/home");
+    }, []);
     (0, _react.useEffect)(()=>{
         getRestaurants();
     }, []);
@@ -56698,7 +56690,7 @@ let Body = ()=>{
     //search
     return filteredRestaurant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerTsxDefault.default), {}, void 0, false, {
         fileName: "source/components/Body.tsx",
-        lineNumber: 90,
+        lineNumber: 92,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -56726,17 +56718,17 @@ let Body = ()=>{
                                     d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                                 }, void 0, false, {
                                     fileName: "source/components/Body.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 132,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "source/components/Body.tsx",
-                                lineNumber: 123,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 116,
+                            lineNumber: 118,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -56749,18 +56741,18 @@ let Body = ()=>{
                             placeholder: "Search something.."
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 139,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "source/components/Body.tsx",
-                    lineNumber: 115,
+                    lineNumber: 117,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Body.tsx",
-                lineNumber: 114,
+                lineNumber: 116,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -56774,30 +56766,31 @@ let Body = ()=>{
                                 ...restraunt
                             }, void 0, false, {
                                 fileName: "source/components/Body.tsx",
-                                lineNumber: 157,
+                                lineNumber: 159,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Body.tsx",
-                            lineNumber: 156,
+                            lineNumber: 158,
                             columnNumber: 15
                         }, undefined)
                     }, restraunt?.id, false, {
                         fileName: "source/components/Body.tsx",
-                        lineNumber: 155,
+                        lineNumber: 157,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "source/components/Body.tsx",
-                lineNumber: 152,
+                lineNumber: 154,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "ToHbumSdcYnu4j8070E0/nP2I8A=", false, function() {
+_s(Body, "RuXSiJaczcX3oK4j7eSXKXrMB5I=", false, function() {
     return [
+        (0, _reactRedux.useSelector),
         (0, _reactRouterDom.useNavigate)
     ];
 });
@@ -56811,7 +56804,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./ResturarntCard.js":"9CAiZ","react":"21dqq","./Shimmer.tsx":"95q92","react-router-dom":"9xmpe","../utils/helper.js":"l8NVo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CAiZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./ResturarntCard.js":"9CAiZ","react":"21dqq","./Shimmer.tsx":"95q92","react-router-dom":"9xmpe","../utils/helper.js":"l8NVo","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9CAiZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$211c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -57091,7 +57084,17 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const Home = ()=>{
+    _s();
+    const userIn = (0, _reactRedux.useSelector)((store)=>store.cart.isUser);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    console.log("user ", userIn);
+    (0, _react.useEffect)(()=>{
+        if (!userIn) navigate("/home");
+    }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30",
@@ -57102,8 +57105,8 @@ const Home = ()=>{
                     alt: ""
                 }, void 0, false, {
                     fileName: "source/components/Home.tsx",
-                    lineNumber: 8,
-                    columnNumber: 3
+                    lineNumber: 22,
+                    columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center",
@@ -57115,56 +57118,62 @@ const Home = ()=>{
                                 children: "Welcome To Yumhive"
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 11,
-                                columnNumber: 7
+                                lineNumber: 25,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                 className: "text-white font-extrabold text-5xl mb-8",
                                 children: "Findout Latest Tasteful and quality foods"
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 12,
-                                columnNumber: 7
+                                lineNumber: 26,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: "text-stone-100 text-base",
                                 children: "Log in to chose , order and enjoying the feast of foods..."
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 13,
-                                columnNumber: 7
+                                lineNumber: 27,
+                                columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                 className: "mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10",
                                 children: "Get started"
                             }, void 0, false, {
                                 fileName: "source/components/Home.tsx",
-                                lineNumber: 16,
-                                columnNumber: 7
+                                lineNumber: 30,
+                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "source/components/Home.tsx",
-                        lineNumber: 10,
-                        columnNumber: 5
+                        lineNumber: 24,
+                        columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "source/components/Home.tsx",
-                    lineNumber: 9,
-                    columnNumber: 3
+                    lineNumber: 23,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "source/components/Home.tsx",
-            lineNumber: 7,
-            columnNumber: 1
+            lineNumber: 21,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "source/components/Home.tsx",
-        lineNumber: 6,
-        columnNumber: 1
+        lineNumber: 20,
+        columnNumber: 5
     }, undefined);
 };
+_s(Home, "qxLBAr8CTeauYqff3huyM14FBZk=", false, function() {
+    return [
+        (0, _reactRedux.useSelector),
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = Home;
 exports.default = Home;
 var _c;
@@ -57175,37 +57184,6 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Rrdt2":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e6d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e6d9.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-function Em() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "Em"
-    }, void 0, false, {
-        fileName: "source/components/Em.tsx",
-        lineNumber: 5,
-        columnNumber: 5
-    }, this);
-}
-_c = Em;
-exports.default = Em;
-var _c;
-$RefreshReg$(_c, "Em");
-
-  $parcel$ReactRefreshHelpers$e6d9.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["5kuJl","1xC6H","cWBxW"], "cWBxW", "parcelRequire5d3f")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["5kuJl","1xC6H","cWBxW"], "cWBxW", "parcelRequire5d3f")
 
 //# sourceMappingURL=index.225c7c84.js.map

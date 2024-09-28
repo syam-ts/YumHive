@@ -4,19 +4,21 @@ import Shimmer from "./Shimmer.tsx"
 import { Link, useNavigate } from "react-router-dom"
 import { filterData } from "../utils/helper.js"
 import React from 'react'
+import { useSelector } from "react-redux"
 
 let Body = () => {
   const [allRestaurant, setAllRestaurent] = useState([])
   const [filteredRestaurant, setFilteredRestaurent] = useState([])
   const [searchText, setSearchText] = useState("")
+  const userIn = useSelector((store: any) => store.cart.isUser)
   const navigate = useNavigate()
-  const user = false
+ 
 
-  // useEffect(() => {
-  //    if(!user) {
-  //       navigate('/contact')
-  //    }
-  // },[])
+  useEffect(() => {
+     if(!userIn) {
+        navigate('/home')
+     }
+  },[])
 
   useEffect(() => {
     getRestaurants()

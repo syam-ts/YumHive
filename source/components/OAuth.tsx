@@ -43,7 +43,7 @@ const OAuth = (method: any) => {
       await auth.signOut();
       dispatch(signOutUser());  
       console.log("Signed out successfully");
-      navigate('/')
+      navigate('/home')
     } catch (err: any) {
       console.log(err);
     }
