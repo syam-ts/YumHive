@@ -36130,11 +36130,13 @@ parcelHelpers.export(exports, "clearCart", ()=>clearCart);
 parcelHelpers.export(exports, "signInUser", ()=>signInUser);
 parcelHelpers.export(exports, "signOutUser", ()=>signOutUser);
 var _toolkit = require("@reduxjs/toolkit");
+let currentUser = [];
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
         items: [],
-        currentUser: false
+        currentUser,
+        isUser: false
     },
     reducers: {
         addItem: (state, action)=>{
@@ -36146,11 +36148,11 @@ const cartSlice = (0, _toolkit.createSlice)({
         clearCart: (state)=>{
             state.items = [];
         },
-        signInUser: (state)=>{
-            state.currentUser = true;
+        signInUser: (state, action)=>{
+            state.currentUser.push(action.payload), state.isUser = true;
         },
         signOutUser: (state)=>{
-            state.currentUser = false;
+            state.currentUser = [], state.isUser = false;
         }
     }
 });
@@ -42313,7 +42315,9 @@ function OAuth() {
     const handleGoogle = async ()=>{
         try {
             const provider = new (0, _auth.GoogleAuthProvider)();
+            const auth = (0, _auth.getAuth)();
             const result = await (0, _auth.signInWithPopup)(auth, provider);
+            console.log("The result : ", result);
             console.log(result);
         } catch (err) {
             console.log(err);
@@ -42327,12 +42331,12 @@ function OAuth() {
             children: "Log In"
         }, void 0, false, {
             fileName: "source/components/OAuth.tsx",
-            lineNumber: 22,
+            lineNumber: 25,
             columnNumber: 11
         }, this)
     }, void 0, false, {
         fileName: "source/components/OAuth.tsx",
-        lineNumber: 21,
+        lineNumber: 24,
         columnNumber: 5
     }, this);
 }
@@ -42346,7 +42350,7 @@ $RefreshReg$(_c, "OAuth");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","firebase/auth":"79vzg"}],"79vzg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","firebase/auth":"79vzg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"79vzg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _auth = require("@firebase/auth");

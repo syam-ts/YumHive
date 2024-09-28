@@ -1,5 +1,6 @@
 import React from 'react'
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { GoogleAuthProvider, signInWithPopup, getAuth } from 'firebase/auth'
+import { app } from '../Firebase/firebase.ts'
 
 function OAuth() {
 
@@ -7,9 +8,11 @@ function OAuth() {
 
         try {
             const provider = new GoogleAuthProvider()
+            const auth = getAuth()
 
 
             const result = await signInWithPopup(auth, provider)
+            console.log('The result : ', result)
 
             console.log(result)
         } catch (err: any) {

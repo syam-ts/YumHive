@@ -1,10 +1,20 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+interface User {
+    id: string,
+    name: string, 
+    image: string,
+    email: string
+}
+
+let currentUser: User[] = []
+
 const cartSlice = createSlice({
     name: "cart",
     initialState : {
         items: [],
-        currentUser: false
+        currentUser,
+        isUser: false
     },
     reducers: {
         addItem : ( state: any, action ) => {
@@ -16,11 +26,13 @@ const cartSlice = createSlice({
         clearCart: ( state ) => {
             state.items = []
         },
-        signInUser: (state) => {
-            state.currentUser = true
+        signInUser: (state, action) => {
+            state.currentUser.push(action.payload),
+            state.isUser = true
         },
         signOutUser: (state) => {
-            state.currentUser = false
+            state.currentUser = [],
+            state.isUser = false
         }
     }
 })
