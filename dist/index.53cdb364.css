@@ -1184,6 +1184,10 @@ img, video {
   font-weight: 700;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media (width >= 1536px) {
   .\32 xl\:container {
     width: 100%;

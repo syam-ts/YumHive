@@ -1,9 +1,8 @@
 import ResturarntCard from "./ResturarntCard.js"
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import Shimmer from "./Shimmer.tsx"
 import { Link, useNavigate } from "react-router-dom"
-import { filterData } from "../utils/helper.js"
-import React from 'react'
+import { filterData } from "../utils/helper.js" 
 import { useSelector } from "react-redux"
 
 let Body = () => {

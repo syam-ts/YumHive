@@ -19,7 +19,7 @@ const Home = () => {
 
           // https://img.freepik.com/free-photo/top-view-asparagus-with-salad_23-2148622386.jpg?t=st=1727520039~exp=1727523639~hmac=3e9fd3ca00b56446a063a87b1c52f6827954e4481c075559f76e53174638f9c9&w=1800
       return (
-      <div>
+      <div >
         <div className="w-screen h-screen overflow-x-hidden overflow-hidden relative ">
           <img src="https://img.freepik.com/premium-photo/large-table-chinese-new-years-eve-dinner-spread_1316316-16632.jpg?w=1380" className="absolute top-0 left-0 min-h-full " alt="" />
           <div className="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
