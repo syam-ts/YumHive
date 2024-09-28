@@ -14,6 +14,7 @@ import Cart from './components/Cart.tsx'
 import { store } from './utils/store.ts'
 import { Provider } from "react-redux"
 import Home from "./components/Home.tsx"
+import Em from './components/Em.tsx'
 
 
 const AppLayout = () => {
@@ -70,6 +71,10 @@ const AppRouter = createBrowserRouter([
       }
     ],
   },
+  {
+    path: "/em",
+    element: <Em />
+  }
 ])
 
 

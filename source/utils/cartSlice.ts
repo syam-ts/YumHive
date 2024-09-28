@@ -1,41 +1,43 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface User {
-    id: string,
-    name: string, 
-    image: string,
-    email: string
+    id: string;
+    name: string;
+    image: string;
+    email: string;
 }
 
-let currentUser: User[] = []
+ 
+
+const initialState = {
+    items: [],
+    currentUser: [], 
+    isUser: false,
+};
 
 const cartSlice = createSlice({
-    name: "cart",
-    initialState : {
-        items: [],
-        currentUser,
-        isUser: false
-    },
+    name: 'cart',
+    initialState,
     reducers: {
-        addItem : ( state: any, action ) => {
-            state.items.push(action.payload)
+        addItem: (state: any, action ) => {
+            state.items.push(action.payload);
         },
-        removeItem: ( state ) => {
-            state.items.pop()
+        removeItem: (state) => {
+            state.items.pop();
         },
-        clearCart: ( state ) => {
-            state.items = []
+        clearCart: (state) => {
+            state.items = [];
         },
-        signInUser: (state, action) => {
-            state.currentUser.push(action.payload),
-            state.isUser = true
+        signInUser: (state: any, action: PayloadAction<User>) => {
+            state.currentUser.push(action.payload)
+            state.isUser = true;
         },
-        signOutUser: (state) => {
-            state.currentUser = [],
-            state.isUser = false
-        }
-    }
-})
+        signOutUser: (state: any) => {
+            state.currentUser = null;  
+            state.isUser = false;
+        },
+    },
+});
 
-export default cartSlice.reducer
-export const { addItem, removeItem, clearCart, signInUser, signOutUser } = cartSlice.actions
+export default cartSlice.reducer;
+export const { addItem, removeItem, clearCart, signInUser, signOutUser } = cartSlice.actions;

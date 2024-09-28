@@ -60,8 +60,11 @@ const Header2 =() => {
           <li>
             { user }
           </li>
+          {/* <li>
+            <OAuth method="sign-in" />
+          </li> */}
           <li>
-            <OAuth />
+            <OAuth method='sign-in'/>
           </li>
      </ul>
  </nav>

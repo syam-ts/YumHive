@@ -1,5 +1,6 @@
-import { initializeApp } from "firebase/app"
- 
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+console.log('firebse : ',process.env.VITE_FIREBASE_API_KEY)
  
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_API_KEY,
@@ -10,5 +11,7 @@ const firebaseConfig = {
   appId: "1:954755685522:web:aa2443985ce1d09e541a4b"
 }
 
+const app = initializeApp(firebaseConfig)
 
-export const app = initializeApp(firebaseConfig)
+export const auth = getAuth(app)
+export default app

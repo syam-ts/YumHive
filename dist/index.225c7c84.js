@@ -2982,6 +2982,8 @@ var _storeTs = require("./utils/store.ts");
 var _reactRedux = require("react-redux");
 var _homeTsx = require("./components/Home.tsx");
 var _homeTsxDefault = parcelHelpers.interopDefault(_homeTsx);
+var _emTsx = require("./components/Em.tsx");
+var _emTsxDefault = parcelHelpers.interopDefault(_emTsx);
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
         store: (0, _storeTs.store),
@@ -2989,28 +2991,28 @@ const AppLayout = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _header2TsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 25,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "source/App.tsx",
-            lineNumber: 22,
+            lineNumber: 23,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 21,
+        lineNumber: 22,
         columnNumber: 5
     }, undefined);
 };
@@ -3020,12 +3022,12 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 34,
+            lineNumber: 35,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorTsxDefault.default), {}, void 0, false, {
             fileName: "source/App.tsx",
-            lineNumber: 35,
+            lineNumber: 36,
             columnNumber: 19
         }, undefined),
         children: [
@@ -3033,7 +3035,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 39,
+                    lineNumber: 40,
                     columnNumber: 18
                 }, undefined),
                 children: [
@@ -3041,7 +3043,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                         path: "profile",
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileTsxDefault.default), {}, void 0, false, {
                             fileName: "source/App.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 22
                         }, undefined)
                     }
@@ -3051,7 +3053,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3059,7 +3061,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/home",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 53,
+                    lineNumber: 54,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3067,7 +3069,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3075,7 +3077,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "restraunt/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 61,
+                    lineNumber: 62,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3083,7 +3085,7 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/instamart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _instMartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 65,
+                    lineNumber: 66,
                     columnNumber: 18
                 }, undefined)
             },
@@ -3091,11 +3093,19 @@ const AppRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartTsxDefault.default), {}, void 0, false, {
                     fileName: "source/App.tsx",
-                    lineNumber: 69,
+                    lineNumber: 70,
                     columnNumber: 18
                 }, undefined)
             }
         ]
+    },
+    {
+        path: "/em",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _emTsxDefault.default), {}, void 0, false, {
+            fileName: "source/App.tsx",
+            lineNumber: 76,
+            columnNumber: 14
+        }, undefined)
     }
 ]);
 const rootElement = document.getElementById("root");
@@ -3105,7 +3115,7 @@ if (rootElement) {
         router: AppRouter
     }, void 0, false, {
         fileName: "source/App.tsx",
-        lineNumber: 79,
+        lineNumber: 84,
         columnNumber: 15
     }, undefined));
 } else console.error("Root element not found");
@@ -3117,7 +3127,7 @@ $RefreshReg$(_c, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header2.tsx":"aX5VQ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/RestaurantMenu.tsx":"eGouL","./components/InstMart.tsx":"jv7cb","./components/Contact.tsx":"8vnGt","./components/Profile.tsx":"ldj32","./components/Header2.tsx":"aX5VQ","./components/Footer.tsx":"4Uafc","./components/Error.tsx":"78Cr0","./components/About.tsx":"cERdQ","./components/Body.tsx":"lnLNw","./components/Cart.tsx":"a1VAA","./utils/store.ts":"2c52X","react-redux":"62sf7","./components/Home.tsx":"9xaaN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Em.tsx":"Rrdt2"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -36130,14 +36140,14 @@ parcelHelpers.export(exports, "clearCart", ()=>clearCart);
 parcelHelpers.export(exports, "signInUser", ()=>signInUser);
 parcelHelpers.export(exports, "signOutUser", ()=>signOutUser);
 var _toolkit = require("@reduxjs/toolkit");
-let currentUser = [];
+const initialState = {
+    items: [],
+    currentUser: [],
+    isUser: false
+};
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
-    initialState: {
-        items: [],
-        currentUser,
-        isUser: false
-    },
+    initialState,
     reducers: {
         addItem: (state, action)=>{
             state.items.push(action.payload);
@@ -36149,10 +36159,12 @@ const cartSlice = (0, _toolkit.createSlice)({
             state.items = [];
         },
         signInUser: (state, action)=>{
-            state.currentUser.push(action.payload), state.isUser = true;
+            state.currentUser.push(action.payload);
+            state.isUser = true;
         },
         signOutUser: (state)=>{
-            state.currentUser = [], state.isUser = false;
+            state.currentUser = null;
+            state.isUser = false;
         }
     }
 });
@@ -42254,14 +42266,16 @@ const Header2 = ()=>{
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {}, void 0, false, {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
+                                method: "sign-in"
+                            }, void 0, false, {
                                 fileName: "source/components/Header2.tsx",
-                                lineNumber: 64,
+                                lineNumber: 67,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header2.tsx",
-                            lineNumber: 63,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -42311,35 +42325,84 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _auth = require("firebase/auth");
-function OAuth() {
-    const handleGoogle = async ()=>{
+var _firebaseTs = require("../Firebase/firebase.ts");
+var _firebaseTsDefault = parcelHelpers.interopDefault(_firebaseTs);
+var _cartSliceTs = require("../utils/cartSlice.ts");
+var _reactRedux = require("react-redux");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+const auth = (0, _auth.getAuth)((0, _firebaseTsDefault.default));
+const OAuth = (method)=>{
+    _s();
+    const dispatch = (0, _reactRedux.useDispatch)();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const handleGoogleSignIn = async ()=>{
         try {
             const provider = new (0, _auth.GoogleAuthProvider)();
-            const auth = (0, _auth.getAuth)();
             const result = await (0, _auth.signInWithPopup)(auth, provider);
-            console.log("The result : ", result);
-            console.log(result);
+            const user = result.user;
+            const userData = {
+                id: user.uid,
+                name: user.displayName,
+                email: user.email,
+                image: user.photoURL
+            };
+            dispatch((0, _cartSliceTs.signInUser)(userData));
+            console.log("Logged in successfully");
+            navigate("/em");
+        } catch (err) {
+            console.error("Sign-in error:", err);
+        }
+    };
+    const handleGoogleSignOut = async ()=>{
+        try {
+            console.log("Signout");
+            const auth = (0, _auth.getAuth)();
+            await auth.signOut();
+            dispatch((0, _cartSliceTs.signOutUser)());
+            console.log("Signed out successfully");
         } catch (err) {
             console.log(err);
         }
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return method.method === "sign-in" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
             type: "button",
-            onClick: handleGoogle,
+            onClick: handleGoogleSignIn,
             className: " p-3 uppecase",
             children: "Log In"
         }, void 0, false, {
             fileName: "source/components/OAuth.tsx",
-            lineNumber: 25,
-            columnNumber: 11
-        }, this)
+            lineNumber: 55,
+            columnNumber: 7
+        }, undefined)
     }, void 0, false, {
         fileName: "source/components/OAuth.tsx",
-        lineNumber: 24,
+        lineNumber: 54,
         columnNumber: 5
-    }, this);
-}
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            type: "button",
+            onClick: handleGoogleSignOut,
+            className: " p-3 uppecase",
+            children: "Log Out"
+        }, void 0, false, {
+            fileName: "source/components/OAuth.tsx",
+            lineNumber: 65,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "source/components/OAuth.tsx",
+        lineNumber: 64,
+        columnNumber: 5
+    }, undefined);
+};
+_s(OAuth, "R1L93MxeLXzQXESpmjjjQSuQgvM=", false, function() {
+    return [
+        (0, _reactRedux.useDispatch),
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = OAuth;
 exports.default = OAuth;
 var _c;
@@ -42350,7 +42413,7 @@ $RefreshReg$(_c, "OAuth");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","firebase/auth":"79vzg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"79vzg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","firebase/auth":"79vzg","../utils/cartSlice.ts":"6ouwu","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../Firebase/firebase.ts":"amTfU","react-router-dom":"9xmpe"}],"79vzg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _auth = require("@firebase/auth");
@@ -55998,7 +56061,50 @@ exports.default = {
     __disposeResources: __disposeResources
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Uafc":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"amTfU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "auth", ()=>auth);
+var _app = require("firebase/app");
+var _auth = require("firebase/auth");
+console.log("firebse : ", "AIzaSyCcZ__e-_6Qg09Eexj1B5qBgsj8BLhIy8Q");
+const firebaseConfig = {
+    apiKey: "AIzaSyCcZ__e-_6Qg09Eexj1B5qBgsj8BLhIy8Q",
+    authDomain: "yumhive-5d9cb.firebaseapp.com",
+    projectId: "yumhive-5d9cb",
+    storageBucket: "yumhive-5d9cb.appspot.com",
+    messagingSenderId: "954755685522",
+    appId: "1:954755685522:web:aa2443985ce1d09e541a4b"
+};
+const app = (0, _app.initializeApp)(firebaseConfig);
+const auth = (0, _auth.getAuth)(app);
+exports.default = app;
+
+},{"firebase/app":"aM3Fo","firebase/auth":"79vzg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aM3Fo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _app = require("@firebase/app");
+parcelHelpers.exportAll(_app, exports);
+var name = "firebase";
+var version = "10.13.2";
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ (0, _app.registerVersion)(name, version, "app");
+
+},{"@firebase/app":"3AcPV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Uafc":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$598e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56999,391 +57105,73 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Home = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "https://picsum.photos/seed/picsum/1900/850",
-                        className: "absolute top-0 left-0 min-h-full ob",
-                        alt: ""
-                    }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "https://picsum.photos/seed/picsum/1900/850",
+                    className: "absolute top-0 left-0 min-h-full ob",
+                    alt: ""
+                }, void 0, false, {
+                    fileName: "source/components/Home.tsx",
+                    lineNumber: 8,
+                    columnNumber: 3
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "col-span-6",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "uppercase text-white text-xs font-bold mb-2 block",
+                                children: "Welcome To Yumhive"
+                            }, void 0, false, {
+                                fileName: "source/components/Home.tsx",
+                                lineNumber: 11,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                className: "text-white font-extrabold text-5xl mb-8",
+                                children: "Findout Latest Tasteful and quality foods"
+                            }, void 0, false, {
+                                fileName: "source/components/Home.tsx",
+                                lineNumber: 12,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-stone-100 text-base",
+                                children: "Log in to chose , order and enjoying the feast of foods..."
+                            }, void 0, false, {
+                                fileName: "source/components/Home.tsx",
+                                lineNumber: 13,
+                                columnNumber: 7
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10",
+                                children: "Get started"
+                            }, void 0, false, {
+                                fileName: "source/components/Home.tsx",
+                                lineNumber: 16,
+                                columnNumber: 7
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "source/components/Home.tsx",
-                        lineNumber: 8,
-                        columnNumber: 3
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "col-span-6",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "uppercase text-white text-xs font-bold mb-2 block",
-                                    children: "WE ARE EXPERTS"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 11,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    className: "text-white font-extrabold text-5xl mb-8",
-                                    children: "Finpoint provides Financial Consulting in different ways"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 12,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-stone-100 text-base",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 13,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10",
-                                    children: "Get started"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 16,
-                                    columnNumber: 7
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 10,
-                            columnNumber: 5
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "source/components/Home.tsx",
-                        lineNumber: 9,
-                        columnNumber: 3
+                        lineNumber: 10,
+                        columnNumber: 5
                     }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "source/components/Home.tsx",
-                lineNumber: 7,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-[#f7d0b6] py-20",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "max-w-screen-lg mx-auto flex justify-between items-center",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "max-w-xl",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "font-black text-sky-950 text-3xl mb-4",
-                                    children: "As the leading experts in this field, we're in over 90 countries"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 23,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-base text-sky-950",
-                                    children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 24,
-                                    columnNumber: 7
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 22,
-                            columnNumber: 5
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "text-sky-950 uppercase py-3 text-base px-10 border border-sky-950 hover:bg-sky-950 hover:bg-opacity-10",
-                            children: "Get started"
-                        }, void 0, false, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 26,
-                            columnNumber: 5
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                }, void 0, false, {
                     fileName: "source/components/Home.tsx",
-                    lineNumber: 21,
+                    lineNumber: 9,
                     columnNumber: 3
                 }, undefined)
-            }, void 0, false, {
-                fileName: "source/components/Home.tsx",
-                lineNumber: 20,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "py-12 relative overflow-hidden bg-white",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-2 max-w-screen-lg mx-auto",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-full flex flex-col items-end pr-16",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10",
-                                    children: "Whether you need Assistance"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 32,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "h-full mt-auto overflow-hidden relative",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://picsum.photos/800/600",
-                                        className: "h-full w-full object-contain",
-                                        alt: ""
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 34,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 33,
-                                    columnNumber: 7
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 31,
-                            columnNumber: 5
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative z-20 pl-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                        className: "text-[#f7d0b6] font-black text-5xl leading-snug mb-10",
-                                        children: "Finpoint is here to help you"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-white text-sm",
-                                        children: "Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar."
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 41,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        className: "mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10",
-                                        children: "Talk with expert"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 44,
-                                        columnNumber: 9
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "source/components/Home.tsx",
-                                lineNumber: 39,
-                                columnNumber: 7
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 38,
-                            columnNumber: 5
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "source/components/Home.tsx",
-                    lineNumber: 30,
-                    columnNumber: 3
-                }, undefined)
-            }, void 0, false, {
-                fileName: "source/components/Home.tsx",
-                lineNumber: 29,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "py-4 relative overflow-hidden bg-white",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-2 max-w-screen-lg mx-auto",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-[#f7d0b6] before:top-0 before:right-0",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative z-20 pl-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                        className: "text-sky-950 font-black text-5xl leading-snug mb-10",
-                                        children: "Finpoint is here to help you"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 56,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-sky-950 text-sm",
-                                        children: "Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar."
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        className: "mt-8 text-sky-950 uppercase py-3 text-sm px-10 border border-sky-950 hover:bg-white hover:bg-opacity-10",
-                                        children: "Talk with expert"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 60,
-                                        columnNumber: 9
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "source/components/Home.tsx",
-                                lineNumber: 55,
-                                columnNumber: 7
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 54,
-                            columnNumber: 5
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-full flex flex-col pl-16",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10",
-                                    children: "Whether you need Assistance"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 64,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "h-full mt-auto overflow-hidden relative",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://picsum.photos/800/600",
-                                        className: "h-full w-full object-contain",
-                                        alt: ""
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 66,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 65,
-                                    columnNumber: 7
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 63,
-                            columnNumber: 5
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "source/components/Home.tsx",
-                    lineNumber: 51,
-                    columnNumber: 3
-                }, undefined)
-            }, void 0, false, {
-                fileName: "source/components/Home.tsx",
-                lineNumber: 50,
-                columnNumber: 1
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "py-12 relative overflow-hidden bg-white",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-2 max-w-screen-lg mx-auto",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-full flex flex-col items-end pr-16",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    className: "text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10",
-                                    children: "Whether you need Assistance"
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 76,
-                                    columnNumber: 7
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "h-full mt-auto overflow-hidden relative",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: "https://picsum.photos/800/600",
-                                        className: "h-full w-full object-contain",
-                                        alt: ""
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 78,
-                                        columnNumber: 9
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "source/components/Home.tsx",
-                                    lineNumber: 77,
-                                    columnNumber: 7
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 75,
-                            columnNumber: 5
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "relative z-20 pl-12",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                        className: "text-[#f7d0b6] font-black text-5xl leading-snug mb-10",
-                                        children: "Finpoint is here to help you"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 84,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-white text-sm",
-                                        children: "Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar."
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 85,
-                                        columnNumber: 9
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        className: "mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10",
-                                        children: "Talk with expert"
-                                    }, void 0, false, {
-                                        fileName: "source/components/Home.tsx",
-                                        lineNumber: 88,
-                                        columnNumber: 9
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "source/components/Home.tsx",
-                                lineNumber: 83,
-                                columnNumber: 7
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "source/components/Home.tsx",
-                            lineNumber: 82,
-                            columnNumber: 5
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "source/components/Home.tsx",
-                    lineNumber: 74,
-                    columnNumber: 3
-                }, undefined)
-            }, void 0, false, {
-                fileName: "source/components/Home.tsx",
-                lineNumber: 73,
-                columnNumber: 1
-            }, undefined)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "source/components/Home.tsx",
+            lineNumber: 7,
+            columnNumber: 1
+        }, undefined)
+    }, void 0, false, {
         fileName: "source/components/Home.tsx",
         lineNumber: 6,
         columnNumber: 1
@@ -57395,6 +57183,37 @@ var _c;
 $RefreshReg$(_c, "Home");
 
   $parcel$ReactRefreshHelpers$30f8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Rrdt2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$e6d9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e6d9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+function Em() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Em"
+    }, void 0, false, {
+        fileName: "source/components/Em.tsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+}
+_c = Em;
+exports.default = Em;
+var _c;
+$RefreshReg$(_c, "Em");
+
+  $parcel$ReactRefreshHelpers$e6d9.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
