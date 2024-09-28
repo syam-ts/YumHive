@@ -27,9 +27,9 @@ const OAuth = (method: any) => {
       image: user.photoURL,
     };
 
-      dispatch(signInUser(userData))
-      console.log("Logged in successfully")
-      navigate('/em')
+      dispatch(signInUser(userData.image))
+      console.log("Logged in successfully", userData.image)
+      navigate('/')
     } catch (err: any) {
       console.error("Sign-in error:", err)
     }
@@ -43,6 +43,7 @@ const OAuth = (method: any) => {
       await auth.signOut();
       dispatch(signOutUser());  
       console.log("Signed out successfully");
+      navigate('/')
     } catch (err: any) {
       console.log(err);
     }
@@ -57,7 +58,7 @@ const OAuth = (method: any) => {
         onClick={handleGoogleSignIn}
         className=" p-3 uppecase"
       >
-        Log In
+        LOG IN
       </button>
     </div>
   ) : (
@@ -68,7 +69,7 @@ const OAuth = (method: any) => {
         className=" p-3 uppecase"
       >
   
-        Log Out
+        LOG OUT
       </button>
     </div>
   )

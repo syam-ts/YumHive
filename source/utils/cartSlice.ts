@@ -11,7 +11,7 @@ interface User {
 
 const initialState = {
     items: [],
-    currentUser: [], 
+    currentUser: null, 
     isUser: false,
 };
 
@@ -29,11 +29,11 @@ const cartSlice = createSlice({
             state.items = [];
         },
         signInUser: (state: any, action: PayloadAction<User>) => {
-            state.currentUser.push(action.payload)
+            state.currentUser = action.payload
             state.isUser = true;
         },
         signOutUser: (state: any) => {
-            state.currentUser = null;  
+            state.currentUser = '';  
             state.isUser = false;
         },
     },

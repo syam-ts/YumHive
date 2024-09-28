@@ -8,6 +8,9 @@ const Header2 =() => {
     const cartItems = useSelector((store: any )=> store.cart.items)
     const [isloggedIn, setIsLoggedIn] = useState(false)
     const user = useSelector((store: any ) => store.cart.currentUser)
+    const userIn = useSelector((store: any) => store.cart.isUser)
+
+    console.log('The user : ',userIn)
 
  
 
@@ -52,19 +55,19 @@ const Header2 =() => {
           </div> 
            </Link> 
          </li>
-         {isloggedIn ? (
-            <li className="hover:text-green-400 pr-0"> <button onClick={() => setIsLoggedIn(false)}> LOGOUT </button> </li>
+       {userIn}
+          {userIn ? (
+               <li>
+               <OAuth method='sign-out'/>
+             </li>
           ) : (
-            <li className="hover:text-green-400 pl-4"> <button onClick={() => setIsLoggedIn(true)}> LOGIN </button> </li>
-          )}
-          <li>
-            { user }
-          </li>
-          {/* <li>
-            <OAuth method="sign-in" />
-          </li> */}
-          <li>
+            <li>
             <OAuth method='sign-in'/>
+          </li>
+          )
+        }
+          <li className='pl-96'>
+            <img className='w-8 rounded-full' src={user} />
           </li>
      </ul>
  </nav>
