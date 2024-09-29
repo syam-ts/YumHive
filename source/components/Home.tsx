@@ -8,13 +8,12 @@ const Home = () => {
   const userIn = useSelector((store: any) => store.user.isUser)
   const navigate = useNavigate() 
 
-  console.log(userIn)
+ 
           useEffect(() => {
             if(userIn) {
               navigate('/')
             }
-
-          }, [])
+          })
           
 
           // https://img.freepik.com/free-photo/top-view-asparagus-with-salad_23-2148622386.jpg?t=st=1727520039~exp=1727523639~hmac=3e9fd3ca00b56446a063a87b1c52f6827954e4481c075559f76e53174638f9c9&w=1800

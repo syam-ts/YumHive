@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
 interface Section {
   title: string,
@@ -6,6 +8,7 @@ interface Section {
 }
 
 const Section = ({ title, description }: Section) => {
+
   const [isVisible, setIsVisible] = useState(false)
 
   return (
@@ -23,6 +26,16 @@ const Section = ({ title, description }: Section) => {
 
 
 const InstaMart = () => {
+
+  const user = useSelector((store: any ) => store.user.isUser)
+  const navigate = useNavigate()
+ 
+  
+  useEffect(() => {
+    !user && navigate('/home')
+  }, [])
+
+
   return (
     <div className="grid gap-12 px-44 pt-44 pb-44">
       <div className="border border-black rounded-md">

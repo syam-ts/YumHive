@@ -8,11 +8,10 @@ interface User {
 }
 
  
-
-const initialState = { 
-    currentUser: null, 
-    isUser: false,
-};
+const initialState = {
+    currentUser: null,
+    isUser: false
+}
 
 const userSlice = createSlice({
     name: 'user',

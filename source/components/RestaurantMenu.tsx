@@ -4,7 +4,7 @@ import { IMG_CDN_URl } from '../utils/constants.js'
 import Shimmer from './Shimmer.js'
 import useRestaurant from '../utils/useRestaurant.js' 
 import { useDispatch } from 'react-redux'
-import { addItem } from '../utils/cartSlice.js'
+import { addItem } from '../slices/cartSlice.js'
 
 const RestaurantMenu = () => {
 

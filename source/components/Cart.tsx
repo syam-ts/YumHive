@@ -1,12 +1,30 @@
 import { useSelector } from "react-redux";
 import CartMenu from "./CartMenu.js";
 import { useDispatch } from "react-redux";
-import { clearCart } from "../utils/cartSlice.js"
-import React from 'react'
+import { clearCart } from "../slices/cartSlice.js"
+import React, { useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const cartItems = useSelector((store: any) => store.cart.items);
+  
+  interface Store {
+    cart: SliceData,
+    user: SliceData
+  }
+
+  type SliceData = {
+    items: any,
+    isUser: boolean
+  }
+
+  const cartItems = useSelector((store: Store) => store.cart.items);
+  const user = useSelector((store: Store) => store.user.isUser);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
+      
+      useEffect(() => {
+        !user && navigate('/home')
+      }, [])
 
   const handleClearCart = () => {
     dispatch(clearCart());

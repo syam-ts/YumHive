@@ -4,14 +4,15 @@ import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
 
- const user = useSelector((store: any ) => store.cart.currentUser)
- const navigate = useNavigate()
+    const user = useSelector((store: any ) => store.user.isUser)
+    const navigate = useNavigate()
 
-//  useEffect(() => {
-//     if(!user) {
-//         navigate('/about')
-//     }
-//  }, [])
+    console.log('User from about page : ', user)
+
+    useEffect(() => {
+      !user && navigate('/home')
+    }, []);
+
 
   return (
     <>
