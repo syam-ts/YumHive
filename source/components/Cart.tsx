@@ -32,24 +32,33 @@ const Cart = () => {
 
   return (
     <div className="text-center">
-      <h1 className="font-bold text-3xl"> Cart Items</h1>
-      <div className="grid">
-        {cartItems.map((item: any) => (
-          <CartMenu key={item.id} {...item} />
-       
-        ))}
-      </div>
-
-      <div>
-        <button
-          className="bg-gray-400 p-2 m-3 rounded-2xl hover:opacity-60 hover:text-white"
-          onClick={() => handleClearCart()}
-        >
-          Clear Cart
-        </button>
-      </div>
+      {
+        cartItems.length > 0 ? 
+        <div>
+          <h1 className="font-bold text-3xl"> Cart Items</h1>
+        <div className="grid">
+          {cartItems.map((item: any) => (
+            <CartMenu key={item.id} {...item} />
+         
+          ))}
+        </div>
+  
+        <div>
+          <button
+            className=" items-center justify-center px-2 py-3 text-sm font-bold leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-green-300 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-1"
+            onClick={() => handleClearCart()}
+          >
+            Clear Cart
+          </button>
+        </div>
+        </div> :
+        <div className='my-72'>
+          <h1 className='quicksand-bold'> Empty Cart </h1>
+        </div>
+      }
     </div>
   );
 };
+
 
 export default Cart

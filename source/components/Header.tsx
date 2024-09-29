@@ -6,7 +6,7 @@ import OAuth from "./OAuth"
 const Header =() => {
  
     const cartItems = useSelector((store: any )=> store.cart.items) 
-    const user = useSelector((store: any ) => store.user.currentUser)
+    const userImage = useSelector((store: any ) => store.user.currentUser)
     const userIn = useSelector((store: any) => store.user.isUser)
     const navigate = useNavigate()
 
@@ -22,7 +22,6 @@ const Header =() => {
     
       
     
-
  
 
     return(
@@ -77,7 +76,8 @@ const Header =() => {
                  )
                }
                  <li className='pl-96'>
-                   <img className='w-8 rounded-full' src={user} />
+          
+                   <img className='w-8 rounded-full' src={userImage} />
                  </li>
             </ul>
         </nav>

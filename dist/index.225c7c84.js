@@ -42060,7 +42060,7 @@ var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
     const cartItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
-    const user = (0, _reactRedux.useSelector)((store)=>store.user.currentUser);
+    const userImage = (0, _reactRedux.useSelector)((store)=>store.user.currentUser);
     const userIn = (0, _reactRedux.useSelector)((store)=>store.user.isUser);
     const navigate = (0, _reactRouterDom.useNavigate)();
     (0, _react.useEffect)(()=>{
@@ -42085,17 +42085,17 @@ const Header = ()=>{
                         alt: "logo-yumgive"
                     }, void 0, false, {
                         fileName: "source/components/Header.tsx",
-                        lineNumber: 33,
+                        lineNumber: 32,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "source/components/Header.tsx",
-                    lineNumber: 32,
+                    lineNumber: 31,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Header.tsx",
-                lineNumber: 31,
+                lineNumber: 30,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
@@ -42110,12 +42110,12 @@ const Header = ()=>{
                                 children: " HOME "
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 43,
+                                lineNumber: 42,
                                 columnNumber: 17
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 42,
+                            lineNumber: 41,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42125,12 +42125,12 @@ const Header = ()=>{
                                 children: "ABOUT"
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 46,
+                                lineNumber: 45,
                                 columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 45,
+                            lineNumber: 44,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42140,12 +42140,12 @@ const Header = ()=>{
                                 children: "CONTACT"
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 49,
+                                lineNumber: 48,
                                 columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 48,
+                            lineNumber: 47,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42155,12 +42155,12 @@ const Header = ()=>{
                                 children: "INSTAMART"
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 52,
+                                lineNumber: 51,
                                 columnNumber: 19
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 51,
+                            lineNumber: 50,
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -42174,7 +42174,7 @@ const Header = ()=>{
                                             children: " CART "
                                         }, void 0, false, {
                                             fileName: "source/components/Header.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 58,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -42191,12 +42191,12 @@ const Header = ()=>{
                                                 d: "M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
                                             }, void 0, false, {
                                                 fileName: "source/components/Header.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 60,
                                                 columnNumber: 19
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "source/components/Header.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 59,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -42207,23 +42207,23 @@ const Header = ()=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "source/components/Header.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 63,
                                             columnNumber: 18
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "source/components/Header.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 57,
                                     columnNumber: 18
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 57,
+                                lineNumber: 56,
                                 columnNumber: 18
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 54,
+                            lineNumber: 53,
                             columnNumber: 17
                         }, undefined),
                         userIn,
@@ -42232,31 +42232,31 @@ const Header = ()=>{
                                 method: "sign-out"
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 71,
+                                lineNumber: 70,
                                 columnNumber: 23
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 70,
+                            lineNumber: 69,
                             columnNumber: 23
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _oauthDefault.default), {
                                 method: "sign-in"
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
-                                lineNumber: 75,
+                                lineNumber: 74,
                                 columnNumber: 20
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 74,
+                            lineNumber: 73,
                             columnNumber: 20
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             className: "pl-96",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 className: "w-8 rounded-full",
-                                src: user
+                                src: userImage
                             }, void 0, false, {
                                 fileName: "source/components/Header.tsx",
                                 lineNumber: 80,
@@ -42264,28 +42264,28 @@ const Header = ()=>{
                             }, undefined)
                         }, void 0, false, {
                             fileName: "source/components/Header.tsx",
-                            lineNumber: 79,
+                            lineNumber: 78,
                             columnNumber: 18
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "source/components/Header.tsx",
-                    lineNumber: 41,
+                    lineNumber: 40,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "source/components/Header.tsx",
-                lineNumber: 40,
+                lineNumber: 39,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "source/components/Header.tsx",
-        lineNumber: 29,
+        lineNumber: 28,
         columnNumber: 9
     }, undefined);
 };
-_s(Header, "h+heO54eOo7PiUZKAQ3Hu0mJnP4=", false, function() {
+_s(Header, "zi5nypJAeizEDH84PSyOo5KwOd4=", false, function() {
     return [
         (0, _reactRedux.useSelector),
         (0, _reactRedux.useSelector),
@@ -56977,46 +56977,66 @@ const Cart = ()=>{
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "text-center",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "font-bold text-3xl",
-                children: " Cart Items"
-            }, void 0, false, {
-                fileName: "source/components/Cart.tsx",
-                lineNumber: 35,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid",
-                children: cartItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartMenuJsDefault.default), {
-                        ...item
-                    }, item.id, false, {
-                        fileName: "source/components/Cart.tsx",
-                        lineNumber: 38,
-                        columnNumber: 11
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "source/components/Cart.tsx",
-                lineNumber: 36,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "bg-gray-400 p-2 m-3 rounded-2xl hover:opacity-60 hover:text-white",
-                    onClick: ()=>handleClearCart(),
-                    children: "Clear Cart"
+        children: cartItems.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "font-bold text-3xl",
+                    children: " Cart Items"
                 }, void 0, false, {
                     fileName: "source/components/Cart.tsx",
-                    lineNumber: 44,
+                    lineNumber: 38,
+                    columnNumber: 11
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid",
+                    children: cartItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartMenuJsDefault.default), {
+                            ...item
+                        }, item.id, false, {
+                            fileName: "source/components/Cart.tsx",
+                            lineNumber: 41,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "source/components/Cart.tsx",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: " items-center justify-center px-2 py-3 text-sm font-bold leading-6 capitalize duration-100 transform border-2 rounded-sm cursor-pointer border-green-300 focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 focus:outline-none sm:w-auto sm:px-6 border-text  hover:shadow-lg hover:-translate-y-1",
+                        onClick: ()=>handleClearCart(),
+                        children: "Clear Cart"
+                    }, void 0, false, {
+                        fileName: "source/components/Cart.tsx",
+                        lineNumber: 47,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "source/components/Cart.tsx",
+                    lineNumber: 46,
                     columnNumber: 9
                 }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "source/components/Cart.tsx",
+            lineNumber: 37,
+            columnNumber: 9
+        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "my-72",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "quicksand-bold",
+                children: " Empty Cart "
             }, void 0, false, {
                 fileName: "source/components/Cart.tsx",
-                lineNumber: 43,
-                columnNumber: 7
+                lineNumber: 56,
+                columnNumber: 11
             }, undefined)
-        ]
-    }, void 0, true, {
+        }, void 0, false, {
+            fileName: "source/components/Cart.tsx",
+            lineNumber: 55,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
         fileName: "source/components/Cart.tsx",
         lineNumber: 34,
         columnNumber: 5
@@ -57040,7 +57060,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","./CartMenu.js":"jAPOL","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../slices/cartSlice.js":"eZTmK","react-router-dom":"9xmpe"}],"jAPOL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"62sf7","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../slices/cartSlice.js":"eZTmK","react-router-dom":"9xmpe","./CartMenu.js":"jAPOL"}],"jAPOL":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$05ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
