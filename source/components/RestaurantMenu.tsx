@@ -66,7 +66,9 @@ const RestaurantMenu = () => {
         <h1 className="text-3xl font-mono text-center border-b p-2 "> Menu Card </h1>
      
         { menus == undefined ? 
-        <div> Empty </div> :
+           <div className='font-sans mx-auto my-44 text-3xl'>
+               Out of Service
+            </div> :
           menus.map((menu: any, index: number) => { 
             return (
               
