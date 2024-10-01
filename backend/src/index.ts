@@ -8,6 +8,8 @@ const app = express();
 dotenv.config();
 const PORT: number = 3600;
 
+app.use('/', userRouter)
+
 
 //database
 const mongoURI = 'mongodb+srv://syamnandhu3:syam%40yumhive@yumhive.42uda.mongodb.net/?retryWrites=true&w=majority&appName=YumHIve';
