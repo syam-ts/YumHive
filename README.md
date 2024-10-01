@@ -1,11 +1,11 @@
 
 <div>
 <h1> YumHive </h1>
-<img src="source/style/img/preview1.png" />
+<img src="backend/src/style/img/preview1.png" />
 </br>
 </br>
 </br>
-<img src="source/style/img/preview2.png" />
+<img src="backend/src/style/img/preview2.png" />
 
 <h3> About</h3>
 <p style="font-family: sans";> 
