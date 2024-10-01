@@ -9,7 +9,7 @@
 
 <h3> About</h3>
 <p style="font-family: sans";> 
-  An Food Odering MERN Stack Application .For frendend used React.js, Parcel, Babel, Tailwind, Typescript and for backend Node.js, express.js, mongoose. By using Parcel as budler i can access lot of methods given by parcel and i dont need lot of jargan codes which are created when we use create react-app or vite @latest.
+  An Food Odering MERN Stack Application .For frendend used React.js, Parcel, Babel, Tailwind, Typescript and for backend Node.js, express.js, mongoose. By using Parcel as budler i can access lot of methods given by parcel and i dont need lot of jargan codes which are created when we use create react-app or vite @latest and for global state management used Redux Toolkit.
 </p>
 
 <br>* Tools </br>
@@ -18,6 +18,7 @@
 * Express.js</br>
 * MongoDB</br>
 * Typescript</br>
+* Redux</br>
 * Parcel </br>
 * Babel </br>
 * Tailwind CSS</br>
