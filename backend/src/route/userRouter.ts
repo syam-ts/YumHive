@@ -1,6 +1,11 @@
 import express from 'express'
+import { signUp } from '../controllers/userCtrl'
 
 
 const Router = express.Router()
 
-Router.get('/user', userController)
+Router.post('/user/signup', signUp)
+
+
+
+export default Router
