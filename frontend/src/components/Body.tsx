@@ -12,7 +12,7 @@ let Body = () => {
   const userIn = useSelector((store: any) => store.user.isUser)
   const navigate = useNavigate()
  
- console.log('this', userIn)
+ 
 
   useEffect(() => {
      if(!userIn) {
@@ -27,10 +27,10 @@ let Body = () => {
     getRestaurants()
   }, [])
 
-  async function getRestaurants() {
+
+  const getRestaurants = async () => {
     try {
-      const [swiggyResponse, secondApiResponse, thirdApiResponse, fourthApiResponse, fifthApiResponse] =
-        await Promise.all([
+      const [swiggyResponse, secondApiResponse, thirdApiResponse, fourthApiResponse, fifthApiResponse] = await Promise.all([
           fetch(
             "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
           ),
