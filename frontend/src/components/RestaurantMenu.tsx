@@ -5,7 +5,7 @@ import Shimmer from './Shimmer.js'
 import useRestaurant from '../utils/useRestaurant.js' 
 import { useDispatch } from 'react-redux'
 import { addItem } from '../slices/cartSlice.js'
-import { motion } from 'framer-motion'
+import { Hover } from './Framer.js'
 
 const RestaurantMenu = () => {
 
@@ -62,6 +62,7 @@ const RestaurantMenu = () => {
 
 
 
+
     {/* menu */}
       <div className="grid decoration">
         <h1 className="text-3xl font-mono text-center border-b p-2 "> Menu Card </h1>
@@ -89,15 +90,11 @@ const RestaurantMenu = () => {
          <button className=""
                   onClick={() => handleAddItem(menu?.card?.info)}
                     > 
-                 <motion.div
-                    className="box bg-white border font-bold border-gray-700 mx-5 text-green-500 p-1 h-[34px] w-[119px] rounded-lg"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    
-                  >
-                   <span className='quicksand-bold'> ADD </span>
-                  </motion.div>
+                 <Hover>
+                 <span className='quicksand-regular'> ADD </span>
+                 </Hover>
+               
+                  
                            </button>
                 <span className='text-xs mx-11 quicksand-regular'>
                 Customisable

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { Link, useNavigate } from 'react-router-dom' 
 import { useSelector } from 'react-redux'
+import { motion } from 'framer-motion'
 import OAuth from "./OAuth"
+import { Transition } from "./Framer"
 
 const Header =() => {
  
@@ -29,9 +31,12 @@ const Header =() => {
  
         <h1 className="w-3/12">
             <a href="/">
+            <Transition>
             <img 
             className="w-24 p-2"
             src="https://www.creativefabrica.com/wp-content/uploads/2020/02/12/Food-Logo-Graphics-1-98-580x386.jpg" alt="logo-yumgive"/>
+          
+            </Transition> 
             </a>
         </h1>
        
