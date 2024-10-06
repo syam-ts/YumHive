@@ -14,13 +14,13 @@ let Body = () => {
  
  
 
-  useEffect(() => {
-     if(!userIn) {
-        navigate('/home')
-     } else if( userIn) {
-      navigate('/')
-     }
-  },[])
+  // useEffect(() => {
+  //    if(!userIn) {
+  //       navigate('/home')
+  //    } else if( userIn) {
+  //     navigate('/')
+  //    }
+  // },[])
   
 
   useEffect(() => {

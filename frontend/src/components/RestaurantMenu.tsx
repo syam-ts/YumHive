@@ -5,6 +5,7 @@ import Shimmer from './Shimmer.js'
 import useRestaurant from '../utils/useRestaurant.js' 
 import { useDispatch } from 'react-redux'
 import { addItem } from '../slices/cartSlice.js'
+import { motion } from 'framer-motion'
 
 const RestaurantMenu = () => {
 
@@ -81,15 +82,23 @@ const RestaurantMenu = () => {
                   <span className='quicksand-regular'> {menu?.card?.info?.itemAttribute?.vegClassifier} </span> 
                     </div>
                 <div className=''> 
-                   <img className='h-[140px] w-[160px] transition duration-300 ease-in-out hover:scale-110 rounded-2xl' src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`} />
+                   <img className='h-[140px] w-[160px] rounded-2xl' src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${menu?.card?.info?.imageId}`} />
               
        
          <div className='grid'>
-         <button className="bg-white border transition duration-300 ease-in-out hover:bg-gray-200 font-bold border-gray-700 mx-5 text-green-500 p-1 h-[34px] w-[119px] rounded-lg "
+         <button className=""
                   onClick={() => handleAddItem(menu?.card?.info)}
-                >
-                  ADD
-                </button>
+                    > 
+                 <motion.div
+                    className="box bg-white border font-bold border-gray-700 mx-5 text-green-500 p-1 h-[34px] w-[119px] rounded-lg"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    
+                  >
+                   <span className='quicksand-bold'> ADD </span>
+                  </motion.div>
+                           </button>
                 <span className='text-xs mx-11 quicksand-regular'>
                 Customisable
                 </span>

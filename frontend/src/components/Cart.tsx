@@ -22,9 +22,9 @@ const Cart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
       
-      useEffect(() => {
-        !user && navigate('/home')
-      }, [])
+      // useEffect(() => {
+      //   !user && navigate('/home')
+      // }, [])
 
   const handleClearCart = () => {
     dispatch(clearCart());
