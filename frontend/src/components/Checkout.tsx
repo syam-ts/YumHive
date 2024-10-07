@@ -20,7 +20,7 @@ const Checkout = () => {
                   id="email"
                   name="email"
                   placeholder="ashok lane, gurgaon"
-                  className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                  className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring--500"
                 />
               </div>
               <div className="relative">
@@ -32,7 +32,7 @@ const Checkout = () => {
                   id="city"
                   name="city"
                   placeholder="City"
-                  className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                  className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring--500"
                 />
                 <label className="text-xs font-semibold text-gray-500">
                  Pincode
@@ -42,7 +42,7 @@ const Checkout = () => {
                   id="card-number"
                   name="card-number"
                   placeholder="Pincode"
-                  className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                  className="block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring--500"
                 />
                 <img
                   src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
@@ -60,7 +60,7 @@ const Checkout = () => {
                   id="card-name"
                   name="card-name"
                   placeholder="Cash On Delivery"
-                  className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-teal-500"
+                  className="mt-1 block w-full rounded border-gray-300 bg-gray-50 py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring--500"
                 />
               </div>
             </form>
@@ -68,36 +68,36 @@ const Checkout = () => {
               By placing this order you agree to the{" "}
               <a
                 href="#"
-                className="whitespace-nowrap text-teal-400 underline hover:text-teal-600"
+                className="whitespace-nowrap text--400 underline hover:text-teal-600"
               >
                 Terms and Conditions
               </a>
             </p>
             <button
               type="submit"
-              className="mt-4 inline-flex w-full items-center justify-center rounded bg-teal-600 py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring-teal-500 sm:text-lg"
+              className="mt-4 inline-flex w-full items-center justify-center rounded bg-teal-600 py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring--500 sm:text-lg"
             >
               Place Order
             </button>
           </div>
         </div>
-        <div className="relative col-span-full flex flex-col py-6 pl-8 pr-4 sm:py-12 lg:col-span-4 lg:py-24">
+        <div className="relative col-span-full flex flex-col py-6 pl-24 pr-4 sm:py-12 lg:col-span-4 lg:py-24">
           <h2 className="sr-only">Order summary</h2>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1581318694548-0fb6e47fe59b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+              src="https://images.unsplash.com/photo-1532980400857-e8d9d275d858?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww"
               alt=""
-              className="absolute inset-0 h-full w-full object-cover"
+              className="absolute inset-0 h-full w-full object-fill pl-16" 
             />
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-teal-800 to-teal-400 opacity-95"></div>
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-t from--800 to--400 opacity-95"></div>
           </div>
           <div className="relative">
             <ul className="space-y-5">
               <li className="flex justify-between">
                 <div className="inline-flex">
                   <img
-                    src="https://images.unsplash.com/photo-1620331311520-246422fd82f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                    alt=""
+                    src='/'
+                 alt="product image"
                     className="max-h-16"
                   />
                   <div className="ml-3">
@@ -114,8 +114,8 @@ const Checkout = () => {
               <li className="flex justify-between">
                 <div className="inline-flex">
                   <img
-                    src="https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhhaXIlMjBkcnllcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                    alt=""
+                    src="/"
+                    alt="productimage"
                     className="max-h-16"
                   />
                   <div className="ml-3">
