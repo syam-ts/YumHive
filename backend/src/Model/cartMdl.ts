@@ -2,6 +2,10 @@ import { Schema, model } from 'mongoose';
 
 
 const cartSchema = new Schema({
+    id: {
+        type: Number,
+        required: true
+    },
     productName: {
         type: String,
         required: true
@@ -13,8 +17,8 @@ const cartSchema = new Schema({
         type: Number,
         default: 100
     },
-    rating: {
-        type: Number
+    description: {
+        type: String
     },
     Type: {
         type: String,

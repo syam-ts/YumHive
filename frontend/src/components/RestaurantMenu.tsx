@@ -22,6 +22,26 @@ const RestaurantMenu = () => {
       dispatch(addItem(item))
   }
 
+  const addToCart = async (items: any) => {
+
+    try { 
+      const res = await fetch('http://localhost:3000/addToCart', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(items),
+      })
+
+       console.log('Reacted ')
+
+    } catch (err: any) {
+      console.log('cannot add items to cart');
+    }
+
+  }
+
+
 
   useEffect(() => {
     const menuId = restaurant?.id;
@@ -88,7 +108,7 @@ const RestaurantMenu = () => {
        
          <div className='grid'>
          <button className=""
-                  onClick={() => handleAddItem(menu?.card?.info)}
+                  onClick={() => addToCart(menu?.card?.info)}
                     > 
                  <Hover>
                  <span className='quicksand-regular'> ADD </span>
