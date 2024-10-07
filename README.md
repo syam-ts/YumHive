@@ -29,8 +29,8 @@
 * Redux.js</br>
 * Parcel </br>
 * Babel </br>
-* Tailwind CSS</br>
 * Framer motion</br>
+* Tailwind CSS</br>
 * React Router</p> 
  
 
