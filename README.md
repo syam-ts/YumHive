@@ -1,7 +1,7 @@
 
 <div>
 <h1> YumHive </h1>
-<img src="backend/src/style/img/preview1.png" />
+<img style="border: 1px solid black" src="backend/src/style/img/preview1.png" />
 </br>
 </br>
 </br>
@@ -13,7 +13,7 @@
 </br>
 </br>
 </br>
-<img src="backend/src/style/img/preview2.png" />
+<img style="border: 1px solid black" src="backend/src/style/img/preview2.png" />
 
 <h3> About</h3>
 <p style="font-family: sans";> 
