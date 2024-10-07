@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 
-const productSchema = new Schema({
+const cartSchema = new Schema({
     productName: {
         type: String,
         required: true
@@ -22,6 +22,6 @@ const productSchema = new Schema({
     }
 });
 
- const Product = model('Product', productSchema);
+ const Cart = model('Cart', cartSchema);
 
- export default Product;
+ export default Cart;

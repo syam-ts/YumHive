@@ -1,6 +1,6 @@
 import express from "express";
 import userRouter from "./route/userRouter";
-import productRouter from './route/productRouter'
+import cartRouter from './route/cartRouter'
 import bodyParser from "body-parser";
 import { connectDB } from "./config/db";
 
@@ -15,7 +15,7 @@ const PORT: number = 3000;
 
 app.use(bodyParser.json());
 app.use("/", userRouter);
-app.use("/", productRouter);
+app.use("/", cartRouter);
 
 
 
