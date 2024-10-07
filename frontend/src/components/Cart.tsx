@@ -2,8 +2,9 @@ import { useSelector } from "react-redux";
 import CartMenu from "./CartMenu.js";
 import { useDispatch } from "react-redux";
 import { clearCart } from "../slices/cartSlice.js"
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from "react-router-dom";
+import Shimmer from "./Shimmer.js";
 
 const Cart = () => {
   
@@ -21,27 +22,59 @@ const Cart = () => {
   const user = useSelector((store: Store) => store.user.isUser);
   const dispatch = useDispatch();
   const navigate = useNavigate()
+  const [cart, setCart] = useState([])
       
       // useEffect(() => {
       //   !user && navigate('/home')
       // }, [])
 
+      useEffect( function () {
+
+        const cartItems = async () => {
+          try { 
+            const res = await fetch('http://localhost:3000/getProducts', {
+              method: 'GET',
+              headers: {
+                'Content-Type': 'application/json',
+              }
+            })
+      
+             
+             const result = await res.json()
+             const data = result.data
+             
+             setCart(data);
+            
+             console.log('dt : ', cart)
+      
+          } catch (err: any) {
+            console.log('cannot add items to cart');
+          }
+        }
+
+
+        cartItems();
+      }, [setCart]);
+
   const handleClearCart = () => {
     dispatch(clearCart());
   };
 
+  console.log('The cart : ',cart)
+
+
   return (
     <div className="text-center">
+ 
       {
-        cartItems.length > 0 ? 
+        cart.length > 0 ? 
         <div>
           <h1 className="font-bold text-3xl"> Cart Items</h1>
-        <div className="grid">
-          {cartItems.map((item: any) => (
-            <CartMenu key={item.id} {...item} />
-         
-          ))}
-        </div>
+          <div className="grid">
+      {cart.map((item: any) => (
+        <CartMenu key={item._id} {...item} />
+      ))}
+    </div>
   
         <div>
           <button
@@ -52,9 +85,7 @@ const Cart = () => {
           </button>
         </div>
         </div> :
-        <div className='my-72'>
-          <h1 className='quicksand-bold'> Empty Cart </h1>
-        </div>
+       <Shimmer />
       }
     </div>
   );
