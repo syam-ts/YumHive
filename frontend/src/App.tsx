@@ -11,6 +11,7 @@ import Error from "./components/Error.tsx"
 import About from "./components/About.tsx"
 import Body from "./components/Body.tsx"
 import Cart from './components/Cart.tsx'
+import Checkout from './components/Checkout.tsx'
 import store, { persistor } from './utils/store.ts'
 import { Provider } from "react-redux"
 import Home from "./components/Home.tsx" 
@@ -73,6 +74,10 @@ const AppRouter = createBrowserRouter([
       {
         path: "/cart",
         element: < Cart/>
+      },
+      {
+        path: "/checkout",
+        element: < Checkout/>
       }
     ],
   } 
