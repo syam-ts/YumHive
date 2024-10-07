@@ -3,17 +3,19 @@ import User from '../Model/userModel'
 export const signUp = async (req: any, res: any)  => {
     console.log("Enter so far")
 
-    const { username, email, password} = req.body
+    // const { username, email, password} = req.body
 
     try{
  
-        res.json('Succesfully created new user!')
+        const userName = 'Syam';
+        const password = 'syamnandu@1234';
 
-        // const user = await User.findOne({username: req.body.username})
+        const user = await User.insertMany({userName, password});
 
-        // if(user) {
-            
-        // }
+
+        res.json(' User Created Successfully!')
+
+        
 
 
     }catch(err: any) {

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "module": "esnext",
-  "main": "backend/dist/index.js",
+  "main": "backend/dist/app.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "ts-node-dev --respawn --transpile-only --project backend/tsconfig.json backend/src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,7 +15,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "framer-motion": "^11.11.1",
-    "mongoose": "^8.7.0"
+    "mongoose": "^8.7.0",
+    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

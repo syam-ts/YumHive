@@ -4,7 +4,8 @@ import { signUp } from '../controllers/userCtrl'
 
 const Router = express.Router()
 
-Router.post('/user/signup', signUp)
+Router.post('/signup', signUp)
+
 
 
 
