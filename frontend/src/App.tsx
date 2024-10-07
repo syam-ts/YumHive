@@ -16,6 +16,7 @@ import store, { persistor } from './utils/store.ts'
 import { Provider } from "react-redux"
 import Home from "./components/Home.tsx" 
 import { PersistGate } from 'redux-persist/integration/react';
+import GoogleSignup from "./components/GoogleSignup.tsx"
 import SignUp from "./components/Signup.tsx"
 
 
@@ -54,6 +55,10 @@ const AppRouter = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/signup/google",
+        element: <GoogleSignup />,
       },
       {
         path: '/home',
