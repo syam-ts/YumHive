@@ -1,4 +1,4 @@
-import User from '../Model/userModel'
+import User from '../Model/userMdl'
 
 export const signUp = async (req: any, res: any)  => {
     console.log("Enter so far")

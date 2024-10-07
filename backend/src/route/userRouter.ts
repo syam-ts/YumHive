@@ -2,11 +2,11 @@ import express from 'express'
 import { signUp } from '../controllers/userCtrl'
 
 
-const Router = express.Router()
+const router = express.Router()
 
-Router.post('/signup', signUp)
-
-
+router.post('/signup', signUp)
 
 
-export default Router
+
+
+export default router
