@@ -43,9 +43,7 @@ const Cart = () => {
              const result = await res.json()
              const data = result.data
              
-             setCart(data);
-            
-             console.log('dt : ', cart)
+             setCart(data); 
       
           } catch (err: any) {
             console.log('cannot add items to cart');
@@ -56,14 +54,27 @@ const Cart = () => {
         cartItems();
       }, [setCart]);
 
-  const handleClearCart = () => {
-    dispatch(clearCart());
+
+
+  const handleClearCart = async () => {
+    try { 
+      const res = await fetch('http://localhost:3000/clearCart', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
+
+        navigate('/')
+      
+       console.log('Cart Cleared!');
+
+    } catch (err: any) {
+      console.log(err.message);
+    }
   };
 
- 
-
-  console.log('The cart : ',cart)
-
+  
 
   return (
     <div className="text-center">

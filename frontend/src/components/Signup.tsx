@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{ useState } from 'react';
 
 
 const SignUp = () => {
+
+  const [input , setInput] = useState();
 
 
     return (
@@ -18,15 +20,22 @@ const SignUp = () => {
                         <div className="relative mt-8 flex h-px place-items-center bg-gray-200">
                             <div className="absolute left-1/2 h-6 w-14 -translate-x-1/2 bg-white text-center text-sm text-gray-500">or</div>
                         </div>
-                        <form className="flex flex-col pt-3 md:pt-8">
+                        <form className="flex flex-col pt-3 md:pt-8"
+                           
+                        >
                             <div className="flex flex-col pt-4">
                                 <div className="focus-within:border-b-gray-500 relative flex overflow-hidden border-b-2 transition">
-                                    <input type="email" id="login-email" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Email" />
+                                    <input type="userName" id="userName" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Username" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col pt-4">
+                                <div className="focus-within:border-b-gray-500 relative flex overflow-hidden border-b-2 transition">
+                                    <input type="email" id="email" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Email" />
                                 </div>
                             </div>
                             <div className="mb-12 flex flex-col pt-4">
                                 <div className="focus-within:border-b-gray-500 relative flex overflow-hidden border-b-2 transition">
-                                    <input type="password" id="login-password" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Password" />
+                                    <input type="password" id="password" className="w-full flex-1 appearance-none border-gray-300 bg-white px-4 py-2 text-base text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Password" />
                                 </div>
                             </div>
                             <button type="submit" className="w-full rounded-lg quicksand-regular bg-gray-900 px-4 py-2 text-center text-base font-semibold text-white shadow-md ring-gray-500 ring-offset-2 transition focus:ring-2">
