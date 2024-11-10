@@ -24,3 +24,4 @@ const persistConfig = {
   
   export default store
   
+  

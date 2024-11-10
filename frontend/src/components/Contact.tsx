@@ -9,9 +9,9 @@ const Contact = () => {
 
     console.log('User from about page : ', user)
 
-    useEffect(() => {
-      !user && navigate('/home')
-    }, []);
+    // useEffect(() => {
+    //   !user && navigate('/home')
+    // }, []);
 
 
   return (

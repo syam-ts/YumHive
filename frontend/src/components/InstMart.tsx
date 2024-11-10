@@ -31,9 +31,9 @@ const InstaMart = () => {
   const navigate = useNavigate()
  
   
-  useEffect(() => {
-    !user && navigate('/home')
-  }, [])
+  // useEffect(() => {
+  //   !user && navigate('/home')
+  // }, [])
 
 
   return (

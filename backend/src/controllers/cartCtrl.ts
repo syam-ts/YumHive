@@ -12,7 +12,6 @@ export const getProductInCarts = async (req: any, res: any) => {
 
 export const addProductToCart = async (req: any, res: any) => {
   try {
- 
     const { id, name, imageId, price, description } = req.body;
 
     const cart = await Cart.insertMany({
@@ -27,17 +26,10 @@ export const addProductToCart = async (req: any, res: any) => {
   }
 };
 
-
 export const clearCart = async (req: any, res: any) => {
   try {
-     
-
-    const cart = await Cart.deleteMany({})
- 
+    const cart = await Cart.deleteMany({});
   } catch (err: any) {
     res.json({ message: err.message });
   }
 };
-
-
-
